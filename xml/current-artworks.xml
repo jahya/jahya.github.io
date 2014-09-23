@@ -1,0 +1,67 @@
+<?xml version='1.0' standalone='yes' ?>
+<projects>
+	<project>
+		<title>Existential</title>
+		<img>portfolio/existential1.png</img>
+		<location>Museum of Arts and Design, New York</location>
+		<medium>Depth Video</medium>
+		<url>existential</url>
+		<year><![CDATA[2014]]></year>
+	</project>
+	<project>
+		<title>Long</title>
+		<img>portfolio/long1.png</img>
+		<location>Contemporary Artists Center, New York</location>
+		<medium>Installation</medium>
+		<url>long</url>
+		<year><![CDATA[2012]]></year>
+	</project>
+	<project>
+		<title>Gravity</title>
+		<img>portfolio/gravity1.png</img>
+		<location>Jaaga Creative Common Ground, Bangalore</location>
+		<medium>Light/Sound Triptych</medium>
+		<url>gravity</url>
+		<year><![CDATA[2011]]></year>
+	</project>
+	<project>
+		<title>Measure</title>
+		<img>portfolio/measure1.png</img>
+		<location>Alpha-Ville Festival, London</location>
+		<medium>Installation</medium>
+		<url>measure</url>
+		<year><![CDATA[2011]]></year>
+	</project>
+	<project>
+		<title>Reflections</title>
+		<img>portfolio/reflections1.png</img>
+		<location>Jaaga Creative Common Ground, Bangalore</location>
+		<medium>Sound Environment</medium>
+		<url>reflections</url>
+		<year><![CDATA[2011]]></year>
+	</project>
+	<project>
+		<title>Sound Chamber</title>
+		<img>portfolio/sound-chamber1.png</img>
+		<location>ThoughtWorks, New York</location>
+		<medium>Light/Sound Environment</medium>
+		<url>sound-chamber</url>
+		<year><![CDATA[2013]]></year>
+	</project>
+	<project>
+		<title>Control Room</title>
+		<img>portfolio/control-room1.png</img>
+		<location>Domestic Disturbance, London</location>
+		<medium>Installation</medium>
+		<url>control-room</url>
+		<year><![CDATA[2010]]></year>
+	</project>
+	<project>
+		<title>Surface</title>
+		<img>portfolio/surface2.png</img>
+		<location>Jaaga Creative Common Ground, Bangalore</location>
+		<medium>Installation</medium>
+		<url>surface</url>
+		<year><![CDATA[2010]]></year>
+	</project>
+</projects>
