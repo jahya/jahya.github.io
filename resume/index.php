@@ -19,9 +19,9 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="year"><p>2014</p></td>
+								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p><a href="http://www.jahya.net/blog/?2013-09-study-existential">Existential</a> - New York Museum of Arts &amp; Design, CultureHub</p>
+									<p><a href="http://www.jahya.net/blog/?2013-09-study-existential">Existential</a> - CultureHub, USA</p>
 								</td>
 							</tr>
 							<tr>
@@ -221,7 +221,7 @@
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Jaaga Journals, <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">Jaaga - Gravity, In The Making</a>, India</p>
+									<p>Jaaga Journals, <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity</a>, India</p>
 								</td>
 							</tr>
 						</tbody>
