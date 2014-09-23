@@ -197,31 +197,31 @@
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p>Fast Company: <a href="http://www.fastcolabs.com/3026601/10-steps-to-pulling-off-a-killer-hardware-hackathon">10 Steps to a Killer Hardware Hackathon</a></p>
+									<p>Fast Company - <a href="http://www.fastcolabs.com/3026601/10-steps-to-pulling-off-a-killer-hardware-hackathon">10 Steps to a Killer Hardware Hackathon</a></p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p>ThoughtWorks: <a href="http://www.thoughtworks.com/insights/blog/creative-culture-hardware-hack">Hardware Hacking and Creative Culture</a></p>
+									<p>ThoughtWorks - <a href="http://www.thoughtworks.com/insights/blog/creative-culture-hardware-hack">Hardware Hacking and Creative Culture</a></p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2012</p></td>
 								<td class="text">
-									<p>I-Park, <a href="https://vimeo.com/48962415">August/September 2012 Open Studios</a>, USA</p>
+									<p>I-Park Media - <a href="https://vimeo.com/48962415">August/September 2012 Open Studios</a>, USA</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Time Out, <a href="/press/timeout20110505.pdf">Sound &amp; Lights Review (excerpt)</a>, India</p>
+									<p>Time Out Bengaluru - <a href="http://www.timeoutbengaluru.net/bars-pubs-clubs/features/aural-sects">Aural Sects</a></p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Jaaga Journals, <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity</a>, India</p>
+									<p>Jaaga Journals - <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity</a></p>
 								</td>
 							</tr>
 						</tbody>
