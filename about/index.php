@@ -26,7 +26,7 @@
 				<p>McWilliams is the co-founder of <a href="http://art-a-hack.github.io/">Art-A-Hack</a>, a biannual intensive co-creation program in New York, and co-founder of <a href="http://hardwarehacklab.tumblr.com/">Hardware Hack Lab</a>, a weekly workshop exploring advances in technology. He also co-runs the <a href="http://nyc.volumetric.org">Volumetric Society</a>, which aims to broaden the conversation between technology and the arts, via a program of public presentations and events.</p>
 
 				<h2>Statement</h2>
-				<p>My work is about using immediate experience to explore the nature of the abstractions we use to make sense of the world. I use technology, objects and physical space to find new ways of balancing sensations or ideas, and use those to explore cultural and mental states. Beginning with the notion that our picture of ourselves will always be incomplete, I look for ways of combining materials such that in our experience of them, something is left unresolved, open to new questioning, or available for longer reflection.</p>
+				<p>I see my work as interventions which undercut the things we take for-granted just by being human. Our daily experience is composed of a continuous, constructed network of mental signs and signifiers which govern our perception. Using technology as a medium, I create sensory environments which seek to question - and alter - how we navigate, make sense of, and relate to the world.</p>
 
 				<div class="clear" />
 			</div>
