@@ -203,6 +203,12 @@
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
+									<p>Technically Brooklyn - <a href="http://technical.ly/brooklyn/2014/08/19/see-arttech-mashups-art-hack-livestream-public/">See these art/tech mashups from Art-A-Hack at Livestream Public</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="year"><p>2014</p></td>
+								<td class="text">
 									<p>ThoughtWorks - <a href="http://www.thoughtworks.com/insights/blog/creative-culture-hardware-hack">Hardware Hacking and Creative Culture</a></p>
 								</td>
 							</tr>
