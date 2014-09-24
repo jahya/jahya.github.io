@@ -16,8 +16,8 @@
 					<h1><?=$title?></h1>
 					<p class="what">Depth Video</p>
 					<p class="where">
-						Exhibited at: New York Museum of Arts &amp; Design, CultureHub<br />
-						New York, 2014
+						Exhibited at: CultureHub<br />
+						New York, 2013
 					</p>
 				</div>
 				<?=renderVimeo("73437198", 530)?>

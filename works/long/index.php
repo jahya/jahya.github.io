@@ -16,8 +16,8 @@
 					<h1><?=$title?></h1>
 					<p class="what">Installation</p>
 					<p class="where">
-						Created at: Contemporary Artist Center Woodside<br />
-						New York, 2012
+						Exhibited at: ThoughtWorks Away Day<br />
+						Colorado, 2013
 					</p>
 				</div>
 				<?=renderVimeo("52138049", 530)?>
