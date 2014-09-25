@@ -136,12 +136,6 @@
 									<p><a href="http://volumetric.org">The Volumetric Society of New York</a>, Organizer</p>
 								</td>
 							</tr>
-							<tr>
-								<td class="year"><p>2013</p></td>
-								<td class="text">
-									<p><a href="http://agilecny.org/">Agile Culture New York</a>, Organizer</p>
-								</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
