@@ -79,7 +79,7 @@
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Residencies &amp; Awards</th>
+								<th colspan="2">Residencies / Awards</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -114,26 +114,26 @@
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Organizations &amp; Events</th>
+								<th colspan="2">Organizations</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p><a href="http://art-a-hack.github.io/">Art-A-Hack</a>, Co-founder &amp; Organizer</p>
+									<p><a href="http://art-a-hack.github.io/">Art-A-Hack</a> - Founder &amp; Director</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p><a href="http://hardwarehacklab.tumblr.com/">Hardware Hack Lab</a>, Co-founder &amp; Organizer</p>
+									<p><a href="http://hardwarehacklab.tumblr.com/">Hardware Hack Lab</a> - Founder &amp; Director</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p><a href="http://volumetric.org">The Volumetric Society of New York</a>, Organizer</p>
+									<p><a href="http://nyc.volumetric.org">The Volumetric Society</a> - Program Coordinator</p>
 								</td>
 							</tr>
 						</tbody>
@@ -143,38 +143,38 @@
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Speaking Enagements</th>
+								<th colspan="2">Selected Presentations</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p>CultureHub NYC, <a href="https://vimeo.com/78873697">New Directions in Depth</a></p>
+									<p>CultureHub, <a href="https://vimeo.com/78873697">New Directions in Depth</a>, USA</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p>ThoughtWorks, <a href="https://www.youtube.com/watch?v=MMA0Vlrdajs">The Hardware Explosion</a></p>
+									<p>ThoughtWorks, <a href="https://www.youtube.com/watch?v=MMA0Vlrdajs">The Hardware Explosion</a>, USA</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p>Dorkbot NYC, <a href="https://vimeo.com/61342809">Perception as a Creative Process</a></p>
+									<p>Dorkbot, <a href="https://vimeo.com/61342809">Perception as a Creative Process</a>, USA</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2012</p></td>
 								<td class="text">
-									<p>I-Park Foundation, <span>Perception as a Creative Process</span>, Connecticut</p>
+									<p>I-Park Foundation, <span>Perception as a Creative Process</span>, USA</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Jaaga Creative Common Ground, <span>Sound &amp; Lights</span>, Bangalore</p>
+									<p>Jaaga Creative Common Ground, <span>Sound &amp; Lights</span>, India</p>
 								</td>
 							</tr>
 						</tbody>
@@ -197,7 +197,7 @@
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p>Technically Brooklyn - <a href="http://technical.ly/brooklyn/2014/08/19/see-arttech-mashups-art-hack-livestream-public/">See these art/tech mashups from Art-A-Hack at Livestream Public</a></p>
+									<p>Technically Brooklyn - <a href="http://technical.ly/brooklyn/2014/08/19/see-arttech-mashups-art-hack-livestream-public/">Art/tech mashups from Art-A-Hack at Livestream Public</a></p>
 								</td>
 							</tr>
 							<tr>
@@ -209,7 +209,7 @@
 							<tr>
 								<td class="year"><p>2012</p></td>
 								<td class="text">
-									<p>I-Park Media - <a href="https://vimeo.com/48962415">August/September 2012 Open Studios</a>, USA</p>
+									<p>I-Park Foundation - <a href="https://vimeo.com/48962415">Fall 2012 Open Studios (video)</a></p>
 								</td>
 							</tr>
 							<tr>
@@ -221,7 +221,7 @@
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Jaaga Journals - <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity</a></p>
+									<p>Jaaga Journals - <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity (video)</a></p>
 								</td>
 							</tr>
 						</tbody>
