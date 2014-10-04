@@ -477,7 +477,7 @@
 	/* blog - main - subscribe rss */
 	.blog_page #main #subscribe_section{
 		float: right;
-		position: relative; right: -7px; top: 22px;
+		position: relative; right: -14px; top: -2px;
 	}
 
 	.blog_page #main #subscribe_section a img{
