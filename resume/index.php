@@ -27,13 +27,13 @@
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p><a href="http://www.jahya.net/portfolio/long/">Long</a> - Contemporary Artists Center, USA</p>
+									<p><a href="http://www.jahya.net/portfolio/sound-chamber/">Sound Chamber</a> - ThoughtWorks, USA</p>
 								</td>
 							</tr>
 							<tr>
-								<td class="year"><p>2013</p></td>
+								<td class="year"><p>2012</p></td>
 								<td class="text">
-									<p><a href="http://www.jahya.net/portfolio/sound-chamber/">Sound Chamber</a> - ThoughtWorks, USA</p>
+									<p><a href="http://www.jahya.net/portfolio/long/">Long</a> - Contemporary Artists Center, USA</p>
 								</td>
 							</tr>
 							<tr>
@@ -143,10 +143,16 @@
 					<table>
 						<thead>
 							<tr>
-								<th colspan="2">Selected Presentations</th>
+								<th colspan="2">Presentations / Workshops</th>
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td class="year"><p>2014</p></td>
+								<td class="text">
+									<p>School for Poetic Computation, <a href="http://www.meetup.com/openFrameworks/events/211805302/">Skeletal Interactions with KinectV2</a>, USA</p>
+								</td>
+							</tr>
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
@@ -197,19 +203,25 @@
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
+									<p>ThoughtWorks (video) - <a href="https://www.youtube.com/watch?v=0kxNCYpxcXM">Introducing the Hardware Hack Lab</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="year"><p>2014</p></td>
+								<td class="text">
 									<p>Technically Brooklyn - <a href="http://technical.ly/brooklyn/2014/08/19/see-arttech-mashups-art-hack-livestream-public/">Art/tech mashups from Art-A-Hack at Livestream Public</a></p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p>ThoughtWorks - <a href="http://www.thoughtworks.com/insights/blog/creative-culture-hardware-hack">Hardware Hacking and Creative Culture</a></p>
+									<p>Andrew McWilliams - <a href="http://www.thoughtworks.com/insights/blog/creative-culture-hardware-hack">Hardware Hacking and Creative Culture</a></p>
 								</td>
 							</tr>
 							<tr>
 								<td class="year"><p>2012</p></td>
 								<td class="text">
-									<p>I-Park Foundation - <a href="https://vimeo.com/48962415">Fall 2012 Open Studios (video)</a></p>
+									<p>I-Park Foundation (video) - <a href="https://vimeo.com/48962415">Fall 2012 Open Studios</a></p>
 								</td>
 							</tr>
 							<tr>
@@ -221,7 +233,7 @@
 							<tr>
 								<td class="year"><p>2011</p></td>
 								<td class="text">
-									<p>Jaaga Journals - <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity (video)</a></p>
+									<p>Jaaga Journals (video) - <a href="http://www.youtube.com/watch?v=UN6jQDS5GRY">The Making of Gravity</a></p>
 								</td>
 							</tr>
 						</tbody>
