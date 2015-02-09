@@ -203,7 +203,7 @@
 							<tr>
 								<td class="year"><p>2014</p></td>
 								<td class="text">
-									<p>ThoughtWorks (video) - <a href="https://www.youtube.com/watch?v=0kxNCYpxcXM">Introducing the Hardware Hack Lab</a></p>
+									<p>ThoughtWorks (video) - <a href="https://www.youtube.com/watch?v=A0NLoMr9tHQ">Introducing the Hardware Hack Lab</a></p>
 								</td>
 							</tr>
 							<tr>
