@@ -19,6 +19,12 @@
 						</thead>
 						<tbody>
 							<tr>
+								<td class="year"><p>2014</p></td>
+								<td class="text">
+									<p><a href="http://jahya.net/blog/?2014-11-sound-control-at-future-interfaces">Sound Control</a> - NYC MediaLab, USA</p>
+								</td>
+							</tr>
+							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
 									<p><a href="http://www.jahya.net/blog/?2013-09-study-existential">Existential</a> - CultureHub, USA</p>
