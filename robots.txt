@@ -1,11 +1,6 @@
 User-agent: *
 Disallow: /cgi-bin/
 Disallow: /includes/
-Disallow: /css/
-Disallow: /rss/
-Disallow: /img/
-Disallow: /404/
-Disallow: /xml/
 Disallow: /Zend/
 Disallow: /dls/
 Disallow: /venlala/
