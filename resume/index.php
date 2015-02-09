@@ -127,7 +127,7 @@
 							<tr>
 								<td class="year"><p>2013</p></td>
 								<td class="text">
-									<p><a href="http://hardwarehacklab.tumblr.com/">Hardware Hack Lab</a> - Founder &amp; Director</p>
+									<p><a href="http://hardwarehacklab.io/">Hardware Hack Lab</a> - Founder &amp; Director</p>
 								</td>
 							</tr>
 							<tr>
