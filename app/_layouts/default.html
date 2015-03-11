@@ -10,7 +10,7 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
     <!-- build:css({app,.tmp}) /stylesheets/style.css -->
     <link href="/stylesheets/site.css" rel="stylesheet">
     <!-- endbuild -->
@@ -23,8 +23,8 @@
     <link rel="shortcut icon" href="/images/favicon.png">
   </head>
   <body id="{{ page.bodyid }}" class="{{ page.bodyclass }}">
-    <header role="banner"{% if page.bodyid == 'home' %} class="first-glance"{% endif %}>
-      <h1><a href="/">Hardware Hack Lab</a></h1>
+    <header role="banner">
+      <h1><a href="/">Andrew M<span class="sub">c</span>Williams</a></h1>
       <nav role="navigation">
         <h2>Navigation</h2>
         <a id="menu-button" href="#">
@@ -32,31 +32,12 @@
           <i class="fa fa-times"></i>
         </a>
         <ul class="cta">
-          <li><a href="/members/">Members</a></li>
-          <li><a href="/stories/">Stories</a></li>
-          <li><a href="/join/">Join</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/works/">Works</a></li>
+          <li><a href="/blog/">Blog</a></li>
         </ul>
       </nav>
-      {% if page.bodyid == 'home' %}
-      <div id="tagline">
-        <h2>Tagline</h2>
-        <p>A free space for artists,&nbsp;<br />hackers &amp; innovators, weekly&nbsp;<br />in NYC.</p>
-      </div>
-      <div id="chevron"></div>
-      {% endif %}
     </header>
-    {% if page.bodyid == 'home' %}
-    <section id="sponsors">
-      <h2>Sponsors</h2>
-      <a href="http://www.thoughtworks.com" id="thoughtworks">
-        <img src="/images/sponsors/thoughtworks.png" alt="Thoughtworks" />
-      </a>
-      &#43;
-      <a href="http://meetup.com/volumetric" id="volumetric">
-        <img src="/images/sponsors/volumetric.png" alt="The Volumetric Society" />
-      </a>
-    </section>
-    {% endif %}
     {{ content }}
     <!-- build:js(app) /javascript/script.js -->
     <script src="/javascript/analytics.js"></script>
