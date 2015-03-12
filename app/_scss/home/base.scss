@@ -1,4 +1,7 @@
 #home {
+	display: flex;
+	flex-flow: column;
+
 	header {
 		position: relative;
 	}
@@ -15,7 +18,7 @@
 	}
 
 	#homepage {
-		height: 80%;
+		flex: 1 0 auto;
 		background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/full-bleed/gravity-1600.jpg);
 		background-position: center center;
 		background-size: cover;
