@@ -58,6 +58,18 @@ blockquote {
 	}
 }
 
+figure {
+	position: relative;
+}
+
+figcaption {
+	background: #ffffff;
+	margin: 1.5em;
+	padding: 0.5em 0.8em;
+	position: absolute; bottom: 0; right: 0;
+	font-weight: 400;
+}
+
 .center {
 	width: 100%;
 	text-align: center;
