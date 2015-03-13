@@ -66,6 +66,10 @@ figcaption.label {
 	padding: 0.5em 0.8em;
 	position: absolute; bottom: 0; right: 0;
 	font-weight: 400;
+
+	a {
+		text-decoration: none;
+	}
 }
 
 .center {
