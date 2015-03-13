@@ -1,6 +1,9 @@
 .content {
-	main {
+	main.index {
 		width: 100%;
+	}
+
+	main {
 		background-color: #f6f6f6;
 		font-weight: 300;
 		padding: 1.6em 5.1em 5em 4.7em;
@@ -33,7 +36,7 @@
 			flex: 0 0 auto;
 		}
 
-		section, aside {
+		aside, section {
 			flex: 1 1 auto;
 		}
 	}

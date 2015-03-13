@@ -60,7 +60,7 @@ figure {
 	position: relative;
 }
 
-figcaption {
+figcaption.label {
 	background: #ffffff;
 	margin: 1.5em;
 	padding: 0.5em 0.8em;
@@ -71,6 +71,14 @@ figcaption {
 .center {
 	width: 100%;
 	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.title {
+	font-style: italic;
 }
 
 ul.links {
