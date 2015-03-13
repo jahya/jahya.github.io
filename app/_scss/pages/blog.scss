@@ -49,6 +49,36 @@
 			}
 		}
 	}
+
+	aside {
+		padding: 6em;
+
+		nav {
+			h1 {
+				display: none;
+			}
+
+			h2 {
+				margin-bottom: 1.3em;
+				font-size: 1.2em;
+			}
+
+			ul {
+				margin-bottom: 4em;
+
+				li {
+					list-style-image: url('/images/blog/liststyle.png');
+					margin: 0 0 1.5em 1.02em;
+
+					a {
+						font-weight: 300;
+						letter-spacing: 0.03em;
+						font-size: 1.05em;
+					}
+				}
+			}
+		}
+	}
 } 
 
 @media (max-width: 1299px) {
