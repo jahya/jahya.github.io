@@ -1,7 +1,9 @@
 #blog {
 	main {
+		flex: 0 0 auto;
+		width: 48%;
+
 		article {
-			width: 66%;
 
 			header {
 				.widgets {
@@ -39,10 +41,6 @@
 			}
 		}
 
-		article, #paging {
-			margin-left: 33%;
-		}
-
 		.video {
 			width: 90%;
 			position: relative;
@@ -54,6 +52,12 @@
 				width: 100%; height: 100%;
 			}
 		}
+
+
+	}
+
+	aside {
+		flex: 1 1 auto;
 	}
 } 
 
