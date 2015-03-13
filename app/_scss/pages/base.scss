@@ -23,6 +23,20 @@
 			}
 		}
 	}
+
+	.flex-row {
+		display: flex;
+		flex-flow: row;
+
+		main {
+			width: 48%;
+			flex: 0 0 auto;
+		}
+
+		section, aside {
+			flex: 1 1 auto;
+		}
+	}
 }
 
 @media (max-width: 1299px) {
