@@ -1,0 +1,27 @@
+#resume {
+	ul#tables {
+		li{
+			list-style-type: none;
+		}
+
+		h2 {
+			margin: 1.8em 0 0.5em 0;
+		}
+
+		p {
+			padding: 0.25em 0;
+		}
+
+		a:link, a:visited {
+			text-decoration: none;
+		}
+
+		a:hover, a:active {
+			text-decoration: underline;
+		}
+
+		td.year {
+			width: 6em;
+		}
+	}
+}
