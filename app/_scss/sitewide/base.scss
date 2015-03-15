@@ -156,7 +156,7 @@ main {
 	}
 
 	main .cta a {
-		font-size: 1.6em;
+		font-size: 1.73em;
 	}
 }
 
@@ -177,7 +177,7 @@ main {
 	}
 
 	main .cta a {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 	time {
@@ -189,16 +189,11 @@ main {
 @media (max-width: 899px) {
 	main .cta {
 		padding-bottom: 3em;
+		margin-bottom: 0.7em;
 	}
 
 	hr {
 		margin-bottom: 0;
-	}
-}
-
-@media (max-width: 639px) {
-	main .cta a {
-		font-size: 1.3em;
 	}
 }
 
