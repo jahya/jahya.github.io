@@ -6,6 +6,7 @@
 	main {
 		background-color: #f6f6f6;
 		font-weight: 300;
+		padding-bottom: 1em;
 
 		article {
 			padding: 1.6em 5.1em 0 4.7em;
@@ -45,8 +46,6 @@
 @media (max-width: 1099px) {
 	.content {
 		main {
-			top: 51%;
-
 			article {
 				padding: 1.1em 3.1em 0 3.5em;
 			}
