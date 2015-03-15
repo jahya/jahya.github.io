@@ -132,7 +132,8 @@ ul.links {
 	}
 
 	p {
-		font-size: 1.05em;
+		font-size: 1.1em;
+		line-height: 1.8em;
 		padding: 0.6em 0;
 	}
 
@@ -155,10 +156,6 @@ ul.links {
 		font-size: 1.25em;
 	}
 
-	p, address {
-		font-size: 1em;
-	}
-
 	ul.links li i {
 		font-size: 1.5em;
 	}
@@ -169,6 +166,12 @@ ul.links {
 }
 
 @media (max-width: 499px) {
+	p {
+		font-size: 1.05em;
+		letter-spacing: 0.03em;
+		line-height: 1.7em;
+	}
+
 	hr {
 		margin-bottom: 0.8em;
 	}

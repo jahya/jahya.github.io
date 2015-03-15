@@ -23,21 +23,46 @@
 @media (max-width: 1299px) {
 	#about {
 		main {
-			width: 52%;
+			width: 53%;
 		}
 	}
 }
+
 @media (max-width: 899px) {
 	#about {
 		main {
 			width: 100%;
 
-			#image {
-				display: none;
+			article {
+				padding: 2.6em 18% 0 4.9em;
+			}
+		}
 
-				figure {
-					background: inherit;
-				}
+		#image {
+			display: none;
+
+			figure {
+				background: inherit;
+			}
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	#about {
+		main {
+			article {
+				padding-right: 5.4em;
+			}
+		}
+	}
+}
+
+@media (max-width: 709px) {
+	#about {
+		main {
+			article {
+				padding: 1em 3.2em;
 			}
 		}
 	}
@@ -45,14 +70,10 @@
 
 @media (max-width: 639px) {
 	#about {
-		main #map {
-			width: 100%;
+		main {
+			article {
+				padding: 0.5em 1.8em;
+			}
 		}
-	}
-}
-
-@media (max-width: 499px) {
-	#about main #map {
-		padding-top: 65%;
 	}
 }
