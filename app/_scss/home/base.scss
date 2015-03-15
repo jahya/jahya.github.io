@@ -15,22 +15,22 @@
 
 	#homepage {
 		flex: 1 0 auto;
-		background: url(/images/full-bleed/gravity-1600.jpg);
+		background-image: url(/images/full-bleed/gravity-1600.jpg);
 		background-position: center center;
-		background-size: cover;
+		background-size: auto 100%;
+		background-color: black;
+		background-repeat: no-repeat;
+
+		.small-screens {
+			display: none;
+		}
 	}
 }
 
 @media (max-width: 1299px) {
 	#home {
 		#homepage {
-			background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(/images/full-bleed/lab-1-1299.jpg);
-			background-position: center center;
-			background-size: cover;
-		}
-
-		>p {
-			font-size: 2.15em;
+			background-image: url(/images/full-bleed/gravity-1299.jpg);
 		}
 	}
 }
@@ -38,13 +38,7 @@
 @media (max-width: 1099px) {
 	#home {
 		#homepage {
-			background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(/images/full-bleed/lab-1-1099.jpg);
-			background-position: center center;
-			background-size: cover;
-		}
-
-		>p {
-			font-size: 2.05em;
+			background-image: url(/images/full-bleed/gravity-1099.jpg);
 		}
 	}
 }
@@ -52,18 +46,16 @@
 @media (max-width: 899px) {
 	#home {
 		#homepage {
-			background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(/images/full-bleed/lab-1-899.jpg);
-			background-position: center center !important;
-			background-size: cover;
+			background-image: url(/images/full-bleed/existential-899.jpg);
+			background-size: 100% auto;
 
-			nav {
+			.small-screens {
 				display: block;
 			}
-		}
 
-		>header {
-			height: 96%;
-			position: relative;
+			.large-screens {
+				display: none;
+			}
 		}
 	}
 }
@@ -71,14 +63,7 @@
 @media (max-width: 639px) {
 	#home {
 		#homepage {
-			background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(/images/full-bleed/lab-1-639.jpg);
-			background-position: bottom center !important;
-			background-size: cover;
-		}
-
-		>p {
-			padding-top: 2.2em;
-			padding-bottom: 2.2em;
+			background-image: url(/images/full-bleed/existential-639.jpg);
 		}
 	}
 }
