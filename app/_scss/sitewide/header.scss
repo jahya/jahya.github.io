@@ -100,7 +100,7 @@ body {
 
 			nav {
 				li {
-					padding: 0.4em 0;
+					padding: 0.8em 0;
 					margin-left: 0.5em;
 				}
 
@@ -116,51 +116,51 @@ body {
 
 @media (max-width: 899px) {
 	body {
-		main {
-			box-shadow: inherit;
-		}
-
 		>header {
-			margin-top: 2.4em;
+			height: 132px;
 
-			>h1, >nav {
-				margin: 0;
-				position: fixed;
-				background-color: #444444;
-				z-index: 10;
-			}
-
-			>nav >ul >li >a, >div {
-				box-shadow: inherit;
-			}
-
-			h1 {
-				font-size: 2em;
-				width: 100%;
-				padding: 0.1em 0.5em;
-				margin: 0;
-				text-align: left;
-				bottom: inherit; top: 0;
+			>h1 {
+				font-size: 2.4em;
 			}
 
 			nav {
-				ul {
-					padding-right: 1em;
+				.cta a {
+					font-size: 1.4em;
 				}
 
 				li {
-					padding: 0.8em 0.4em 0 0;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 639px) {
+	body {
+		>header {
+			height: 116px;
+
+			nav {
+				bottom: 0; top: inherit;
+
+				#menu-button {
+					display: block !important;
+
+					i {
+						margin: 0.6em 0.7em;
+						font-size: 1.6em;
+					}
 				}
 
-				.cta a {
-					font-size: 1em;
-					padding: 0;
-					background-color: #444444 !important;
-					color: white !important;
+				ul {
+					display: none;
 				}
 			}
 
 			nav.popout {
+				bottom: inherit; top: 0;
+
 				#menu-button {
 					.fa-bars {
 						display: none;
@@ -172,13 +172,13 @@ body {
 				}
 
 				.cta {
+					z-index: 10;
 					display: block;
 					position: fixed; top: 0; left: 0; bottom: 0; right: 0;
 					width: 100%; height: 100%;
 					text-align: center;
-					background-color: rgba(68, 68, 68, .95);
-					margin-top: 1.9em;
-					padding-top: 7%;
+					background-color: rgba(102, 102, 102, .97);
+					padding-top: 8%;
 
 					li {
 						display: block;
@@ -190,36 +190,17 @@ body {
 						background-color: rgba(0, 0, 0, 0) !important;
 					}
 				}
-			}
-		}
-	}
-}
 
-@media (max-width: 639px) {
-	body {
-		>header {
-			nav {
-				left: 0; right: inherit;
-
-				#menu-button {
-					display: block !important;
+				a:link, a:visited, a:hover, a:active {
+					color: #ffffff;
+					text-decoration: none;
+					position: relative;
+					z-index: 20;
 
 					i {
-						margin: 0.5em 0 0 0.6em;
-						color: white;
-						font-size: 1.2em;
+						color: #ffffff;
 					}
 				}
-
-				ul {
-					display: none;
-				}
-			}
-
-			h1 {
-				font-size: 1.6em;
-				text-align: center;
-				padding: 0.15em 0;
 			}
 		}
 	}
@@ -228,16 +209,10 @@ body {
 @media (max-width: 499px) {
 	body {
 		>header {
-			margin-top: 2em;
+			height: 110px;
 
 			h1 {
-				font-size: 1.25em;
-				padding: 0.35em 0;
-			}
-
-			nav a i.fa {
-				margin: 0.5em 0 0 0.6em;
-				font-size: 1.2em;
+				font-size: 2.2em;
 			}
 		}
 	} 
