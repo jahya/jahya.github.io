@@ -32,8 +32,12 @@
 		main {
 			width: 100%;
 
-			#image figure {
-				background: inherit;
+			#image {
+				display: none;
+
+				figure {
+					background: inherit;
+				}
 			}
 		}
 	}
