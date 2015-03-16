@@ -31,6 +31,20 @@
 				}
 			}
 
+			.post-content {
+				li {
+					font-size: $largest_font;
+					letter-spacing: $large_spacing;
+					line-height: $small_lineheight;
+					margin: 0 0 0.6em 1em;
+					padding-left: 0.4em;
+				}
+
+				ul, ol {
+					margin: 0.5em 0;
+				}
+			}
+
 			/* blogspot legacy... */
 			.tr-caption-container {
 				margin-bottom: 2em;
@@ -97,6 +111,16 @@
 
 @media (max-width: 1299px) {
 	#blog {
+		.left {
+			article {
+				.post-content {
+					li {
+						font-size: $large_font;
+					}
+				}
+			}
+		}
+
 		.right {
 			padding: 4.5em;
 
@@ -109,6 +133,17 @@
 
 @media (max-width: 1099px) {
 	#blog {
+		.left {
+			article {
+				.post-content {
+					li {
+						font-size: $medium_font;
+						line-height: $large_lineheight;
+					}
+				}
+			}
+		}
+
 		.right {
 			padding: 3.4em;
 
@@ -127,6 +162,22 @@
 
 		.right {
 			display: none;
+		}
+	}
+}
+
+@media (max-width: 499px) {
+	#blog {
+		.left {
+			article {
+				.post-content {
+					li {
+						font-size: $small_font;
+						letter-spacing: $small_spacing;
+						line-height: $small_lineheight;
+					}
+				}
+			}
 		}
 	}
 }
