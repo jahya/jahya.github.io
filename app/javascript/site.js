@@ -1,7 +1,16 @@
 $(document).ready(function() {
+	redirectDeceasedURLs();
 	enableMenuButton();
 	enableSocialLinks();
 });
+
+function redirectDeceasedURLs() {
+	var blogQuerystring = getBlogQuerystring();
+	if(blogQuerystring != "") {
+		$('main').html('<article><header><h1>Redirecting...</h1></header></article>');
+		window.location.replace("/blog/" + blogQuerystring);
+	}
+}
 
 function enableMenuButton() {
 	var menuOverlaid = false;
@@ -32,4 +41,10 @@ function enableSocialLinks() {
 		window.open(url, 'social-share', opts);
 		event.preventDefault();
 	});
+}
+
+function getBlogQuerystring() {
+	if(window.location.pathname == "/blog/" && window.location.search != "") {
+		return window.location.search.slice(9);
+	} else return "";
 }
