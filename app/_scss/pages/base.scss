@@ -14,13 +14,16 @@
 		}
 	}
 
-	main.index {
+	main.index, main.full-width {
 		width: 100%;
 
 		article {
-			padding: 0;
 			max-width: inherit;
 		}
+	}
+
+	main.index article {
+		padding: 0;
 	}
 
 	.flex-row {
