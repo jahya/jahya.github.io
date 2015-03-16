@@ -5,7 +5,7 @@ bodyid	  : "blog"
 bodyclass : "content"
 ---
 <div class="flex-row">
-	<main>
+	<main class="left">
 		{% for post in paginator.posts %}
 		<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
@@ -44,7 +44,7 @@ bodyclass : "content"
 			{% endif %}
 		</ul>
 	</main>
-	<aside>
+	<aside class="right">
 		<nav>
 			<header>
 				<h1>All posts</h1>

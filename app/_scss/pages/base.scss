@@ -34,12 +34,12 @@
 		display: flex;
 		flex-flow: row;
 
-		main {
+		.left {
 			width: 60%;
 			flex: 0 0 auto;
 		}
 
-		aside, section {
+		.right {
 			flex: 1 1 auto;
 		}
 	}
@@ -76,7 +76,7 @@
 @media (max-width: 899px) {
 	.content {
 		.flex-row {
-			main {
+			.left {
 				padding-right: 12%;
 				width: 88%;
 			}
@@ -108,6 +108,13 @@
 
 @media (max-width: 799px) {
 	.content {
+		.flex-row {
+			.left {
+				padding-right: 0;
+				width: 100%;
+			}
+		}
+
 		main {
 			article, .description {
 				padding-right: 5.4em;

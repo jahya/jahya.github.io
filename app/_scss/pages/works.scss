@@ -36,6 +36,7 @@
 	main {
 		figure {
 			width: 66%;
+			max-width: 61em;
 
 			.video {
 				position: relative;
@@ -52,25 +53,25 @@
 				padding-bottom: 56.25%;
 			}
 
-			figcaption.description {
-				padding: 1.6em 14.1em 0 0;
+			.description {
+				padding: 1.6em 0;
 			}
 		}
 	}
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1479px) {
 	#works {
-		main.index {
-			ul {
-				text-align: center;
-				padding-top: 1em;
+		main figure {
+			width: 55em;
+		}
+	}
+}
 
-				li {
-					width: 90%;
-					margin: 0.7em auto;
-				}
-			}
+@media (max-width: 1099px) {
+	#works {
+		main figure {
+			width: 96%;
 		}
 	}
 }
@@ -86,6 +87,10 @@
 					margin: 0.6em auto;
 				}
 			}
+		}
+
+		main figure {
+			width: 100%;
 		}
 	}
 }
