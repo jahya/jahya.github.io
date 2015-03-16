@@ -40,9 +40,16 @@
 				padding-top: 1em;
 			}
 
-			img {
-				border: 4px solid #e8e8e8;
-				width: 99%;
+			figure {
+				img, iframe {
+					width: 98%;
+					border: 4px solid #e8e8e8;
+				}
+
+				figcaption {
+					margin-top: 0.5em;
+					text-align: center;
+				}
 			}
 
 			.read-more {
@@ -53,18 +60,6 @@
 
 			hr.separator {
 				margin: 2.7em 0 0.9em 0;
-			}
-		}
-
-		.video {
-			width: 90%;
-			position: relative;
-			display: inline-block;
-			padding-top: 50.1%;
-
-			iframe {
-				position: absolute; top: 0; bottom: 0; right: 0; left: 0;
-				width: 100%; height: 100%;
 			}
 		}
 	}

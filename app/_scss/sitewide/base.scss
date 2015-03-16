@@ -137,6 +137,25 @@ main {
 	}
 }
 
+figure {
+	margin-bottom: 1em;
+
+	.video {
+		position: relative;
+		width: 100%; height: 0;
+		padding-bottom: 57%;
+
+		iframe {
+			position: absolute; top: 0; left: 0;
+			width: 100%; height: 100%;
+		}
+	}
+
+	.ratio-56 {
+		padding-bottom: 56.25%;
+	}
+}
+
 @media (max-width: 1299px) {
 	p {
 		font-size: 1.15em;
