@@ -2,26 +2,31 @@
 	main.index {
 		padding: 0;
 
-		.grid {
+		ul {
 			text-align: justify;
 			width: 100%;
 
-			a {
-				text-decoration: none;
+			li {
+				display: inline-block;
+				width: 49.45%;
+				margin-bottom: 0.5%;
 
-				figure {
-					display: inline-block;
-					width: 49.5%;
-					margin-bottom: 1.1%;
+				a {
+					text-decoration: none;
 
-					img {
+					figure {
+						display: inline-block;
 						width: 100%;
+
+						img {
+							width: 100%;
+						}
 					}
 				}
 			}
 		}
 
-		.grid:after{
+		ul:after{
 			content: '';
 			display: inline-block;
 			width: 100%;
@@ -56,7 +61,7 @@
 
 @media (max-width: 1099px) {
 	#works {
-		.grid {
+		main.index ul {
 			text-align: center;
 			left: -2em;
 
@@ -70,7 +75,7 @@
 
 @media (max-width: 899px) {
 	#works {
-		.grid {
+		main.index ul {
 			text-align: center;
 			left: -1.75em;
 
@@ -92,7 +97,7 @@
 
 @media (max-width: 639px) {
 	#works {
-		.grid {
+		main.index ul {
 			left: 0;
 
 			figure {
