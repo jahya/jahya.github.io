@@ -4,9 +4,13 @@
 		font-weight: 300;
 		padding-bottom: 1em;
 
-		article {
-			padding: 1.6em 5.1em 0 4.7em;
+		article, .description {
+			padding: 1.6em 5.1em 0 0;
 			max-width: 42em;
+		}
+
+		article, .description, #paging, .cta {
+			padding-left: 4.7em;
 		}
 
 		h1 {
@@ -44,8 +48,12 @@
 @media (max-width: 1299px) {
 	.content {
 		main {
-			article {
-				padding: 1.2em 3.7em 0 4.1em;
+			article, .description {
+				padding: 1.2em 3.7em 0 0;
+			}
+
+			article, .description, #paging, .cta {
+				padding-left: 4.1em;
 			}
 		}
 	}
@@ -54,8 +62,12 @@
 @media (max-width: 1099px) {
 	.content {
 		main {
-			article {
-				padding: 1.1em 3.1em 0 3.5em;
+			article, .description {
+				padding: 1.1em 3.1em 0 0;
+			}
+
+			article, .description, #paging, .cta {
+				padding-left: 3.5em;
 			}
 		}
 	}
@@ -65,7 +77,8 @@
 	.content {
 		.flex-row {
 			main {
-				width: 100%;
+				padding-right: 12%;
+				width: 88%;
 			}
 
 			.right {
@@ -78,8 +91,12 @@
 		}
 
 		main {
-			article {
-				padding: 1.8em 18% 0 4.9em;
+			article, .description {
+				padding: 1.8em 3em 0 0;
+			}
+
+			article, .description, #paging, .cta {
+				padding-left: 4.9em;
 			}
 		}
 
@@ -92,7 +109,7 @@
 @media (max-width: 799px) {
 	.content {
 		main {
-			article {
+			article, .description {
 				padding-right: 5.4em;
 			}
 		}
@@ -102,8 +119,12 @@
 @media (max-width: 709px) {
 	.content {
 		main {
-			article {
-				padding: 1em 3.2em;
+			article, .description {
+				padding: 1em 3.2em 0 0;
+			}
+
+			article, .description, #paging, .cta {
+				padding-left: 3.2em;
 			}
 		}
 	}
@@ -112,21 +133,13 @@
 @media (max-width: 639px) {
 	.content {
 		main {
-			article {
-				padding: 0.5em 1.8em;
+			article, .description {
+				padding: 0.5em 1.8em 0 0;
 			}
 
-			#paging {
-				padding: 0 0 4em 2.5em;
+			article, .description, #paging, .cta {
+				padding-left: 1.8em;
 			}
-		}
-	}
-}
-
-@media (max-width: 499px) {
-	.content {
-		#paging {
-			padding: 0 0 3em 1.5em;
 		}
 	}
 }
