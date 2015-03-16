@@ -1,5 +1,5 @@
 #blog {
-	main {
+	.left {
 		article {
 			header {
 				.widgets {
@@ -51,8 +51,8 @@
 				font-size: 1.4em;
 			}
 
-			hr {
-				margin: 2.3em 0 5.6em 0;
+			hr.separator {
+				margin: 2.7em 0 0.9em 0;
 			}
 		}
 
@@ -69,7 +69,7 @@
 		}
 	}
 
-	aside {
+	.right {
 		padding: 6em;
 
 		nav {
@@ -92,98 +92,46 @@
 					a {
 						font-weight: 300;
 						letter-spacing: 0.03em;
-						font-size: 1.05em;
+						font-size: 1.1em;
 					}
 				}
 			}
 		}
 	}
-} 
+}
 
 @media (max-width: 1299px) {
 	#blog {
-		main {
-			article {
-				width: 70%;
+		.right {
+			padding: 4.5em;
 
-				header time {
-					left: 3em;
-				}
-			}
-
-			article, #paging {
-				margin-left: 30%;
+			nav ul li a {
+				font-size: 1.05em;
 			}
 		}
 	}
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1099px) {
 	#blog {
-		main {
-			article {
-				width: 66%;
+		.right {
+			padding: 3.4em;
 
-				header {
-					time {
-						width: 17%;
-					}
-
-					.widgets {
-						position: relative; left: 0;
-
-						ul {
-							text-align: left;
-							margin-top: 1em;
-							padding: 0;
-						}
-
-						li {
-							display: inline;
-							margin-right: 0.7em;
-						}
-
-						i {
-							top: 0;
-							font-size: 1.6em;
-						}
-					}
-				}
-			}
-
-			article, #paging {
-				margin-left: 7%;
-			}
-
-			.video {
-				width: 100%;
-				padding-top: 55.55%;
+			nav ul li a {
+				font-size: 1em;
 			}
 		}
 	}
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1019px) {
 	#blog {
-		main {
-			article {
-				width: 80%;
-
-				header time {
-					width: inherit;
-					position: relative; left: 0;
-				}
-			}
-
-			article, #paging {
-				margin-left: 0;
-			}
+		.left {
+			width: 100%;
 		}
-	}
-}
 
-@media (max-width: 499px) {
-	#blog main article {
-		width: 82%;
+		.right {
+			display: none;
+		}
 	}
 }
