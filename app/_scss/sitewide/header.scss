@@ -13,7 +13,7 @@ body {
 			letter-spacing: -0.02em;
 			position: absolute; bottom: 0; left: 0;
 			text-align: left;
-			font-size: 3.7em;
+			font-size: 4em;
 			line-height: 0.83em;
 			width: 7em;
 			margin-bottom: 0.05em;
@@ -71,16 +71,6 @@ body {
 			.cta a:hover, .cta a:active {
 				background: #ffffff;
 				color: #666;
-			}
-		}
-	}
-}
-
-@media (max-width: 1299px) {
-	body {
-		>header {
-			h1 {
-				font-size: 4em;
 			}
 		}
 	}
