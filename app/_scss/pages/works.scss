@@ -59,58 +59,47 @@
 	}
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 799px) {
 	#works {
-		main.index ul {
-			text-align: center;
-			left: -2em;
+		main.index {
+			ul {
+				text-align: center;
+				padding-top: 1em;
 
-			figure {
-				width: 39%;
-				margin: 2.4% 2.5% 6% 5.5%;
+				li {
+					width: 90%;
+					margin: 0.7em auto;
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: 899px) {
+@media (max-width: 799px) {
 	#works {
-		main.index ul {
-			text-align: center;
-			left: -1.75em;
+		main.index {
+			ul {
+				padding-top: 0.7em;
 
-			figure {
-				width: 40%;
-				margin: 2.4% 2% 6% 7%;
-			}
-
-			figcaption {
-				margin-top: 1em;
-			}
-
-			p {
-				margin: 0.5em 0;
+				li {
+					width: 94%;
+					margin: 0.6em auto;
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: 639px) {
+@media (max-width: 449px) {
 	#works {
-		main.index ul {
-			left: 0;
+		main.index {
+			ul {
+				padding-top: 0.7em;
 
-			figure {
-				width: 70%;
-				margin: 0 auto 2.8em auto;
-			}
-
-			h2 {
-				font-size: 2em;
-			}
-
-			p {
-				font-size: 1.4em;
+				li {
+					width: 100%;
+					margin: 0.6em auto;
+				}
 			}
 		}
 	}
