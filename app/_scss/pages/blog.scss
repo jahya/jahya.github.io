@@ -32,10 +32,19 @@
 			}
 
 			.post-content {
-				li {
+				li, blockquote {
 					font-size: $largest_font;
 					letter-spacing: $large_spacing;
 					line-height: $small_lineheight;
+				}
+
+				blockquote {
+					padding: 1em 0;
+					margin: 0 2em;
+					font-style: italic;
+				}
+
+				li {
 					margin: 0 0 0.6em 1em;
 					padding-left: 0.4em;
 				}
@@ -116,7 +125,7 @@
 		.left {
 			article {
 				.post-content {
-					li {
+					li, blockquote {
 						font-size: $large_font;
 					}
 				}
@@ -138,7 +147,7 @@
 		.left {
 			article {
 				.post-content {
-					li {
+					li, blockquote {
 						font-size: $medium_font;
 						line-height: $large_lineheight;
 					}
@@ -173,7 +182,7 @@
 		.left {
 			article {
 				.post-content {
-					li {
+					li, blockquote {
 						font-size: $small_font;
 						letter-spacing: $small_spacing;
 						line-height: $small_lineheight;
