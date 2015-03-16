@@ -44,7 +44,7 @@ function enableSocialLinks() {
 }
 
 function getBlogQuerystring() {
-	if(window.location.pathname == "/blog/" && window.location.search != "") {
+	if(window.location.pathname == "/blog/" && window.location.search != "" && window.location.search.substring(0, 5) != "?tag:") {
 		return window.location.search.slice(9);
 	} else return "";
 }
