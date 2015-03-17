@@ -74,8 +74,20 @@ figure {
 		}
 	}
 
+	.ratio-55 {
+		padding-bottom: 55.25%;
+	}
+
 	.ratio-56 {
 		padding-bottom: 56.25%;
+	}
+
+	.ratio-59 {
+		padding-bottom: 59.65%;
+	}
+
+	.ratio-80 {
+		padding-bottom: 80%;
 	}
 }
 
@@ -102,6 +114,16 @@ figcaption.label {
 
 .title {
 	font-style: italic;
+}
+
+.col-2 {
+	display: inline;
+
+	img {
+		display: inline-block;
+		width: 44% !important;
+		margin: 0 2%;
+	}
 }
 
 .no-margin {
