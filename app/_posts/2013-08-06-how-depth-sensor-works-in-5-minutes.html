@@ -18,4 +18,35 @@ blogger_id: tag:blogger.com,1999:blog-1775524623396551680.post-52307418198923368
 blogger_orig_url: http://jahyawords.blogspot.com/2013/08/how-depth-sensor-works-in-5-minutes.html
 ---
 
-<p>How does a Kinect, or Asus Xtion work? Take a look at the front:</p> <table class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"> <a href="http://2.bp.blogspot.com/-k7oVxPflMco/Uf0aQcQ1jSI/AAAAAAAABSg/KWWBtTNnq80/s1600/RGBDXtion3.png"><img alt="The elements of a depth sensor" src="http://2.bp.blogspot.com/-k7oVxPflMco/Uf0aQcQ1jSI/AAAAAAAABSg/KWWBtTNnq80/s500/RGBDXtion3.png" width="500" height="231" /></a> </td></tr><tr><td class="tr-caption" style="text-align: center;">The elements of a depth sensor</td></tr></tbody></table> <p>Some depth sensors have an RGB (Red Green Blue) camera, some don't. But that's fairly unremarkable and let's ignore it for now.</p> <p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p> <p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p> <table class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"> <a href="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s1600/RGBDDots.png"><img alt="Depth sensors work by projecting a pattern of dots in infra-red" src="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s500/RGBDDots.png" width="500" height="273" /></a> </td></tr><tr><td class="tr-caption" style="text-align: center;">Depth sensors work by projecting a pattern of dots in infra-red <br />Credit (and more info): <a href="http://graphics.stanford.edu/~mdfisher/Kinect.html">Matthew Fisher</a></td></tr></tbody></table> <p>But the IR camera <span style="font-style:italic">can</span> see the dots. An IR camera is essentially the same as a regular RGB camera except that the images it captures are in the Infra-Red color range. So nothing too fancy going on there, still no actual depth sense.</p> <p>The camera sends it's video feed of this distorted dot pattern into the depth sensor's processor, and the processor <span style="font-style:italic">works out</span> depth from the displacement of the dots. On near objects the pattern is spread out, on far objects the pattern is dense.</p> <table class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"> <img alt="The sensor internally builds a depth map" src="http://3.bp.blogspot.com/-dMUX5KyMCWY/Uf0kNnPn8-I/AAAAAAAABTI/u-cqcPRWHkg/s1600/RGBDepthMap.jpg" width="450" height="340" /> </td></tr><tr><td class="tr-caption" style="text-align: center;">The sensor internally builds a depth map</td></tr></tbody></table> <p>This 'worked out' depth map can be read from the depth sensor into your computer, or you can just take the feed directly from the IR camera, it's up to you. When calibrating the <a href="{{ site.baseurl }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a>, during the correspondence calibration phase we must take a feed from both the depth map and the IR camera feed.</p>
+<p>How does a Kinect, or Asus Xtion work? Take a look at the front:</p>
+
+<figure>
+	<a href="http://2.bp.blogspot.com/-k7oVxPflMco/Uf0aQcQ1jSI/AAAAAAAABSg/KWWBtTNnq80/s1600/RGBDXtion3.png">
+		<img alt="The elements of a depth sensor" src="http://2.bp.blogspot.com/-k7oVxPflMco/Uf0aQcQ1jSI/AAAAAAAABSg/KWWBtTNnq80/s800/RGBDXtion3.png" />
+	</a>
+	<figcaption>
+		The elements of a depth sensor
+	</figcaption>
+</figure>
+
+<p>Some depth sensors have an RGB (Red Green Blue) camera, some don't. But that's fairly unremarkable and let's ignore it for now.</p> <p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p> <p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p>
+
+<figure>
+	<a href="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s1600/RGBDDots.png">
+		<img alt="Depth sensors work by projecting a pattern of dots in infra-red" src="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s800/RGBDDots.png" />
+	</a>
+	<figcaption>
+		Depth sensors work by projecting a pattern of dots in infra-red <br />Credit (and more info): <a href="http://graphics.stanford.edu/~mdfisher/Kinect.html">Matthew Fisher</a>
+	</figcaption>
+</figure>
+
+<p>But the IR camera <span style="font-style:italic">can</span> see the dots. An IR camera is essentially the same as a regular RGB camera except that the images it captures are in the Infra-Red color range. So nothing too fancy going on there, still no actual depth sense.</p> <p>The camera sends it's video feed of this distorted dot pattern into the depth sensor's processor, and the processor <span style="font-style:italic">works out</span> depth from the displacement of the dots. On near objects the pattern is spread out, on far objects the pattern is dense.</p>
+
+<figure>
+	<img alt="The sensor internally builds a depth map" src="http://3.bp.blogspot.com/-dMUX5KyMCWY/Uf0kNnPn8-I/AAAAAAAABTI/u-cqcPRWHkg/s800/RGBDepthMap.jpg" />
+	<figcaption>
+		The sensor internally builds a depth map
+	</figcaption>
+</figure>
+
+<p>This 'worked out' depth map can be read from the depth sensor into your computer, or you can just take the feed directly from the IR camera, it's up to you. When calibrating the <a href="{{ site.baseurl }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a>, during the correspondence calibration phase we must take a feed from both the depth map and the IR camera feed.</p>
