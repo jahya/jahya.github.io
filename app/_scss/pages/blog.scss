@@ -53,15 +53,6 @@
 					margin: 0.5em 0;
 				}
 
-				/* blogspot legacy... */
-				.tr-caption-container {
-					margin-bottom: 2em;
-				}
-
-				.tr-caption {
-					padding-top: 1em;
-				}
-
 				figure {
 					text-align: center;
 					margin-bottom: 1em;
@@ -76,6 +67,23 @@
 						text-align: center;
 					}
 				}
+			}
+
+			/* blogspot legacy... */
+			.tr-caption-container {
+				margin-bottom: 2em;
+			}
+
+			.tr-caption {
+				padding-top: 1em;
+			}
+
+			.tr-container, table.tr-caption-container, .post-content>div {
+				text-align: center;
+			}
+
+			.tr-container img, table.tr-caption-container img, .post-content>div>img, .post-content>div>a>img, .post-content>a>img {
+				width: 90%; height: inherit;
 			}
 			
 			.read-more {
