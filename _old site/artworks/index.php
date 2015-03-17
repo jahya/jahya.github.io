@@ -1,3 +1,0 @@
-<?
-	require("../works/index.php");
-?>
