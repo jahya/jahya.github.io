@@ -60,8 +60,8 @@ blockquote {
 	}
 }
 
-/* This should actually be inside 'figure' below, but this makes
-   it backwards-compatible with tables from imported content */
+// This should actually be inside 'figure' below, but this makes
+// it backwards-compatible with tables from imported content
 .video, .post-content>div {
 	display: block;
 	position: relative;
@@ -153,7 +153,7 @@ figcaption.label {
 
 	a:link, a:visited {
 		background-color: #829192;
-		color: white;
+		color: #ffffff;
 	}
 
 	a:hover, a:active {
