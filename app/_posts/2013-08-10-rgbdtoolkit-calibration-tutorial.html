@@ -17,7 +17,7 @@ blogger_id: tag:blogger.com,1999:blog-1775524623396551680.post-82738876227868227
 blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration-tutorial.html
 ---
 
-<p>The <a href="{{ site.baseurl }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a> is a fun piece of kit for tinkerers and artists, but it comes with a steep learning curve. This post will guide you through the hardest part - calibration.</p>
+<p>The <a href="{{ site.url }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a> is a fun piece of kit for tinkerers and artists, but it comes with a steep learning curve. This post will guide you through the hardest part - calibration.</p>
 
 <figure>
 	<a href="http://4.bp.blogspot.com/-nM3cO6YZ_74/UfcwQJjDAdI/AAAAAAAABQ0/0rEqHT96_Fo/s1600/RGBDToolkit1.jpg">
@@ -30,7 +30,9 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 
 <p>Ultimately calibration is about combining two commercial products which weren't designed to be combined - a depth sensor (either a Kinect or an Asus Xtion), and a DSLR (or some kind of RGB camera). Although it is undeniably difficult at first, the RGBDToolkit makes this process far easier than it would be if you were starting from scratch, and it gets easier and quicker with time.</p>
 
-<p>This tutorial only covers calibration (pre-production). There is some great information on <a href="http://www.rgbdtoolkit.com/tutorials.html">capture and visualizing here</a>, and also <a href="{{ site.baseurl }}{% post_url 2013-07-25-rgbdtoolkit-visualizer-tutorial %}">here is a really good visualizer tutorial video from the workshop</a>.</p>
+<!--excerpt-ends-->
+
+<p>This tutorial only covers calibration (pre-production). There is some great information on <a href="http://www.rgbdtoolkit.com/tutorials.html">capture and visualizing here</a>, and also <a href="{{ site.url }}{% post_url 2013-07-25-rgbdtoolkit-visualizer-tutorial %}">here is a really good visualizer tutorial video from the workshop</a>.</p>
 
 <p><strong>Why this tutorial?</strong><br />The RGBDToolkit guys write and maintain an <a href="http://www.rgbdtoolkit.com/tutorials.html">in-depth tutorial</a> on the website. It covers all bases and so is pretty dense. However, I found it easier to work from my own notes (made during an RGBD workshop). This post is just a write-up of those notes.</p>
 
@@ -213,7 +215,7 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 
 <ul><li>The RGB image from the DSLR</li><li>The infra-red image from the depth sensor</li><li>The computed depth map from the depth sensor</li></ul>
 
-<p>If you are not sure about these terms, particularly 'infra-red image' and 'computed depth map', check out this quick explanation of <a href="{{ site.baseurl }}{% post_url 2013-08-06-how-depth-sensor-works-in-5-minutes %}">how depth sensors work</a>. It will help you going forward to get a sense of what the depth sensor is actually doing.</p>
+<p>If you are not sure about these terms, particularly 'infra-red image' and 'computed depth map', check out this quick explanation of <a href="{{ site.url }}{% post_url 2013-08-06-how-depth-sensor-works-in-5-minutes %}">how depth sensors work</a>. It will help you going forward to get a sense of what the depth sensor is actually doing.</p>
 
 <p>We can see in the Capture app that there are slots for each of these three images, and they are organized into columns so that we can take images of the checkerboard at different distances from the rig. Taking images at different depths ensures that the overlay is correct when the items we shoot move from the near range to the far range.</p>
 

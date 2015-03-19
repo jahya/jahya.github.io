@@ -4,6 +4,7 @@
 # 3. config.yml
 
 name: jahya.net
+url: 'http://jahya.net'
 description: Portfolio of Andrew McWilliams
 author:
   name: Andrew McWilliams

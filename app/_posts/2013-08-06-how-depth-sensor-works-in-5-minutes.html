@@ -29,7 +29,11 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/how-depth-sensor-works-
 	</figcaption>
 </figure>
 
-<p>Some depth sensors have an RGB (Red Green Blue) camera, some don't. But that's fairly unremarkable and let's ignore it for now.</p> <p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p> <p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p>
+<p>Some depth sensors have an RGB (Red Green Blue) camera, some don't. But that's fairly unremarkable and let's ignore it for now.</p>
+
+<!--excerpt-ends-->
+
+<p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p> <p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p>
 
 <figure>
 	<a href="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s1600/RGBDDots.png">
@@ -49,4 +53,4 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/how-depth-sensor-works-
 	</figcaption>
 </figure>
 
-<p>This 'worked out' depth map can be read from the depth sensor into your computer, or you can just take the feed directly from the IR camera, it's up to you. When calibrating the <a href="{{ site.baseurl }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a>, during the correspondence calibration phase we must take a feed from both the depth map and the IR camera feed.</p>
+<p>This 'worked out' depth map can be read from the depth sensor into your computer, or you can just take the feed directly from the IR camera, it's up to you. When calibrating the <a href="{{ site.url }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a>, during the correspondence calibration phase we must take a feed from both the depth map and the IR camera feed.</p>
