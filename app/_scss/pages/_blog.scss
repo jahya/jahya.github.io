@@ -85,6 +85,53 @@
 			.tr-container img, table.tr-caption-container img, .post-content>div>img, .post-content>div>a>img, .post-content>a>img {
 				width: 90%; height: inherit;
 			}
+
+			div.blogger-post-footer{
+				display: inline;
+			}
+
+			div.blogger-post-footer img{
+				border: 0;
+			}
+
+			p.code{
+				background-color: #fff;
+				border: 3px #e5e5e5 dashed;
+				padding-top: 0.4em;
+				padding-bottom: 0.4em;
+				color: #666;
+			}
+
+			.spacedlist{
+				line-height: 2.25em;
+			}
+
+			span.backtotop{
+				padding-top: 0.875em;
+			}
+
+			a.linkheader{
+				display: block;
+				margin-top: 2em;
+				padding: 0.5em 0;
+				font-size: 1.35em;
+				text-align: center;
+				border-top: 4px solid #e5e5e5;
+				border-bottom: 4px solid #e5e5e5;
+			}
+
+			table.displaytable{
+				background: white;
+				border: 2px solid #e5e5e5;
+				border-collapse: collapse;
+				margin-bottom: 1.2em;
+			}
+
+			table.displaytable td, table.displaytable tr{
+				border: 2px solid #e5e5e5;
+				margin: 0px; padding: 0.5em;
+				border-collapse: collapse;
+			}
 			
 			.read-more {
 				display: block;
