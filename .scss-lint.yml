@@ -11,6 +11,9 @@ linters:
   ColorKeyword:
     enabled: true
 
+  ColorVariable:
+    enabled: false
+
   Comment:
     enabled: true
 
@@ -49,6 +52,9 @@ linters:
     enabled: true
 
   IdSelector:
+    enabled: false
+
+  ImportantRule:
     enabled: false
 
   ImportPath:
