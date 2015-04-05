@@ -1,6 +1,6 @@
 $largest_font: 1.2em;
 $large_font: 1.15em;
-$medium_font: 1.1em;
+$medium_font: 1.125em;
 $small_font: 1.05em;
 
 $large_spacing: 0.04em;
@@ -252,7 +252,7 @@ main {
 
 @media (max-width: 499px) {
 	p {
-		font-size: $small_font;
+		font-size: $medium_font;
 		letter-spacing: $small_spacing;
 		line-height: $small_lineheight;
 	}
