@@ -233,6 +233,22 @@
 	}
 }
 
+@media (max-width: 899px) {
+	#blog {
+		.left {
+			width: 88%;
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	#blog {
+		.left {
+			width: 100%;
+		}
+	}
+}
+
 @media (max-width: 499px) {
 	#blog {
 		.left {
