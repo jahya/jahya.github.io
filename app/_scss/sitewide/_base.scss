@@ -58,7 +58,8 @@ blockquote {
 	font-style: italic;
 
 	p {
-		letter-spacing: 0.05em;
+		font-size: 1.22em;
+		letter-spacing: 0.07em;
 		word-spacing: 0.03em;
 		font-style: italic;
 	}
@@ -236,6 +237,13 @@ main {
 	time {
 		font-size: 0.88em;
 		padding-top: 0.3em;
+	}
+}
+
+@media (max-width: 639px) {
+	blockquote p {
+		font-size: 1.18em;
+		letter-spacing: 0.05em;
 	}
 }
 
