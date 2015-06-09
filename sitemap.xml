@@ -373,7 +373,7 @@
     <lastmod>2010-09-03T09:40:00-04:00</lastmod>
   </url>
   <url>
-    <loc>http://jahya.net/works/gravity/</loc>
+    <loc>http://jahya.net/resume/</loc>
   </url>
   <url>
     <loc>http://jahya.net/blog/</loc>
@@ -391,7 +391,7 @@
     <loc>http://jahya.net/works/existential/</loc>
   </url>
   <url>
-    <loc>http://jahya.net/resume/</loc>
+    <loc>http://jahya.net/works/gravity/</loc>
   </url>
   <url>
     <loc>http://jahya.net/works/</loc>
@@ -407,6 +407,9 @@
   </url>
   <url>
     <loc>http://jahya.net/works/sound-chamber/</loc>
+  </url>
+  <url>
+    <loc>http://jahya.net/works/sound-control/</loc>
   </url>
   <url>
     <loc>http://jahya.net/works/surface/</loc>
