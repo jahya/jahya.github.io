@@ -40,9 +40,10 @@ h1 {
 h2 {
 	font-size: 1.5em;
 	font-weight: 400;
+	margin-top: 1em;
 }
 
-p {
+p, pre {
 	font-size: $largest_font;
 	letter-spacing: $large_spacing;
 	line-height: $small_lineheight;
@@ -192,7 +193,7 @@ main {
 }
 
 @media (max-width: 1299px) {
-	p {
+	p, pre {
 		font-size: $large_font;
 	}
 
@@ -224,7 +225,7 @@ main {
 		font-size: 1.4em;
 	}
 
-	p {
+	p, pre {
 		font-size: $medium_font;
 		line-height: $large_lineheight;
 		padding: 0.6em 0;
@@ -259,7 +260,7 @@ main {
 }
 
 @media (max-width: 499px) {
-	p {
+	p, pre {
 		font-size: $medium_font;
 		letter-spacing: $small_spacing;
 		line-height: $small_lineheight;
