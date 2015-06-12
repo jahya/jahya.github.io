@@ -98,12 +98,13 @@
 				border: 0;
 			}
 
-			p.code {
+			p.code, pre {
 				background-color: #fff;
 				border: 3px #e5e5e5 dashed;
 				padding-top: 0.4em;
 				padding-bottom: 0.4em;
 				color: #666;
+				white-space: pre-wrap;
 			}
 
 			.spacedlist {
