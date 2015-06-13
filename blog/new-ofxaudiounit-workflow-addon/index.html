@@ -6,12 +6,12 @@
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=author content="Andrew McWilliams">
 
-    <title>Untitled - Picture This (2011)</title>
+    <title>New ofxAudioUnit workflow addon</title>
     
 
     <link href=http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css rel=stylesheet>
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel=stylesheet type=text/css>
-    <link rel=canonical href=http://jahya.net/blog/untitled-picture-this-2011>
+    <link rel=canonical href=http://jahya.net/blog/new-ofxaudiounit-workflow-addon>
     <link rel=stylesheet href=/stylesheets/style.8021.css>
 
     <!--[if lt IE 9]>
@@ -41,36 +41,191 @@
   <main class=left>
     <article role=article itemscope itemtype=http://schema.org/BlogPosting>
       <header>
-        <h1>Untitled - Picture This (2011)</h1>
+        <h1>New ofxAudioUnit workflow addon</h1>
         <div class=widgets>
-          Posted on <time itemprop=dateCreated datetime=2011-12-02>Friday 2 December, 2011</time>
+          Posted on <time itemprop=dateCreated datetime=2015-06-12>Friday 12 June, 2015</time>
           <ul class=social>
             <li>
-              <a href="http://twitter.com/share?text=Untitled%20-%20Picture%20This%20(2011)&amp;url=http://jahya.net/blog/untitled-picture-this-2011&amp;via=jahyadotnet"><i class="fa fa-twitter-square"></i></a>
+              <a href="http://twitter.com/share?text=New%20ofxAudioUnit%20workflow%20addon&amp;url=http://jahya.net/blog/new-ofxaudiounit-workflow-addon&amp;via=jahyadotnet"><i class="fa fa-twitter-square"></i></a>
             </li>
             <li>
-              <a href="http://www.facebook.com/sharer/sharer.php?title=Untitled%20-%20Picture%20This%20(2011)&amp;u=http://jahya.net/blog/untitled-picture-this-2011"><i class="fa fa-facebook-square"></i></a>
+              <a href="http://www.facebook.com/sharer/sharer.php?title=New%20ofxAudioUnit%20workflow%20addon&amp;u=http://jahya.net/blog/new-ofxaudiounit-workflow-addon"><i class="fa fa-facebook-square"></i></a>
             </li>
             <li>
-              <a href="http://www.tumblr.com/share?v=3&amp;t=Untitled%20-%20Picture%20This%20(2011)&amp;u=http://jahya.net/blog/untitled-picture-this-2011"><i class="fa fa-tumblr-square"></i></a>
+              <a href="http://www.tumblr.com/share?v=3&amp;t=New%20ofxAudioUnit%20workflow%20addon&amp;u=http://jahya.net/blog/new-ofxaudiounit-workflow-addon"><i class="fa fa-tumblr-square"></i></a>
             </li>
           </ul>
         </div>
       </header>
       <div class=post-content>
-        <p>This untitled work was created as a response to Molly Pearson's poem 'Picture This'. It was installed at AlphaVille 2011, in association with <a href="http://www.v4wednesday.com/">V4W</a> and the <a href="http://www.youngpoetsnetwork.org.uk/">Young Poets Network</a>:</p><div style="text-align: center"><iframe frameborder=0 height=294 src="http://player.vimeo.com/video/31937746?byline=0&amp;portrait=0" width=534></iframe></div> <p>Molly's poem dealt with the of passing time, of memories of the past and ideas about the future. One of the key ideas in the poem was the present moment's role as a dividing line between the two. You can read the <a href="http://www.youngpoetsnetwork.org.uk/index.php/2011/09/picture-this-by-molly-pearson/">poem in full here</a>.</p>
+        <p>I have written a leightweight manager for Adam Carlucci's excellent <a href=https://github.com/admsyn/ofxAudioUnit>ofxAudioUnit</a>, named <a href=https://github.com/microcosm/ofxAudioUnitManager>ofxAudioUnitManager</a>.</p>
+
+<figure>
+	<img alt="The ofxAudioUnitManager interface" src=/images/blog/ofxAudioUnitManager.8cf5.png class=no-border>
+	<figcaption class=caption>
+		The ofxAudioUnitManager interface
+	</figcaption>
+</figure>
+
+<p>The manager allows you to deal with chains of Audio Units and sets of presets with your keyboard at runtime, and to design new chains with just a few lines of code. You can show and hide the control panel above by hitting 'v'.</p>
 
 <!--excerpt-ends-->
 
-<p>On the day of the installation, Molly read out her poem in front of the work:</p><div style="text-align: center"><iframe frameborder=0 height=324 src=http://www.youtube.com/embed/dEqOoUEt8Mo width=424></iframe></div><p>The work was judged by the audience and I'm very pleased to say we came first place! Thanks to Molly for writing such a thought-provoking piece.</p> <p>I'd like to thank Simon Dell for his support in setting up the microphone in order to provide a clean signal for the software to run. Thanks also to Hayden Anyasi for organising and setting up the <a href=http://vvvv.org/documentation/how-to-project-on-3d-geometry>homographic vvvv multi-projector environment</a>.</p> <p>If you want to read more about the process, check out <a href=http://jahya.net/blog/installation-at-alpha-ville>this blog post written shortly afterwards</a>. I have also created a <a href=http://jahya.net/artworks/untitled-picture-this>portfolio page for the work here</a>.</p> <p>Edit: This work has been subsequently titled 'Measure' in 2012.</p>
+<h2>What is this addon for?</h2>
+
+<p>The purpose of this addon is to make it easy to experiment with sound design in your apps.</p>
+
+<p>To do this, the addon automates tasks associated with using <code>ofxAudioUnit</code> that are not related to sound design. It then puts in place a helpful interface allowing you to experiment, save and experiment more, often without recompiling.</p>
+
+<h2>How to design a chain</h2>
+
+<p>Declare the manager and the units you would like to use in the header file. The classes below are all bundled with <code>ofxAudioUnitManager</code>, each wrapping <code>ofxAudioUnit</code> classes to simplify their usage:</p>
+
+<pre>    ofxAudioUnitManager manager;
+    AudioUnitChain chain;
+    TALNoiseMaker noiseMaker;
+    LowPassFilter filter;
+    Reverb reverb;</pre>
+
+<p>Over in the <code>cpp</code> file you can declare and initialise a chain in three easy steps. First, have the manager set up the chain with a name and a colour:</p>
+
+<pre>    manager.add(&amp;chain, "tal-one", ofColor::blue);</pre>
+
+<p>Then, load the units into the chain, in the order you would like them connected:</p>
+
+<pre>    chain.link(&amp;noiseMaker)
+         .to(&amp;filter)
+         .to(&amp;reverb)
+         .toMixer();</pre>
+
+<p>Finally, now that the units are loaded you can read presets from disk:</p>
+
+<pre>    manager.loadPresets(&amp;chain);</pre>
+
+<p>That's all you need to do. This code will give you the blue chain shown in the image above.</p>
+
+<h2>Managing presets</h2>
+
+<p>Use the <code>left</code> and <code>right</code> arrow keys at runtime to select different chains. Use the <code>up</code> and <code>down</code> arrow keys to switch between presets on a chain.</p>
+
+<p>On the disk, presets are saved in <code>bin/data</code> in a directory named <code>AudioUnitPresets</code>:</p>
+
+<figure>
+	<img src=/images/blog/ofxAudioUnitManagerFinder.63a6.png alt="How the filesystem is organised" class=no-border>
+	<figcaption class=caption>
+		How the filesystem is organised
+	</figcaption>
+</figure>
+
+<p>Inside <code>AudioUnitPresets</code> each chain has a folder (named when you initialise the chain in your code). Inside each chain folder are directories for each of the presets. These you save and name from the <code>ofxAudioUnitManager</code> user interface.</p>
+
+<p>Inside each preset folder are the individual preset files, one for each unit in the chain.</p>
+
+<h2>Changing the unit order</h2>
+
+<p>You are free to experiment with the order of your chain without losing your presets. For example let's imagine you start off with this chain, and save a selection of presets:</p>
+
+<pre>    chain.link(&amp;noiseMaker)
+       //presets saved as
+       //../preset-name/LowPassFilter.aupreset
+     .to(&amp;filter)
+       //presets saved as
+       //../preset-name/Reverb.aupreset
+     .to(&amp;reverb)
+     .toMixer();</pre>
+
+<p>Later you decide to switch the filter and reverb:</p>
+
+<pre>    chain.link(&amp;noiseMaker)
+       //presets saved as
+       //../preset-name/Reverb.aupreset
+     .to(&amp;reverb)
+       //presets saved as
+       //../preset-name/LowPassFilter.aupreset
+     .to(&amp;filter)
+     .toMixer();</pre>
+
+<p>The presets you originally created will still apply to the correct units as they are named after the class name of the unit.</p>
+
+<h2>Naming your units</h2>
+
+<p>The only complication with the storage technique described above is if you want to chain two units of the same type. In this scenario it is best to name the units with string arguments:</p>
+
+<pre>    LowPassFilter filter1, filter2;
+
+    chain.link(&amp;noiseMaker)
+       //presets saved as
+       //filter1_LowPassFilter.aupreset
+     .to(&amp;filter1, "filter1")
+       //presets saved as
+       //filter2_LowPassFilter.aupreset
+     .to(&amp;filter2, "filter2")
+     .to(&amp;reverb)
+     .toMixer();</pre>
+
+<p>This will prevent naming conflicts when the manager attempts to load and save presets.</p>
+
+<p>If you decide to add or change a unit's name after you have already been using it, remember to go into the preset folders and update the names there too. Otherwise the manager will generate new preset files the next time you run it.</p>
+
+<p>In this circumstance, the new and old preset files will sit alongside each other on the disk. However only the new preset files will be used by the manager.</p>
+
+<h2>Sending MIDI to your chains</h2>
+
+<p>This addon uses <a href=https://github.com/mirrorboy714/ofxBpm>ofxBpm</a> and <a href=https://github.com/danomatika/ofxMidi>ofxMidi</a> to allow you to send MIDI sequences at timed intervals.</p>
+
+<pre>    void ofApp::setup() {
+        ofAddListener(bpm.beatEvent, this, &amp;ofApp::play);
+    }
+
+    void ofApp::play(void){
+        //Each chain exposes it's ofxMidi instance
+        chain.midi()-&gt;sendNoteOn(1, 60);
+    }</pre>
+
+<p>Each chain sets up an <code>ofxMidi</code> instance and provides access for you to manipulate it.</p>
+
+<h2>Adding new units</h2>
+
+<p>Each time you want to work with new Audio Units in <code>ofxAudioUnitManager</code>, you will have to create a new class. However, all of the hard work is taken care of in the base class <code>AudioUnitBase</code>, and your class only need contain a few lines:</p>
+
+<pre>    void TALNoiseMaker::setup() {
+        unit = ofxAudioUnit('aumu', 'ncut', 'TOGU');
+        type = AU_TYPE_SYNTH;
+        className = "TALNoiseMaker";
+        AudioUnitBase::setup();
+    }</pre>
+
+<p>The header file is similarly sparse. As a convention the supported parameter list for each unit is listed as <code>const</code>s in the header:</p>
+
+<pre>    class TALNoiseMaker : public AudioUnitBase {
+    public:
+        void setup();
+    };
+
+    const static int TALNoiseMaker_volume = 1;
+    const static int TALNoiseMaker_filtertype = 2;
+    const static int TALNoiseMaker_cutoff = 3;
+    //.. etc for all parameters</pre>
+
+<p>This enables you to quickly find and set parameters in your general code:</p>
+
+<pre>    float cutoff = ofMap(sin(ofGetFrameNum() * 0.05), -1, 1, 0, 1);
+    noiseMaker.set(TALNoiseMaker_cutoff, cutoff); //Automate the parameter</pre>
+
+<p>In practice only takes a moment to create these classes, using the existing classes as a template.</p>
+
+<p>Obviously there's a world of Audio Units out there and this addon only has a small subset. If you would like to contribute, you can send pull requests with additional units that you use.</p>
+
+<h2>How to try out this addon</h2>
+
+<p>Check out the instructions at the bottom of the <a href=https://github.com/microcosm/ofxAudioUnitManager>github readme</a>.</p>
+
       </div>
     </article>
     <ul id=paging class=cta>
       
-      <li><a href=/blog/wider-context>&lt; Previous post</a></li>
+      <li><a href=/blog/new-site-for-hardware-hack-lab>&lt; Previous post</a></li>
       
-      
-      <li><a href=/blog/freemote-utrecht>Next post &gt;</a></li>
       
     </ul>
   </main>
