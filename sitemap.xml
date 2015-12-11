@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://jahya.net/blog/synthetic-and-organic</loc>
-    <lastmod>2015-10-18T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/modular-art</loc>
-    <lastmod>2015-10-18T00:00:00-04:00</lastmod>
-  </url>
-  <url>
     <loc>http://jahya.net/blog/new-ofxaudiounit-workflow-addon</loc>
     <lastmod>2015-06-12T00:00:00-04:00</lastmod>
   </url>
