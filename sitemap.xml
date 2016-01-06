@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jahya.net/blog/emergence-of-future-reality</loc>
+    <lastmod>2016-01-05T00:00:00-05:00</lastmod>
+  </url>
+  <url>
     <loc>http://jahya.net/blog/new-ofxaudiounit-workflow-addon</loc>
     <lastmod>2015-06-12T00:00:00-04:00</lastmod>
   </url>
@@ -420,44 +424,5 @@
   </url>
   <url>
     <loc>http://jahya.net/works/surface/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page2/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page3/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page4/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page5/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page6/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page7/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page8/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page9/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page10/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page11/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page12/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page13/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page14/</loc>
   </url>
 </urlset>
