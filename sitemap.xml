@@ -393,7 +393,7 @@
     <lastmod>2010-09-03T09:40:00-04:00</lastmod>
   </url>
   <url>
-    <loc>http://jahya.net/works/</loc>
+    <loc>http://jahya.net/works/control-room/</loc>
   </url>
   <url>
     <loc>http://jahya.net/blog/</loc>
@@ -402,10 +402,13 @@
     <loc>http://jahya.net/</loc>
   </url>
   <url>
+    <loc>http://jahya.net/resume/</loc>
+  </url>
+  <url>
     <loc>http://jahya.net/about/</loc>
   </url>
   <url>
-    <loc>http://jahya.net/works/control-room/</loc>
+    <loc>http://jahya.net/works/emergency-room/</loc>
   </url>
   <url>
     <loc>http://jahya.net/works/existential/</loc>
@@ -414,7 +417,7 @@
     <loc>http://jahya.net/works/gravity/</loc>
   </url>
   <url>
-    <loc>http://jahya.net/resume/</loc>
+    <loc>http://jahya.net/works/</loc>
   </url>
   <url>
     <loc>http://jahya.net/works/insulin/</loc>
@@ -436,44 +439,5 @@
   </url>
   <url>
     <loc>http://jahya.net/works/surface/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page2/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page3/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page4/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page5/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page6/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page7/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page8/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page9/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page10/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page11/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page12/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page13/</loc>
-  </url>
-  <url>
-    <loc>http://jahya.net/blog/page14/</loc>
   </url>
 </urlset>
