@@ -5,6 +5,9 @@
 		ul {
 			text-align: justify;
 			width: 100%;
+			padding: 0;
+			font-size: inherit;
+			line-height: inherit;
 
 			li {
 				display: inline-block;
@@ -41,11 +44,33 @@
 			.description {
 				padding: 1.6em 0;
 
+				.note {					
+					font-weight: bold;
+					font-style: italic;
+					font-size: 0.95em;
+					padding: 0;
+					position: absolute;
+					right: 0;
+
+					span {
+						position: relative;
+						top: -2em;
+					}
+				}
+
 				img {
 					border: 4px solid #e8e8e8;
 					max-width: 54.5em;
 					margin: 1.4em 0;
 				}
+
+				ul, ol {
+					margin-left: 1.1em;
+				}
+			}
+
+			.description.with-note {
+				padding-top: 2.3em;
 			}
 		}
 	}

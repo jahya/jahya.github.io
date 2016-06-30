@@ -43,11 +43,13 @@ h2 {
 	margin-top: 1em;
 }
 
-p, pre {
-	font-size: $largest_font;
-	letter-spacing: $large_spacing;
-	line-height: $small_lineheight;
-	padding: 1em 0;
+main {
+	ul, ol, p, pre {
+		font-size: $largest_font;
+		letter-spacing: $large_spacing;
+		line-height: $small_lineheight;
+		padding: 1em 0;
+	}
 }
 
 time {
@@ -193,8 +195,10 @@ main {
 }
 
 @media (max-width: 1299px) {
-	p, pre {
-		font-size: $large_font;
+	main{
+		ul, ol, p, pre {
+			font-size: $large_font;
+		}
 	}
 
 	h1 {
@@ -225,10 +229,12 @@ main {
 		font-size: 1.4em;
 	}
 
-	p, pre {
-		font-size: $medium_font;
-		line-height: $large_lineheight;
-		padding: 0.6em 0;
+	main {
+		ul, ol, p, pre {
+			font-size: $medium_font;
+			line-height: $large_lineheight;
+			padding: 0.6em 0;
+		}
 	}
 
 	main .cta a {
@@ -260,10 +266,12 @@ main {
 }
 
 @media (max-width: 499px) {
-	p, pre {
-		font-size: $medium_font;
-		letter-spacing: $small_spacing;
-		line-height: $small_lineheight;
+	main {
+		ul, ol, p, pre {
+			font-size: $medium_font;
+			letter-spacing: $small_spacing;
+			line-height: $small_lineheight;
+		}
 	}
 
 	hr {
