@@ -5,13 +5,17 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=author content="Andrew McWilliams">
+    <meta name=Description content="Portfolio, project work and blog of New York-based artist Andrew McWilliams.">
 
-    <title>RGBDToolkit Calibration Tutorial</title>
-    
+    <title>RGBDToolkit Calibration Tutorial | Andrew McWilliams</title>
+    <meta property=og:url content=https://jahya.net/blog/rgbdtoolkit-calibration-tutorial>
+    <meta property=og:title content="RGBDToolkit Calibration Tutorial | Andrew McWilliams">
+    <meta property=og:image content=https://jahya.net/images/og_default.jpg>
+    <meta property=og:description content="Portfolio, project work and blog of New York-based artist Andrew McWilliams.">
 
     <link href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css rel=stylesheet>
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel=stylesheet type=text/css>
-    <link rel=canonical href=http://jahya.net/blog/rgbdtoolkit-calibration-tutorial>
+    <link rel=canonical href=https://jahya.net/blog/rgbdtoolkit-calibration-tutorial>
     <link rel=stylesheet href=/stylesheets/style.a1ac.css>
 
     <!--[if lt IE 9]>
@@ -58,7 +62,7 @@
         </div>
       </header>
       <div class=post-content>
-        <p>The <a href=http://jahya.net/blog/rgbdtoolkit-workshop-at-eyebeam>RGBDToolkit</a> is a fun piece of kit for tinkerers and artists, but it comes with a steep learning curve. This post will guide you through the hardest part - calibration.</p>
+        <p>The <a href=https://jahya.net/blog/rgbdtoolkit-workshop-at-eyebeam>RGBDToolkit</a> is a fun piece of kit for tinkerers and artists, but it comes with a steep learning curve. This post will guide you through the hardest part - calibration.</p>
 
 <figure>
 	<a href=http://4.bp.blogspot.com/-nM3cO6YZ_74/UfcwQJjDAdI/AAAAAAAABQ0/0rEqHT96_Fo/s1600/RGBDToolkit1.jpg>
@@ -73,7 +77,7 @@
 
 <!--excerpt-ends-->
 
-<p>This tutorial only covers calibration (pre-production). There is some great information on <a href=http://www.rgbdtoolkit.com/tutorials.html>capture and visualizing here</a>, and also <a href=http://jahya.net/blog/rgbdtoolkit-visualizer-tutorial>here is a really good visualizer tutorial video from the workshop</a>.</p>
+<p>This tutorial only covers calibration (pre-production). There is some great information on <a href=http://www.rgbdtoolkit.com/tutorials.html>capture and visualizing here</a>, and also <a href=https://jahya.net/blog/rgbdtoolkit-visualizer-tutorial>here is a really good visualizer tutorial video from the workshop</a>.</p>
 
 <p><strong>Why this tutorial?</strong><br>The RGBDToolkit guys write and maintain an <a href=http://www.rgbdtoolkit.com/tutorials.html>in-depth tutorial</a> on the website. It covers all bases and so is pretty dense. However, I found it easier to work from my own notes (made during an RGBD workshop). This post is just a write-up of those notes.</p>
 
@@ -256,7 +260,7 @@
 
 <ul><li>The RGB image from the DSLR</li><li>The infra-red image from the depth sensor</li><li>The computed depth map from the depth sensor</li></ul>
 
-<p>If you are not sure about these terms, particularly 'infra-red image' and 'computed depth map', check out this quick explanation of <a href=http://jahya.net/blog/how-depth-sensor-works-in-5-minutes>how depth sensors work</a>. It will help you going forward to get a sense of what the depth sensor is actually doing.</p>
+<p>If you are not sure about these terms, particularly 'infra-red image' and 'computed depth map', check out this quick explanation of <a href=https://jahya.net/blog/how-depth-sensor-works-in-5-minutes>how depth sensors work</a>. It will help you going forward to get a sense of what the depth sensor is actually doing.</p>
 
 <p>We can see in the Capture app that there are slots for each of these three images, and they are organized into columns so that we can take images of the checkerboard at different distances from the rig. Taking images at different depths ensures that the overlay is correct when the items we shoot move from the near range to the far range.</p>
 
