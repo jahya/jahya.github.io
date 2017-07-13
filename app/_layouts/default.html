@@ -5,6 +5,20 @@
   {% assign title = page.title | append: ' | Andrew McWilliams' %}
 {% endif %}
 
+{% capture image %}{{ page.image }}{% endcapture %}
+{% if image == '' %}
+  {% assign image = '/images/og_default.jpg' %}
+{% else %}
+  {% assign image = page.image %}
+{% endif %}
+
+{% capture description %}{{ page.description }}{% endcapture %}
+{% if description == '' %}
+  {% assign description = 'Portfolio, project work and blog of New York-based artist Andrew McWilliams.' %}
+{% else %}
+  {% assign description = page.description %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,9 +26,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="{{ site.author.name }}">
+    <meta name="Description" content="{{ description }}">
 
     <title>{{ title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta property="og:description" content="{{ description }}" />
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
