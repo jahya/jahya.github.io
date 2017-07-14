@@ -14,21 +14,20 @@ module GenerateMetaTags
 
     def generate_meta_tags(site)
       site.posts.each do |post|
-        generate_image_tags(post)
-        generate_description_tags(post)
+        generate_image_tag(post)
+        generate_description_tag(post)
       end
     end
 
-    def generate_image_tags(post)
-      discover_which_image_source(post.content)
-      first_image_src = get_first_image_src(post.content)
+    def generate_image_tag(post)
+      image_src = get_image_url(post.content)
 
-      if is_usable(first_image_src) then
-        post.data['image'] = first_image_src
+      if is_usable(image_src) then
+        post.data['image'] = image_src
       end
     end
 
-    def generate_description_tags(post)
+    def generate_description_tag(post)
       first_paragraph = get_first_paragraph(post.content)
 
       if is_usable(first_paragraph) then
@@ -37,17 +36,30 @@ module GenerateMetaTags
       end
     end
 
-    def discover_which_image_source(content)
-      potentials = {
-        img: find_first_position_of(@img_tag_regex, content),
-        vimeo: find_first_position_of(@vimeo_tag_regex, content),
-        youtube: find_first_position_of(@youtube_tag_regex, content)
-      }
-      (potentials.min_by {|k,v| v || 1000000}).first
+    def get_image_url(content)
+      type = discover_which_image_type(content)
+      case type
+      when :img
+        puts get_img_tag_url(content)
+      when :vimeo
+        puts get_vimeo_thumb_url(content)
+      when :youtube
+        puts get_youtube_thumb_url(content)
+      end
     end
 
-    def get_first_image_src(content)
+    def get_img_tag_url(content)
       content[@img_tag_regex, 1]
+    end
+
+    def get_vimeo_thumb_url(content)
+      id = content[@vimeo_tag_regex, 1]
+      id
+    end
+
+    def get_youtube_thumb_url(content)
+      id = content[@youtube_tag_regex, 1]
+      id
     end
 
     def get_first_paragraph(content)
@@ -56,6 +68,15 @@ module GenerateMetaTags
 
     def strip_tags(content)
       content.gsub(/<\/?[^>]*>/, "")
+    end
+
+    def discover_which_image_type(content)
+      potentials = {
+        img: find_first_position_of(@img_tag_regex, content),
+        vimeo: find_first_position_of(@vimeo_tag_regex, content),
+        youtube: find_first_position_of(@youtube_tag_regex, content)
+      }
+      (potentials.min_by {|k,v| v || 1000000}).first
     end
 
     def is_usable(src)
