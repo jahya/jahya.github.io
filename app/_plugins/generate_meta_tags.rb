@@ -1,9 +1,15 @@
 module GenerateMetaTags
   class Generator < Jekyll::Generator
     def generate(site)
-      @img_tag_regex = /img.*?src="(.*?)"/i
-      @paragraph_tag_regex = /<p>(.*)<\/p>/i
+      load_regexes
       generate_meta_tags site
+    end
+
+    def load_regexes
+      @img_tag_regex = /img.*?src="(.*?)"/i
+      @vimeo_tag_regex = /player.vimeo.com\/video\/(.*?)\?/i
+      @youtube_tag_regex = /youtube.com\/embed\/(.*?)"/i
+      @paragraph_tag_regex = /<p>(.*)<\/p>/i
     end
 
     def generate_meta_tags(site)
@@ -32,7 +38,12 @@ module GenerateMetaTags
     end
 
     def discover_which_image_source(content)
-      img_pos = find_first_position_of(@img_tag_regex, content)
+      potentials = {
+        img: find_first_position_of(@img_tag_regex, content),
+        vimeo: find_first_position_of(@vimeo_tag_regex, content),
+        youtube: find_first_position_of(@youtube_tag_regex, content)
+      }
+      (potentials.min_by {|k,v| v || 1000000}).first
     end
 
     def get_first_image_src(content)
