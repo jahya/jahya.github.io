@@ -27,6 +27,7 @@ module GenerateMetaTags
       @vimeo_tag_regex = /player.vimeo.com\/video\/(.*?)\?/i
       @youtube_tag_regex = /youtube.com\/embed\/(.*?)"/i
       @paragraph_tag_regex = /<p>(.*)<\/p>/i
+      @paragraph_wo_tag_regex = /^(?!<[a-z])(.*)\n/i
     end
 
     def load_prefixes
@@ -89,7 +90,13 @@ module GenerateMetaTags
     end
 
     def get_first_paragraph(content)
-      content[@paragraph_tag_regex, 1]
+      type = discover_which_paragraph_type(content)
+      case type
+      when :with_tag
+        content[@paragraph_tag_regex, 1]
+      when :without_tag
+        content[@paragraph_wo_tag_regex, 1]
+      end
     end
 
     def strip_tags(content)
@@ -101,6 +108,14 @@ module GenerateMetaTags
         img: find_first_position_of(@img_tag_regex, content),
         vimeo: find_first_position_of(@vimeo_tag_regex, content),
         youtube: find_first_position_of(@youtube_tag_regex, content)
+      }
+      (potentials.min_by {|k,v| v || 1000000}).first
+    end
+
+    def discover_which_paragraph_type(content)
+      potentials = {
+        with_tag: find_first_position_of(@paragraph_tag_regex, content),
+        without_tag: find_first_position_of(@paragraph_wo_tag_regex, content)
       }
       (potentials.min_by {|k,v| v || 1000000}).first
     end
