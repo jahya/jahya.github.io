@@ -1,7 +1,10 @@
+require 'video_thumb'
+
 module GenerateMetaTags
   class Generator < Jekyll::Generator
     def generate(site)
       load_regexes
+      load_prefixes
       generate_meta_tags site
     end
 
@@ -10,6 +13,11 @@ module GenerateMetaTags
       @vimeo_tag_regex = /player.vimeo.com\/video\/(.*?)\?/i
       @youtube_tag_regex = /youtube.com\/embed\/(.*?)"/i
       @paragraph_tag_regex = /<p>(.*)<\/p>/i
+    end
+
+    def load_prefixes
+      @vimeo_url_prefix = "http://vimeo.com/"
+      @youtube_url_prefix = "http://www.youtube.com/watch?v="
     end
 
     def generate_meta_tags(site)
@@ -40,11 +48,11 @@ module GenerateMetaTags
       type = discover_which_image_type(content)
       case type
       when :img
-        puts get_img_tag_url(content)
+        get_img_tag_url(content)
       when :vimeo
-        puts get_vimeo_thumb_url(content)
+        get_vimeo_thumb_url(content)
       when :youtube
-        puts get_youtube_thumb_url(content)
+        get_youtube_thumb_url(content)
       end
     end
 
@@ -54,12 +62,12 @@ module GenerateMetaTags
 
     def get_vimeo_thumb_url(content)
       id = content[@vimeo_tag_regex, 1]
-      id
+      VideoThumb::get("#{@vimeo_url_prefix}#{id}", "max") || nil
     end
 
     def get_youtube_thumb_url(content)
       id = content[@youtube_tag_regex, 1]
-      id
+      VideoThumb::get("#{@youtube_url_prefix}#{id}", "max") || nil
     end
 
     def get_first_paragraph(content)
