@@ -3,9 +3,23 @@ require 'video_thumb'
 module GenerateMetaTags
   class Generator < Jekyll::Generator
     def generate(site)
+      begin_benchmark
       load_regexes
       load_prefixes
       generate_meta_tags site
+      end_benchmark
+    end
+
+    def begin_benchmark
+      @start = Time.now
+      puts
+      puts "Generating image and description meta tags on posts..."
+    end
+
+    def end_benchmark
+      @finish = Time.now
+      puts "Done in #{ @finish - @start } seconds."
+      puts
     end
 
     def load_regexes
