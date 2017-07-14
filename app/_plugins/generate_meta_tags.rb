@@ -22,16 +22,20 @@ module GenerateMetaTags
 
     def generate_meta_tags(site)
       site.posts.each do |post|
-        generate_image_tag(post)
-        generate_description_tag(post)
+        if post.data['image'].nil? then
+          generate_image_tag(post)
+        end
+        if post.data['description'].nil? then
+          generate_description_tag(post)
+        end
       end
     end
 
     def generate_image_tag(post)
-      image_src = get_image_url(post.content)
+      image_url = get_image_url(post.content)
 
-      if is_usable(image_src) then
-        post.data['image'] = image_src
+      if is_usable(image_url) then
+        post.data['image'] = image_url
       end
     end
 
