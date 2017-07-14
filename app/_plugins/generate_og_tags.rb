@@ -14,7 +14,7 @@ module GenerateOGTags
     def generate_og_image_tags(post)
       first_image_src = get_first_image_src(post.content)
 
-      if is_usable_image_src(first_image_src) then
+      if is_usable(first_image_src) then
         post.data['image'] = first_image_src
       end
     end
@@ -22,7 +22,7 @@ module GenerateOGTags
     def generate_og_description_tags(post)
       first_paragraph = get_first_paragraph(post.content)
 
-      if is_usable_paragraph(first_paragraph) then
+      if is_usable(first_paragraph) then
         first_paragraph = strip_tags(first_paragraph)
         post.data['description'] = first_paragraph
       end
@@ -36,11 +36,7 @@ module GenerateOGTags
       content[/<p>(.*)<\/p>/i, 1]
     end
 
-    def is_usable_image_src(src)
-      !src.nil? && src.start_with?('/images/blog/')
-    end
-
-    def is_usable_paragraph(src)
+    def is_usable(src)
       !src.nil?
     end
 

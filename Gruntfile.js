@@ -336,8 +336,8 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.dist %>/**/*.html'],
         overwrite: true,
         replacements: [{
-          from: '<meta property=og:image content=',
-          to: '<meta property=og:image content=https://jahya.net'
+          from: '<meta property=og:image content=/',
+          to: '<meta property=og:image content=https://jahya.net/'
         }]
       }
     }
