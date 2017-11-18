@@ -19,11 +19,16 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/06/setting-up-supercollide
 
 <p>My <a href="{{ site.url }}{% post_url 2012-06-04-switching-to-macbook-pro %}">new Mac arrived</a> and one of the first things I wanted to do was set up <a href="http://supercollider.sourceforge.net/">SuperCollider</a> (SC). Installing SC on a Mac is really easy - it's just a regular <code>.dmg</code> installer. Once it's in your Applications folder you're good to go.</p>
 
-<p>But editing in the SC window isn't much fun -- you really need a decent code editor / file manager / syntax highlighter. I took <a href="http://culturehacking.fm/">Gene</a>'s advice (I've been doing that a lot recently) and installed TextMate. There are a few hoops you have to jump (or ought to jump?) when setting this up, so in this post I want to explain the process I went through -- how to get TextMate to talk to SC from the perspective of an ex-Windows user.</p>
+<figure class="smaller">
+	<img alt="The TextMate logo" src="http://2.bp.blogspot.com/-T4SJ275Hwws/T8_blhcWRsI/AAAAAAAAAvE/zS9pNMuTb8U/s200/textmate.png">
+	<figcaption>The TextMate logo</figcaption>
+</figure>
+
+<p>But editing in the SC window isn't much fun -- you really need a decent code editor / file manager / syntax highlighter. I took Gene's advice (I've been doing that a lot recently) and installed TextMate.</p>
 
 <!--excerpt-ends-->
 
-<table class="tr-caption-container" style="float:right; text-align: center; margin-left: 2em;"><tbody><tr><td style="text-align: center;"><img alt="TextMate logo" height="200" width="200" src="http://2.bp.blogspot.com/-T4SJ275Hwws/T8_blhcWRsI/AAAAAAAAAvE/zS9pNMuTb8U/s200/textmate.png" style="float:right; margin-left: 2em; margin-right: 1em; margin-bottom: 1em;" /></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="font-size: small; text-align: left;">The TextMate logo</span></td></tr></tbody></table>
+<p>There are a few hoops you have to jump (or ought to jump?) when setting this up, so in this post I want to explain the process I went through -- how to get TextMate to talk to SC from the perspective of an ex-Windows user.</p>
 
 <p><strong>TextMate SuperCollider bundle</strong><br />TextMate calls it's plugins '<a href="http://manual.macromates.com/en/bundles">Bundles</a>'. To control SC 3.5 from TextMate, you'll need to install the <a href="https://github.com/rfwatson/supercollider-tmbundle">SC TextMate bundle</a> from <a href="https://github.com/rfwatson">Rob Watson</a>, which gives you syntax highlighting and SC control from within TextMate.</p>
 

@@ -26,15 +26,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/06/adding-openframeworks-a
 
 <p><strong>XCode and openFrameworks</strong><br />To give you some sense of how much easier it is to set up OF on a Mac than on a PC, assuming you have little-to-no previous experience OF / C++ like me, take a look at these screengrabs of the OF setup guides:</p>
 
-<div style="text-align:center; width: 100%; margin-left:auto; margin-right:auto;">
-
-<table style="margin-left:auto;margin-right:auto;text-align:left"><tr><td>
-
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-WBNc-Hb_sNI/T8_KlJNUg0I/AAAAAAAAAuo/Ns1CVRkkF0M/s1600/of-vs2010.png" style="margin-left: auto; margin-right: auto;"><img alt="Help page for VS2010" height="200" src="http://2.bp.blogspot.com/-WBNc-Hb_sNI/T8_KlJNUg0I/AAAAAAAAAuo/Ns1CVRkkF0M/s200/of-vs2010.png" width="133" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Help page for<br />VS2010</td></tr></tbody></table> </td><td>
-
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-u-rM1FrbAbM/T8_KkyKYXCI/AAAAAAAAAuc/fVQYELjSt4o/s1600/of-codeblocks.png" style="margin-left: auto; margin-right: auto;"><img alt="Help page for CodeBlocks" height="200" src="http://1.bp.blogspot.com/-u-rM1FrbAbM/T8_KkyKYXCI/AAAAAAAAAuc/fVQYELjSt4o/s200/of-codeblocks.png" width="134" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Help page for<br />CodeBlocks</td></tr></tbody></table> </td><td style="border-right: auto;">
-
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-yQ-LKhDCKWE/T8_KlgaFFvI/AAAAAAAAAu0/p95u_zZCe5E/s2048/of-xcode.png" style="margin-left: auto; margin-right: auto;"><img alt="Help page for XCode" height="200" src="http://1.bp.blogspot.com/-yQ-LKhDCKWE/T8_KlgaFFvI/AAAAAAAAAu0/p95u_zZCe5E/s200/of-xcode.png" width="18" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Help page<br />for XCode</td></tr></tbody></table> </td></tr></table> </div>
+<figure class="smaller">
+	<img alt="OF setup pages compared" src="/images/blog/of-setup.jpg">
+	<figcaption>OF setup pages compared</figcaption>
+</figure>
 
 <p>At first, those thumbnails on the left look bigger. And then you realise that the one on the right is just really, really long. It's not necessarily a problem with the platform, I don't know which platform is really 'better'. It's about the community support - the community mostly use XCode, and most of the online help is in the context of XCode.</p>
 
@@ -46,7 +41,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/06/adding-openframeworks-a
 
 <p><strong>Adding addons</strong><br />There is a really nice video by <a href="http://www.theowatson.com/">Theo Watson</a> which guides you through adding addons, and makes everything look really easy. But before you watch it, it's worth having a quick refresher on how openFrameworks is structured:</p>
 
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-ShGRhp-i83E/T9EjMh7DF6I/AAAAAAAAAvU/cVIZYBUO_4k/s1600/Structure004.png" style="margin-left: auto; margin-right: auto;"><img alt="How OF is structured" height="200" src="http://1.bp.blogspot.com/-ShGRhp-i83E/T9EjMh7DF6I/AAAAAAAAAvU/cVIZYBUO_4k/s200/Structure004.png" width="150" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">How OF is structured</td></tr></tbody></table>
+<figure>
+	<img alt="How OF is structured" src="http://1.bp.blogspot.com/-ShGRhp-i83E/T9EjMh7DF6I/AAAAAAAAAvU/cVIZYBUO_4k/s1600/Structure004.png">
+	<figcaption>How OF is structured</figcaption>
+</figure>
 
 <p>The addons are usually just wrappers around some external library (or libraries). This is the whole point of OF: to package up disparate, useful libraries into an easily accessible format that is standard across everybodys machines.</p>
 
@@ -66,7 +64,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/06/adding-openframeworks-a
 
 <p>So then I compile, but there are errors:</p>
 
-<div style="width:100%;text-align:center"><a href="http://3.bp.blogspot.com/-fxwxYCe0w5w/T9FSjWViaZI/AAAAAAAAAvk/D9F1CC0a3bw/s1600/ofxOscError.png" style="margin-left:1em; margin-right:1em"><img alt="No such file" height="150" width="400" src="http://3.bp.blogspot.com/-fxwxYCe0w5w/T9FSjWViaZI/AAAAAAAAAvk/D9F1CC0a3bw/s400/ofxOscError.png" /></a></div>
+<figure>
+	<img alt="No such file" src="http://3.bp.blogspot.com/-fxwxYCe0w5w/T9FSjWViaZI/AAAAAAAAAvk/D9F1CC0a3bw/s1600/ofxOscError.png">
+	<figcaption>No such file</figcaption>
+</figure>
 
 <p>What's happening here is that the <code>ofxOsc</code> openFrameworks addon is trying to include a header file from the oscpack base library (refer back to the OF structure image). The <a href="http://code.google.com/p/oscpack/">oscpack library</a> doesn't happen to appear in the image, but you can see that it's the base library that ofxOsc uses by drilling down into the contents of the ofxOsc addon.</p>
 
@@ -74,29 +75,44 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/06/adding-openframeworks-a
 
 <p><strong>Things have changed with OF search paths</strong><br />In the latest release, if you follow Theo's steps and go to the <code>.xcconfig</code> file in the <code>opencvExample</code>, you'll notice the additional paths highlighted in the Vimeo aren't there:</p>
 
-<div style="width:100%;text-align:center"><a href="http://1.bp.blogspot.com/-dsOf1fgb6xk/T9F1Pn8fk7I/AAAAAAAAAv0/iJCzEgkwkrU/s1600/ofxOpenCvConfig.png" style="margin-left:1em; margin-right:1em"><img alt="The ofxOpenCv xcconfig file" height="96" width="450" src="http://1.bp.blogspot.com/-dsOf1fgb6xk/T9F1Pn8fk7I/AAAAAAAAAv0/iJCzEgkwkrU/s450/ofxOpenCvConfig.png" /></a></div>
+<figure>
+	<img alt="The ofxOpenCv xcconfig file" src="http://1.bp.blogspot.com/-dsOf1fgb6xk/T9F1Pn8fk7I/AAAAAAAAAv0/iJCzEgkwkrU/s1600/ofxOpenCvConfig.png">
+	<figcaption>The ofxOpenCv xcconfig file</figcaption>
+</figure>
 
 <p>Instead, they are in the project <code>Build Settings</code>: click on the project root node in the left nav, select <code>PROJECT</code> (not <code>TARGETS</code>) in the pane next to the nav, and click the <code>Build Settings</code> tab. Here, if you scroll down (or use the search/filter bar), you'll see <code>Header Search Paths</code>.</p>
 
-<div style="width:100%;text-align:center"><a href="http://2.bp.blogspot.com/-43F2OyIBD1Y/T9F1P0AfsbI/AAAAAAAAAwA/-nAn75cxZaE/s1600/ofxOpenCvProjectFile.png" style="margin-left:1em; margin-right:1em"><img alt="The ofxOpenCv build settings" height="216" width="400" src="http://2.bp.blogspot.com/-43F2OyIBD1Y/T9F1P0AfsbI/AAAAAAAAAwA/-nAn75cxZaE/s400/ofxOpenCvProjectFile.png" /></a></div>
+<figure>
+	<img alt="The ofxOpenCv build settings" src="http://2.bp.blogspot.com/-43F2OyIBD1Y/T9F1P0AfsbI/AAAAAAAAAwA/-nAn75cxZaE/s1600/ofxOpenCvProjectFile.png">
+	<figcaption>The ofxOpenCv build settings</figcaption>
+</figure>
 
 <p>As you can see, it looks like a recursive listing of every directory path that exists within the folder '<code>libs</code>', inside the <code>ofxOpenCv</code> addon folder. In fact, it's a series of strings, which together happen to make up a recursive directory listing. But you can double-click them and edit them individually (although that's not a great idea right now!)</p>
 
 <p>If you then go and take a look at the <code>oscSenderExample</code> project, which demonstrates <code>ofxOsc</code> in use, you'll notice that the <code>oscpack</code> directory structure is similarly mirrored in <code>Build Settings</code>:</p>
 
-<div style="width:100%;text-align:center"><a href="http://4.bp.blogspot.com/-vseM8SIF8X0/T9F1QLhgcYI/AAAAAAAAAwM/61nF_aBPvIE/s1600/ofxOscProjectFile.png" style="margin-left:1em; margin-right:1em"><img alt="The ofxOsc build settings" height="148" width="400" src="http://4.bp.blogspot.com/-vseM8SIF8X0/T9F1QLhgcYI/AAAAAAAAAwM/61nF_aBPvIE/s400/ofxOscProjectFile.png" /></a></div>
+<figure>
+	<img alt="The ofxOsc build settings" src="http://4.bp.blogspot.com/-vseM8SIF8X0/T9F1QLhgcYI/AAAAAAAAAwM/61nF_aBPvIE/s400/ofxOscProjectFile.png">
+	<figcaption>The ofxOsc build settings</figcaption>
+</figure>
 
 <p>So ofcourse, I copied the strings one-by-one into <code>superColliderExample</code>'s <code>Build Settings</code>, and recompiled.</p>
 
 <p><strong>Another compiler error</strong><br />This time there is only one error, and the paths seem to have been found. At first the error seems cryptic, as it only specifies intermediary compile-time files, and doesn't point to a line of human-written code:</p>
 
-<div style="width:100%;text-align:center"><a href="http://1.bp.blogspot.com/-OTeprXG_oWE/T9GJaQDYmsI/AAAAAAAAAwc/AP6-2b3cDnM/s1600/ofxDuplicateCompileError.png" style="margin-left:1em; margin-right:1em"><img alt="A compiler error" height="60" width="400" src="http://1.bp.blogspot.com/-OTeprXG_oWE/T9GJaQDYmsI/AAAAAAAAAwc/AP6-2b3cDnM/s400/ofxDuplicateCompileError.png" /></a></div>
+<figure>
+	<img alt="A compiler error" src="http://1.bp.blogspot.com/-OTeprXG_oWE/T9GJaQDYmsI/AAAAAAAAAwc/AP6-2b3cDnM/s1600/ofxDuplicateCompileError.png">
+	<figcaption>A compiler error</figcaption>
+</figure>
 
 <p>But the clue is in the error type: 'duplicate symbol'. Somewhere the compiler is trying to compile something it has already encountered before.</p>
 
 <p>Looking into the <code>ofxSuperCollider</code> addon, the author has included some example code:</p>
 
-<div style="width:100%;text-align:center"><a href="http://4.bp.blogspot.com/-jEHTZJLlWb8/T9GKMEbkQ2I/AAAAAAAAAwo/ACj8jauNH8U/s1600/ofxSuperColliderNavWindow.png" style="margin-left:1em; margin-right:1em"><img alt="The nav screen" height="200" width="190" src="http://4.bp.blogspot.com/-jEHTZJLlWb8/T9GKMEbkQ2I/AAAAAAAAAwo/ACj8jauNH8U/s200/ofxSuperColliderNavWindow.png" /></a></div>
+<figure class="smaller">
+	<img alt="The nav screen" src="http://4.bp.blogspot.com/-jEHTZJLlWb8/T9GKMEbkQ2I/AAAAAAAAAwo/ACj8jauNH8U/s1600/ofxSuperColliderNavWindow.png">
+	<figcaption>The nav screen</figcaption>
+</figure>
 
 <p>This example code is probably conflicting with the existing sample code in the root <code>src</code> folder above, because if you remove the <code>examples</code> folder, the project compiles OK.</p>
 
