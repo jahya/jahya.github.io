@@ -19,7 +19,7 @@
     <link href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css rel=stylesheet>
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel=stylesheet type=text/css>
     <link rel=canonical href=https://jahya.net/blog/projection-masking-not-projection>
-    <link rel=stylesheet href=/stylesheets/style.3495.css>
+    <link rel=stylesheet href=/stylesheets/style.11ff.css>
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -77,7 +77,19 @@
 
 <!--excerpt-ends-->
 
-<p><strong>Why mask and not map?</strong><br>First off, masking and mapping are two different things. With traditional projection-mapping you choose or sculpt a physical object you want to project light onto, and then you 'pre-warp' light to effectively coat that surface. There are a number of techniques to do this, but they generally have two things in common:</p> <ul><li>First, that you ensure the 'edges' of your projected coat of light match the edges of the object or surface, and;</li><li>Second, that you transform, or pre-warp the light to match the surface such that it appears a natural fit.</li></ul> <p>You might also apply shadows or any number of other visual effects to create the illusion of depth, but this generally entails some 'slight of hand', positioning the viewers of the work at some specific location in which the shadows appear natural.</p> <p><strong>Exploring light, not illusions</strong><br>However, beyond the spectacle something about this feels indirect. Sometimes you want to work with objects that resist illusion due to their physical shape. Or, you might want to explore the character or qualities of the light patterns you are projecting in terms of how they intersect with the world as it is. Or you might want to transform the media you are projecting in a way unrelated to it's masking.</p> <p>This can represent a 180 degree turn <span style=font-style:italic>away</span> from illusion, and into the nature of the graphics and their physical transmission. Or it can be about simply avoiding the idea of the illusion of pre-warping, by using a tool that is indifferent to that aspect of projection mapping.</p> <p>In either case, I created <a href=https://github.com/microcosm/ofxProjectionMask>ofxProjectionMask</a> for those occasions.</p> <p><strong>How does it work?</strong><br>The addon comes with a working example and instructions for how to create your own patterns. There is a pre-built user interface allowing you to create custom mask shapes. The shapes are stored on disk with every change, so they are easy to come back to later if you need to close the program.</p>
+<p><strong>Why mask and not map?</strong><br>First off, masking and mapping are two different things. With traditional projection-mapping you choose or sculpt a physical object you want to project light onto, and then you 'pre-warp' light to effectively coat that surface. There are a number of techniques to do this, but they generally have two things in common:</p>
+
+<ul><li>First, that you ensure the 'edges' of your projected coat of light match the edges of the object or surface, and;</li><li>Second, that you transform, or pre-warp the light to match the surface such that it appears a natural fit.</li></ul>
+
+<p>You might also apply shadows or any number of other visual effects to create the illusion of depth, but this generally entails some 'slight of hand', positioning the viewers of the work at some specific location in which the shadows appear natural.</p>
+
+<p><strong>Exploring light, not illusions</strong><br>However, beyond the spectacle something about this feels indirect. Sometimes you want to work with objects that resist illusion due to their physical shape. Or, you might want to explore the character or qualities of the light patterns you are projecting in terms of how they intersect with the world as it is. Or you might want to transform the media you are projecting in a way unrelated to it's masking.</p>
+
+<p>This can represent a 180 degree turn <span style=font-style:italic>away</span> from illusion, and into the nature of the graphics and their physical transmission. Or it can be about simply avoiding the idea of the illusion of pre-warping, by using a tool that is indifferent to that aspect of projection mapping.</p>
+
+<p>In either case, I created <a href=https://github.com/microcosm/ofxProjectionMask>ofxProjectionMask</a> for those occasions.</p>
+
+<p><strong>How does it work?</strong><br>The addon comes with a working example and instructions for how to create your own patterns. There is a pre-built user interface allowing you to create custom mask shapes. The shapes are stored on disk with every change, so they are easy to come back to later if you need to close the program.</p>
 
 <figure>
 	<a href=http://2.bp.blogspot.com/-1Rcb33L9NKM/VEQy91CGnJI/AAAAAAAAFrY/117mryeG9IQ/s1600/ofxProjectionMask.png>
@@ -88,7 +100,11 @@
 	</figcaption>
 </figure>
 
-<p>You will need a working knowledge of <a href="http://openframeworks.cc/">openFrameworks</a>, and basic knowledge about classes. That should be enough to get started.</p> <p>Behind the scenes, the graphics you draw into the patterns you create are stored in buffers, and masked on your behalf. But in using the addon it's really no different than writing code to go in a <code>draw()</code> function.</p> <p>Again, there are full instructions in the example project, and there is a quickstart at the top. If you would like to dig deeper, go ahead and <a href=https://github.com/microcosm/ofxProjectionMask>clone yourself a copy of the addon</a>. And do submit any issues or pull requests, i'm open to them.</p>
+<p>You will need a working knowledge of <a href="http://openframeworks.cc/">openFrameworks</a>, and basic knowledge about classes. That should be enough to get started.</p>
+
+<p>Behind the scenes, the graphics you draw into the patterns you create are stored in buffers, and masked on your behalf. But in using the addon it's really no different than writing code to go in a <code>draw()</code> function.</p>
+
+<p>Again, there are full instructions in the example project, and there is a quickstart at the top. If you would like to dig deeper, go ahead and <a href=https://github.com/microcosm/ofxProjectionMask>clone yourself a copy of the addon</a>. And do submit any issues or pull requests, i'm open to them.</p>
       </div>
     </article>
     <ul id=paging class=cta>
