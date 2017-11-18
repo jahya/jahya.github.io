@@ -33,7 +33,9 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/how-depth-sensor-works-
 
 <!--excerpt-ends-->
 
-<p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p> <p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p>
+<p>There are two other elements which must always be present for depth sense: An IR (Infra-Red) projector, and an IR camera.</p>
+
+<p>The IR projector projects a pattern of IR light which falls on objects around it like a sea of dots. We can't see the dots because the light is projected in the Infra-Red color range:</p>
 
 <figure>
 	<a href="http://4.bp.blogspot.com/-QkGEsyZVRrU/Uf0TufF07LI/AAAAAAAABSQ/NtnT06hO3E4/s1600/RGBDDots.png">
@@ -44,7 +46,9 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/how-depth-sensor-works-
 	</figcaption>
 </figure>
 
-<p>But the IR camera <span style="font-style:italic">can</span> see the dots. An IR camera is essentially the same as a regular RGB camera except that the images it captures are in the Infra-Red color range. So nothing too fancy going on there, still no actual depth sense.</p> <p>The camera sends it's video feed of this distorted dot pattern into the depth sensor's processor, and the processor <span style="font-style:italic">works out</span> depth from the displacement of the dots. On near objects the pattern is spread out, on far objects the pattern is dense.</p>
+<p>But the IR camera <span style="font-style:italic">can</span> see the dots. An IR camera is essentially the same as a regular RGB camera except that the images it captures are in the Infra-Red color range. So nothing too fancy going on there, still no actual depth sense.</p>
+
+<p>The camera sends it's video feed of this distorted dot pattern into the depth sensor's processor, and the processor <span style="font-style:italic">works out</span> depth from the displacement of the dots. On near objects the pattern is spread out, on far objects the pattern is dense.</p>
 
 <figure>
 	<img alt="The sensor internally builds a depth map" src="http://3.bp.blogspot.com/-dMUX5KyMCWY/Uf0kNnPn8-I/AAAAAAAABTI/u-cqcPRWHkg/s800/RGBDepthMap.jpg" />
