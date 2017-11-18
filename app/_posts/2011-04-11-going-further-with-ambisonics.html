@@ -16,9 +16,13 @@ blogger_id: tag:blogger.com,1999:blog-1775524623396551680.post-48057501624441244
 blogger_orig_url: http://jahyawords.blogspot.com/2011/04/going-further-with-ambisonics.html
 ---
 
-<p>Continuing on from my <a href="{{ site.url }}{% post_url 2011-04-05-introduction-to-ambisonics %}">introduction to ambisonics</a>, I now want to find out more about ambisonics by exploring an implementation in Max/MSP. Max doesn't natively have objects for ambisonics, so I googled for externals. There are a few results, but one of the better-looking ones (and as it happens, the first result) is published by a British academic named Graham Wakefield.</p>
+<p>Continuing on from my <a href="{{ site.url }}{% post_url 2011-04-05-introduction-to-ambisonics %}">introduction to ambisonics</a>, I now want to find out more about ambisonics by exploring an implementation in Max/MSP.</p>
 
-<div class="separator" style="clear: both; text-align: center; margin-bottom: 1em;"><a href="http://1.bp.blogspot.com/-v1hw6O6AE5Y/TdELeG8UxbI/AAAAAAAAAHY/0V6evbTaW2E/s1600/1128376_43162062.jpg" style="margin-left: 1em; margin-right: 1em;"><img alt="Stock photo of a mixing desk" height="185" src="http://1.bp.blogspot.com/-v1hw6O6AE5Y/TdELeG8UxbI/AAAAAAAAAHY/0V6evbTaW2E/s320/1128376_43162062.jpg" width="320" /></a></div>
+<figure>
+	<img alt="Stock photo of a mixing desk" src="http://1.bp.blogspot.com/-v1hw6O6AE5Y/TdELeG8UxbI/AAAAAAAAAHY/0V6evbTaW2E/s1600/1128376_43162062.jpg" />
+</figure>
+
+<p>Max doesn't natively have objects for ambisonics, so I googled for externals. There are a few results, but one of the better-looking ones (and as it happens, the first result) is published by a British academic named Graham Wakefield.</p>
 
 <!--excerpt-ends-->
 
@@ -32,7 +36,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/04/going-further-with-ambi
 
 <p>A little googling tells me that these variables in this context refer to the <a href="http://en.wikipedia.org/wiki/Horizontal_coordinate_system">horizontal coordinate system</a>. This is the system used for space-object observation, and satellite dish positioning. The system seems to be so named because the azimuth and elevation variables only make sense with reference to a horizontal plane (the plane labelled 'horizon' in the image). Notably, it also only makes sense with respect to a specific observer (standing at the 'origin' - the intersection of the zenith and the horizon).</p>
 
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-9QLOozHXOVM/TZ2ppa4I3hI/AAAAAAAAAFk/KCeQie1DvSw/s1600/714px-Azimuth_%2528PSF%2529.svg.png" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img style="background:white;" alt="The horizontal coordinate system" height="256" src="http://2.bp.blogspot.com/-9QLOozHXOVM/TZ2ppa4I3hI/AAAAAAAAAFk/KCeQie1DvSw/s320/714px-Azimuth_%2528PSF%2529.svg.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The horizontal coordinate system</td></tr></tbody></table>
+<figure>
+	<img alt="The horizontal coordinate system" src="http://2.bp.blogspot.com/-9QLOozHXOVM/TZ2ppa4I3hI/AAAAAAAAAFk/KCeQie1DvSw/s1600/714px-Azimuth_%2528PSF%2529.svg.png" />
+	<figcaption>The horizontal coordinate system</figcaption>
+</figure>
 
 <p>So in our ambisonic listening space, imagine you as an observer go to the origin and look due North (0 degrees). Then you turn 45 degrees East. This is the value of your Azimuth (position A in the image). You then tilt your head 45 degrees upwards. This is the value for your Elevation (position B).</p>
 
@@ -40,21 +47,33 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/04/going-further-with-ambi
 
 <p><strong>Loudspeaker Orientation - but not Position</strong><br />The <span style="font-style: italic;">ambi.decode~</span> help patch shows the horizontal coordinate system in action. Each output channel from the decoder is by convention assigned a loudspeaker position related to a platonic solid. For example with 8 channels you could choose a 2D horizontal 'ring' layout (octagonal), a 3D 'cube' layout, or a 3D 'superimposed tetrahedron' layout. The loudspeakers are then positioned in the listening space where the intersections occur between lines in the shape.</p>
 
-<div class="separator" style="clear: both; text-align: center; margin-bottom: 1em;"><a href="http://1.bp.blogspot.com/-O6HgLZAQW2A/TaKl3cOcw6I/AAAAAAAAAFo/9lIZQ-ypvmU/s1600/ambi1.png" style="margin-left: 1em; margin-right: 1em;"><img alt="A Max/MSP sample" height="139" src="http://1.bp.blogspot.com/-O6HgLZAQW2A/TaKl3cOcw6I/AAAAAAAAAFo/9lIZQ-ypvmU/s320/ambi1.png" width="320" /></a></div>
+<figure>
+	<img alt="Max/MSP sample #1" src="http://1.bp.blogspot.com/-O6HgLZAQW2A/TaKl3cOcw6I/AAAAAAAAAFo/9lIZQ-ypvmU/s1600/ambi1.png" />
+	<figcaption>Max/MSP sample #1</figcaption>
+</figure>
 
 <p>Depending on the chosen layout you can then feed decoder orientation values for each loudspeaker, as horizontal coordinate system pairs. The <span style="font-style: italic;">ambi.decode~</span> help patch has some examples:</p>
 
-<div class="separator" style="clear: both; text-align: center; margin-bottom: 1em;"><a href="http://4.bp.blogspot.com/-lyuGt9Nbe2g/TaKmWJiNjKI/AAAAAAAAAFw/Atzm2K4E7zo/s1600/ambi2.png" style="margin-left: 1em; margin-right: 1em;"><img alt="A Max/MSP Sample" src="http://4.bp.blogspot.com/-lyuGt9Nbe2g/TaKmWJiNjKI/AAAAAAAAAFw/Atzm2K4E7zo/s1600/ambi2.png" /></a></div>
+<figure>
+	<img alt="Max/MSP Sample #2" src="http://4.bp.blogspot.com/-lyuGt9Nbe2g/TaKmWJiNjKI/AAAAAAAAAFw/Atzm2K4E7zo/s1600/ambi2.png" />
+	<figcaption>Max/MSP Sample #2</figcaption>
+</figure>
 
 <p>If you sketch out the example values (as I have), you can see how they work, along with predefined positioning, to construct a listening environment:</p>
 
-<div class="separator" style="margin-bottom: 1em; clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-r98u-T_ORik/TaK9jFj8hrI/AAAAAAAAAF0/g5c9bG3TLIw/s1600/sketch.png" style="margin-left: 1em; margin-right: 1em;"><img alt="Sample values sketched along ezimuth and elevation" height="170" src="http://1.bp.blogspot.com/-r98u-T_ORik/TaK9jFj8hrI/AAAAAAAAAF0/g5c9bG3TLIw/s200/sketch.png" width="200" /></a><a href="http://3.bp.blogspot.com/-cIAHEij6Vkg/TaK9mj4fqgI/AAAAAAAAAF4/2NAjDf80vo4/s1600/sketch2.png" style="margin-left: 1em; margin-right: 1em;"><img alt="A sketch showing a listener at the center of a cube layout" height="163" src="http://3.bp.blogspot.com/-cIAHEij6Vkg/TaK9mj4fqgI/AAAAAAAAAF4/2NAjDf80vo4/s200/sketch2.png" width="200" /></a></div>
+<figure>
+	<img alt="Sample values sketched along ezimuth and elevation, and a sketch showing a listener at the center of a cube layout" src="/images/blog/ambisonics-sketch.jpg" />
+	<figcaption>Sample values sketched along ezimuth and elevation, and a sketch showing a listener at the center of a cube layout</figcaption>
+</figure>
 
 <p>Looking at the cube layout sketch, you start to really get a sense of what an ambisonic soundfield really is. It's a 2 or 3-dimensional version of stereo (stereo being 1-dimensional). This also starts to explain why only the <span style="font-style: italic;">rotate</span> transformation is included in Graham's patch. The other transformations make less sense in this context, and much more sense in the cartesian coordinate systems I'm used to.</p>
 
 <p><strong>The Sweet Spot</strong><br />Ambisonics is therefore designed with a 'sweet spot' in mind. This spot will emanate from the origin, and it's size will be dependent on the loudspeaker setup and the nature of the listening environment (outside noise etc).</p>
 
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://www.flickr.com/photos/cakelab/4308012705/" style="margin-left: auto; margin-right: auto;" title="Jelly Donut (Sufganyiot) by CakeLab NYC, on Flickr"><img alt="Jelly Donut with sweet spot in the middle" height="185" src="http://farm5.static.flickr.com/4042/4308012705_19c461a265.jpg" width="250" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Sweet-spot inspired food</td></tr></tbody></table>
+<figure>
+	<img alt="Sweet-spot inspired food" src="http://farm5.static.flickr.com/4042/4308012705_19c461a265.jpg" />
+	<figcaption>Sweet-spot inspired food (credit: <a href="http://www.flickr.com/photos/cakelab/4308012705/">Cakelab NYC</a>)</figcaption>
+</figure>
 
 <p>Looking for more information, I came across an introduction written by Florian Hollerweger, a Sound Art PhD student at Queen's University Belfast.</p>
 
@@ -68,13 +87,21 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/04/going-further-with-ambi
 
 <p><strong>What Ambisonics Can't Do</strong><br />All of the emphasis in ambisonics is on the sweet spot. It's still that thing of imagining a single listener in the middle (like my stick man in the image above), or a collection of listeners in a single space hearing the same thing. Even with all the extra layers and complexity, it's still about creating one sound (or soundspace).</p>
 
-<p><a href="http://4.bp.blogspot.com/-uHXh5koXhKk/TaLhUMUoFuI/AAAAAAAAAGE/4098PPnCO34/s1600/bird.png" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img alt="Sketch of a bird flying through a cube" height="160" src="http://4.bp.blogspot.com/-uHXh5koXhKk/TaLhUMUoFuI/AAAAAAAAAGE/4098PPnCO34/s200/bird.png" width="200" /></a>It's patently <span style="font-style: italic;">not</span> about creating a number of different sound experiences at once, with a freely moving audience, all experiencing their own personal version of the sound. And, (as a specialised version of that), it can't produce an 'environmental' type of 3D sound.</p>
+<figure>
+	<img alt="Sketch of a bird flying through a cube" src="http://4.bp.blogspot.com/-uHXh5koXhKk/TaLhUMUoFuI/AAAAAAAAAGE/4098PPnCO34/s1600/bird.png" />
+	<figcaption>Sketch of a bird flying through a cube</figcaption>
+</figure>
+
+<p>It's patently <span style="font-style: italic;">not</span> about creating a number of different sound experiences at once, with a freely moving audience, all experiencing their own personal version of the sound. And, (as a specialised version of that), it can't produce an 'environmental' type of 3D sound.</p>
 
 <p>What do I mean by that? Imagine a real physical bird flying through a 'cube' listening space, creating a fairly continuous noise as it flaps it's wings and crows. Imagine also that you are standing right next the point of the bird's entry, underneath a loudspeaker, looking toward the centre of the listening space. As the bird flies over your head you should hear the sound very loudly. The sound would then diminish for you even before the bird reached the centre of the space.</p>
 
 <p>For a listener at the centre, the sound would start quietly and get louder when the bird reached the centre. This effect is not possible with ambisonics - you could cater for the listener at the centre (the sweet spot) but not for the listener at the edge. The soundfield is focused inwards, to a core audience.</p>
 
-<div class="separator" style="clear: both; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"><a href="http://2.bp.blogspot.com/-TDBFK4Vspr0/TaLJxTiLP5I/AAAAAAAAAGA/EBHzEgrIO6U/s1600/rubix_cube_solved.jpg"><img alt="A solved Rubix cube" src="http://2.bp.blogspot.com/-TDBFK4Vspr0/TaLJxTiLP5I/AAAAAAAAAGA/EBHzEgrIO6U/s1600/rubix_cube_solved.jpg" /></a></div>
+<figure>
+	<img alt="A solved Rubix cube" src="http://2.bp.blogspot.com/-TDBFK4Vspr0/TaLJxTiLP5I/AAAAAAAAAGA/EBHzEgrIO6U/s1600/rubix_cube_solved.jpg" />
+	<figcaption>A solved Rubix cube</figcaption>
+</figure>
 
 <p>This 'environmental' effect would require a different geometry to those available in ambisonics - i.e. more of a grid than a platonic cube. Like a rubik's cube, with each intersection <span style="font-style: italic;">between each mini-cube</span> furnished with loudspeakers. Ofcourse this in turn would require a different type of decoder.</p>
 

@@ -60,6 +60,7 @@
 					margin: 0.5em 0;
 
 					img, iframe {
+						background-color: #ffffff;
 						width: 98%;
 						border: 3px solid #e8e8e8;
 					}
@@ -82,6 +83,11 @@
 
 				figure.extra-margin {
 					margin-bottom: 1.4em;
+				}
+
+				figure.smaller {
+					width: 60%;
+					margin: auto;
 				}
 			}
 

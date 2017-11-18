@@ -22,7 +22,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/12/kinecting-to-network.ht
 
 <p>Tom and Hayden have been working on grabbing Kinect data, which is basically data about human movement, and sending it out across the network. The graphics server (an Alienware laptop) reads the data from the network and uses it to render an Augmented Reality scene, which is projected up on the wall.</p>
 
-<table class="tr-caption-container" style="margin-left: 1.5em; text-align: center; float: right;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-5YL2sKF3lBg/TuD-ODcJXKI/AAAAAAAAASE/wfOdaM9fFFc/s1600/SL372350.JPG" style="clear:left; float:left;margin-right:1em; margin-right:1em"><img alt="Barney interacting with a Kinect" height="320" width="240" src="http://4.bp.blogspot.com/-5YL2sKF3lBg/TuD-ODcJXKI/AAAAAAAAASE/wfOdaM9fFFc/s320/SL372350.JPG" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Barney interacting with a Kinect</td></tr></tbody></table>
+<figure>
+	<img alt="Barney interacting with a Kinect" src="http://4.bp.blogspot.com/-5YL2sKF3lBg/TuD-ODcJXKI/AAAAAAAAASE/wfOdaM9fFFc/s1600/SL372350.JPG">
+	<figcaption>Barney interacting with a Kinect</figcaption>
+</figure>
 
 <p>The Kinect is a very cool Microsoft device which was designed for the Xbox 360. It's great for mapping realistic human activity into a 3D model in realtime. It has two cameras onboard - one infrared camera for reading depth data, one webcam-style camera for getting a regular video image matrix.</p>
 
@@ -34,7 +37,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/12/kinecting-to-network.ht
 
 <p> Tom has written a small C# program which uses the SDK to grab skeletal data points and broadcast them across the network. We are using 3 Kinects, each of which can handle 2 skeletons reliably, making a total of up to 6 actors that can interact with the installation.</p>
 
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Df7wJ0_tk2o/TuD-On2k_VI/AAAAAAAAASQ/4ZnqMRkhLYU/s1600/SL372315.JPG"><img alt="Kinect depth data" height="150" width="200" src="http://1.bp.blogspot.com/-Df7wJ0_tk2o/TuD-On2k_VI/AAAAAAAAASQ/4ZnqMRkhLYU/s200/SL372315.JPG" /></a>     <a href="http://1.bp.blogspot.com/-qrhIHD_Wjy0/TuEOF5_YaRI/AAAAAAAAASk/rCyh4yqJ2Po/s1600/SL372409_flipped.jpg"><img alt="Kinect skeletal data" height="150" src="http://1.bp.blogspot.com/-qrhIHD_Wjy0/TuEOF5_YaRI/AAAAAAAAASk/rCyh4yqJ2Po/s200/SL372409_flipped.jpg" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The Kinect SDK offers depth data and skeletal data</td></tr></tbody></table>
+<figure>
+	<img alt="The Kinect SDK offers depth data and skeletal data" src="http://1.bp.blogspot.com/-Df7wJ0_tk2o/TuD-On2k_VI/AAAAAAAAASQ/4ZnqMRkhLYU/s1600/SL372315.JPG">
+	<figcaption>The Kinect SDK offers depth data and skeletal data</figcaption>
+</figure>
 
 <p> Hayden has created an OSC server on the graphics server to pick up the skeletal data points from the network. He then set up a test person renderer (the stick man on the wall, above) in VVVV so that we can fine-tune the Kinect interaction before passing data on to the real 3D patches.</p>
 

@@ -31,19 +31,19 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/05/overtones-harmonics-and
 
 <p><strong>The two views: Oscilloscope vs. Frequency Analysis</strong><br />One of the first things in the video is a comparison of the representation of a sine wave in an oscilloscope, against a sine wave in a frequency analysis view:</p>
 
-<div style="text-align: center; margin-left:auto; margin-right:auto; width: 534px">
-
-<table class="tr-caption-container" style="float: left"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by an oscilloscope" height="130" src="http://1.bp.blogspot.com/--UhBN4bmykw/T6ccKrCJTPI/AAAAAAAAAps/aw8YNn31icE/s320/1.%2BSin%2Bwave%2B%2528oscilloscope%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Sine - Oscilloscope view</td></tr></tbody></table>
-
-<table class="tr-caption-container" style="float: right"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by frequency analysis" height="130" src="http://3.bp.blogspot.com/-0UxIcB0X0kI/T6ccHLsZhPI/AAAAAAAAApg/QcBGjxFMRNw/s320/1.%2BSin%2Bwave%2B%2528FFT%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Sine - Frequency Analysis view</td></tr></tbody></table>
-
-<div style="clear:both"></div></div>
+<figure>
+	<img alt="Sine - Oscilloscope view (left), and Sine - Frequency Analysis view (right)" src="/images/blog/sound1.jpg">
+	<figcaption>Sine - Oscilloscope view (left), and Sine - Frequency Analysis view (right)</figcaption>
+</figure>
 
 <p>This is useful, because if you are working with computer sound, these two views are like bread and butter (or perhaps rice and water, depending on your preferred diet).</p>
 
 <p><strong>Sampling and the Oscilloscope view</strong><br />In any short period of digitally recorded audio, say one second, we can store a number of samples, i.e. numbers between -1 and +1, to represent the movement of a loudspeaker during that time. We say that any given sample within our set of samples will have an amplitude value between -1 and +1.</p>
 
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"> <a href="http://2.bp.blogspot.com/-Wy2aPuLuZko/Uo--rQj_3AI/AAAAAAAAC6Y/Kmy3OWdO-dI/s500/sine-wave.png"><img alt="Just over 200 samples of a sine wave audio signal" src="http://2.bp.blogspot.com/-Wy2aPuLuZko/Uo--rQj_3AI/AAAAAAAAC6Y/Kmy3OWdO-dI/s500/sine-wave.png" width="500" height="300" /></a> </td></tr><tr><td class="tr-caption" style="text-align: center;">Just over 200 samples of a sine wave audio signal</td></tr></table>
+<figure>
+	<img alt="Just over 200 samples of a sine wave audio signal" src="http://2.bp.blogspot.com/-Wy2aPuLuZko/Uo--rQj_3AI/AAAAAAAAC6Y/Kmy3OWdO-dI/s500/sine-wave.png">
+	<figcaption>Just over 200 samples of a sine wave audio signal</figcaption>
+</figure>
 
 <p>In the Oscilloscope view, we lay out the samples over time (X axis), with earlier samples on the left and later samples on the right. We lay out the amplitude values on the Y axis, with 0 in the middle, +1 at the top, and -1 at the bottom.</p>
 
@@ -63,7 +63,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/05/overtones-harmonics-and
 
 <p>This is the idea behind <a href="http://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast-Fourier Transform</a> (FFT), and FFT is the algorithm that takes a series of samples (like the one we used to make our Oscilloscope view) and builds a graph showing which frequencies are present in those samples.</p>
 
-<table class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"> <a href="http://4.bp.blogspot.com/-QHsOukVb9-0/Uo_FH956KfI/AAAAAAAAC6o/VHaPBGLiY4o/s1600/fft-view.png"><img alt="A harmonic and two overtones in an FFT view" src="http://4.bp.blogspot.com/-QHsOukVb9-0/Uo_FH956KfI/AAAAAAAAC6o/VHaPBGLiY4o/s500/fft-view.png" width="500" height="300" /></a> </td></tr><tr><td class="tr-caption" style="text-align: center;">A harmonic and two overtones in an FFT view</td></tr></table>
+<figure>
+	<img alt="A harmonic and two overtones in an FFT view" src="http://4.bp.blogspot.com/-QHsOukVb9-0/Uo_FH956KfI/AAAAAAAAC6o/VHaPBGLiY4o/s1600/fft-view.png">
+	<figcaption>A harmonic and two overtones in an FFT view</figcaption>
+</figure>
 
 <p>In fact, the Frequency Analysis view is just the visual result of running the FFT algorithm, so you will often hear it called the FFT view. In the FFT view, volume is on the Y axis (from -96dB to 0dB) and frequency is on the X axis (depending on your readout this will plot 0 times per second all the way to 22,000 times per second - aka 0Hz to 22kHz). So you can think of the FFT view as giving you the relative amounts for each frequency in your set of samples.</p>
 
@@ -75,13 +78,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/05/overtones-harmonics-and
 
 <p>Other waves always have additional frequencies on top of the fundamental. The lowest frequency of the sound, the <em>fundamental</em>, is the basic tone on which the sound is built. Additional frequencies are called <em>overtones</em>. The fundamental and it's overtones are collectively called partials.</p>
 
-<div style="text-align: center; margin-left:auto; margin-right:auto; width: 534px">
-
-<table class="tr-caption-container" style="float: left"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by an oscilloscope" height="130" src="http://3.bp.blogspot.com/-WV5hig-4nt0/T6ceH8OyoII/AAAAAAAAAqE/dqtLE1JL9B0/s320/2.%2BSaw%2Bwave%2B%2528oscilloscope%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Saw - Oscilloscope view</td></tr></tbody></table>
-
-<table class="tr-caption-container" style="float: right"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by frequency analysis" height="130" src="http://4.bp.blogspot.com/-i6meXIzrOds/T6ceD7MbuUI/AAAAAAAAAp4/c4SaXTyhYLs/s320/2.%2BSaw%2Bwave%2B%2528FFT%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Saw - FFT view</td></tr></tbody></table>
-
-<div style="clear:both"></div></div>
+<figure>
+	<img alt="Saw - Oscilloscope view (left), and Saw - FFT view (right)" src="/images/blog/sound2.jpg">
+	<figcaption>Saw - Oscilloscope view (left), and Saw - FFT view (right)</figcaption>
+</figure>
 
 <p>Overtones can be <em>harmonic</em>, or <em>inharmonic</em>. Harmonic overtones support the fundamental frequency and keep it's tonality intact. Non-harmonic overtones result in <em>noise</em>, or sounds with ambiguous pitch.</p>
 
@@ -89,13 +89,10 @@ blogger_orig_url: http://jahyawords.blogspot.com/2012/05/overtones-harmonics-and
 
 <p><strong>Additive synthesis</strong><br />A saw wave can be constructed by combining multiple sine waves, as demonstrated in the video. For a 'classic' saw tone, the amplitude of each added harmonic should be divided by it's harmonic count, i.e. the fundamental is divided by 1, the second harmonic is divided by 2, the third by 3 and so on.</p>
 
-<div style="text-align: center; margin-left:auto; margin-right:auto; width: 534px">
-
-<table class="tr-caption-container" style="float: left"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by an oscilloscope" height="130" src="http://2.bp.blogspot.com/-vL1sThNjYW8/T6cj8ntKIoI/AAAAAAAAAqU/NtjzHrE8euc/s320/3.%2BAdditive%2B%2528second%2Bharmonic%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Fundamental + 2nd harmonic</td></tr></tbody></table>
-
-<table class="tr-caption-container" style="float: right"><tbody><tr><td style="text-align: center;"><img style="display: inline" alt="A sine wave represented by frequency analysis" height="130" src="http://3.bp.blogspot.com/-u83awTCgNvQ/T6ckAlbvYoI/AAAAAAAAAqg/ahXr7tAwtPY/s320/3.%2BAdditive%2B%2528third%2Bharmonic%2529%2Bsmall.png" width="234" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Fundamental + 2nd and 3rd harmonics</td></tr></tbody></table>
-
-<div style="clear:both"></div></div>
+<figure>
+	<img alt="Fundamental + 2nd harmonic (left), and Fundamental + 2nd and 3rd harmonics (right)" src="/images/blog/sound3.jpg">
+	<figcaption>Fundamental + 2nd harmonic (left), and Fundamental + 2nd and 3rd harmonics (right)</figcaption>
+</figure>
 
 <p>So a saw tone can be thought of as the combination of infinite harmonics, each divided by the harmonic count. Though in practice doing so would require infinite CPU power!</p>
 

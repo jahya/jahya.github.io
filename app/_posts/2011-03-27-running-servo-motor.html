@@ -30,13 +30,19 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/03/running-servo-motor.htm
 
 <p><strong>When to use a H-Bridge and when to use a TIP120?</strong><br />Tobias, and my <a href="http://www.amazon.com/Physical-Computing-Sensing-Controlling-Computers/dp/159200346X">Physical Computing book</a> all seem to suggest I need a TIP120, not an L293 H-Bridge (which is what I used when connecting the motors in the previous posts). The question is, why?</p>
 
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; text-align: right; margin-left: 1em;"><tbody><tr><td style="text-align: center;"><a href="https://lh4.googleusercontent.com/-2byTdRfKQP4/TY4BvykiE0I/AAAAAAAAAFI/s3-RitTb_bU/s1600/L293_h-bridge.JPG" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="An L293 H-Bridge" height="184" src="https://lh4.googleusercontent.com/-2byTdRfKQP4/TY4BvykiE0I/AAAAAAAAAFI/s3-RitTb_bU/s200/L293_h-bridge.JPG" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">L293 H-Bridge</td></tr></tbody></table>
+<figure>
+	<img alt="An L293 H-Bridge" src="https://lh4.googleusercontent.com/-2byTdRfKQP4/TY4BvykiE0I/AAAAAAAAAFI/s3-RitTb_bU/s1600/L293_h-bridge.JPG" />
+	<figcaption>L293 H-Bridge</figcaption>
+</figure>
 
 <p>First off, what is a H-Bridge? And what is a TIP120? Going back to the beginning of the chapter (page 97), I get a brief explanation that of what a relay is and what a transistor is. It explains that a relay is an electromagnet that flicks a switch for you whenever you send a control current to it (i.e. it's a switch that doesn't need to be flicked by a person, you can flick it automatically in your microcontroller code). It then just says that a transistor does the same thing but doesn't have any moving parts, and so is quicker - but will only work with DC.</p>
 
 <p>With some googling I find that the TIP120 and the L293 have something in common. The L293 H-Bridge <span style="font-style: italic;">contains</span> transistors, and the TIP120 <span style="font-style: italic;">is a</span> transistor. So it seems that driving powerful loads is all about transistors - using a control current to switch on and off a powerful current.</p>
 
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; text-align: right; margin-left: 1em;"><tbody><tr><td style="text-align: center;"><a href="https://lh5.googleusercontent.com/-o4QAeSke-pg/TY4BndRVLMI/AAAAAAAAAFE/JEx8oxYAeTs/s1600/tip120_transistor.JPG" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="A TIP120 transistor" height="200" src="https://lh5.googleusercontent.com/-o4QAeSke-pg/TY4BndRVLMI/AAAAAAAAAFE/JEx8oxYAeTs/s200/tip120_transistor.JPG" width="189" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">TIP120 Transistor</td></tr></tbody></table>
+<figure>
+	<img alt="TIP120 Transistor" src="https://lh5.googleusercontent.com/-o4QAeSke-pg/TY4BndRVLMI/AAAAAAAAAFE/JEx8oxYAeTs/s1600/tip120_transistor.JPG" />
+	<figcaption>TIP120 Transistor</figcaption>
+</figure>
 
 <p>So this is the information I need to really make it make sense. Both components only allow you to switch higher-load circuits on or off. A standard geared DC motor is spun one way or another by alternating the direction of DC current through it's two connections. This is what an L293 H-Bridge is useful for, as it gives you two output legs to the motor, through which you can send HIGH to one and LOW to the other and vice versa.</p>
 
