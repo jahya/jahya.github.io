@@ -22,7 +22,11 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/03/spinning-dc-motor.html
 
 <p>It's pretty cool how much easier it is nowadays to find very friendly guides for beginners. In particular I like how they use a standardised Arduino graphic instead of dry schematics, which are great for being concise but offputting to the uninitiated.</p>
 
-<div class="separator" style="clear: both; text-align: center; margin-bottom: 1em;"><a href="https://lh6.googleusercontent.com/-ysqCifwcMIU/TYhmH3a6pOI/AAAAAAAAAE4/N1IBJj-g01I/s1600/IMG_2636.JPG" style="margin-left: 1em; margin-right: 1em;"><img alt="Me, working on the circuit" height="150" src="https://lh6.googleusercontent.com/-ysqCifwcMIU/TYhmH3a6pOI/AAAAAAAAAE4/N1IBJj-g01I/s200/IMG_2636.JPG" width="200" /></a><a href="https://lh5.googleusercontent.com/-NbBMbnlf5rs/TYhmO6w55wI/AAAAAAAAAE8/KXaD0HiEJyE/s1600/IMG_2645.JPG" style="margin-left: 1em; margin-right: 1em;"><img alt="A photo of the circuit" height="150" src="https://lh5.googleusercontent.com/-NbBMbnlf5rs/TYhmO6w55wI/AAAAAAAAAE8/KXaD0HiEJyE/s200/IMG_2645.JPG" width="200" /></a></div>
+<figure>
+	<img alt="" src="https://lh6.googleusercontent.com/-ysqCifwcMIU/TYhmH3a6pOI/AAAAAAAAAE4/N1IBJj-g01I/s1600/IMG_2636.JPG">
+	<img alt="" src="https://lh5.googleusercontent.com/-NbBMbnlf5rs/TYhmO6w55wI/AAAAAAAAAE8/KXaD0HiEJyE/s1600/IMG_2645.JPG">
+	<figcaption>Building the circuit</figcaption>
+</figure>
 
 <p>The pushbutton on the top left of the breadboard is just there to change the polarity, i.e. the direction of the motor. It's essentially seperate from the rest of the circuit so we can ignore it and look to the rest.</p>
 
@@ -32,7 +36,9 @@ blogger_orig_url: http://jahyawords.blogspot.com/2011/03/spinning-dc-motor.html
 
 <p>So since the H-Bridge just has to translate 5V control signals to 5-15V motor signals, what ins and outs might it need? You might expect one leg to go to the external 5-15V power source, one to ground, one to +5V, two to the motor, and one control signal to the Arduino.</p>
 
-<div class="separator" style="clear: both; text-align: center; margin-bottom: 1em;"><a href="https://lh6.googleusercontent.com/-iWv_U0rbiRU/TYho8Zq8gjI/AAAAAAAAAFA/24A1ALFWxSg/s1600/hbridge_labpinout.jpg" style="margin-left: 1em; margin-right: 1em;"><img alt="L293 H-Bridge diagram" height="191" src="https://lh6.googleusercontent.com/-iWv_U0rbiRU/TYho8Zq8gjI/AAAAAAAAAFA/24A1ALFWxSg/s320/hbridge_labpinout.jpg" width="320" /></a></div>
+<figure>
+	<img src="https://lh6.googleusercontent.com/-iWv_U0rbiRU/TYho8Zq8gjI/AAAAAAAAAFA/24A1ALFWxSg/s1600/hbridge_labpinout.jpg">
+</figure>
 
 <p>As the diagram shows, in reality things are a little different. The two that go to the motor are there - marked as 'Motor Terminal 1' and 'Motor Terminal 2'. The one that goes to the power supply is there too, marked 'VCC2'. But there are four legs that go to ground! This is according to the schematic and also the imagery in <a href="http://itp.nyu.edu/physcomp/Labs/DCMotorControl">the guide</a>. I don't know why yet, but that's OK - four it is.</p>
 

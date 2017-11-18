@@ -20,12 +20,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>The <a href="{{ site.url }}{% post_url 2013-07-24-rgbdtoolkit-workshop-at-eyebeam %}">RGBDToolkit</a> is a fun piece of kit for tinkerers and artists, but it comes with a steep learning curve. This post will guide you through the hardest part - calibration.</p>
 
 <figure>
-	<a href="http://4.bp.blogspot.com/-nM3cO6YZ_74/UfcwQJjDAdI/AAAAAAAABQ0/0rEqHT96_Fo/s1600/RGBDToolkit1.jpg">
-		<img alt="A mounted DSLR and Kinect, and volumetric video" src="http://4.bp.blogspot.com/-nM3cO6YZ_74/UfcwQJjDAdI/AAAAAAAABQ0/0rEqHT96_Fo/s800/RGBDToolkit1.jpg" />
-	</a>
-	<figcaption>
-		A mounted DSLR and Kinect, and volumetric video
-	</figcaption>
+	<img alt="A mounted DSLR and Kinect, and volumetric video" src="http://4.bp.blogspot.com/-nM3cO6YZ_74/UfcwQJjDAdI/AAAAAAAABQ0/0rEqHT96_Fo/s1600/RGBDToolkit1.jpg" />
+	<figcaption>A mounted DSLR and Kinect, and volumetric video</figcaption>
 </figure>
 
 <p>Ultimately calibration is about combining two commercial products which weren't designed to be combined - a depth sensor (either a Kinect or an Asus Xtion), and a DSLR (or some kind of RGB camera). Although it is undeniably difficult at first, the RGBDToolkit makes this process far easier than it would be if you were starting from scratch, and it gets easier and quicker with time.</p>
@@ -37,12 +33,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p><strong>Why this tutorial?</strong><br />The RGBDToolkit guys write and maintain an <a href="http://www.rgbdtoolkit.com/tutorials.html">in-depth tutorial</a> on the website. It covers all bases and so is pretty dense. However, I found it easier to work from my own notes (made during an RGBD workshop). This post is just a write-up of those notes.</p>
 
 <figure>
-	<a href="http://4.bp.blogspot.com/-scJLiauMJz8/UfcyAeHuRpI/AAAAAAAABRE/sVcqbkuX4nU/s1600/RGBDXtion2.jpg">
-		<img alt="An Asus Xtion Pro Live, the recommended alternative to a Kinect" src="http://4.bp.blogspot.com/-scJLiauMJz8/UfcyAeHuRpI/AAAAAAAABRE/sVcqbkuX4nU/s700/RGBDXtion2.jpg" />
-	</a>
-	<figcaption>
-		An Asus Xtion Pro Live, the recommended alternative to a Kinect
-	</figcaption>
+	<img alt="An Asus Xtion Pro Live, the recommended alternative to a Kinect" src="http://4.bp.blogspot.com/-scJLiauMJz8/UfcyAeHuRpI/AAAAAAAABRE/sVcqbkuX4nU/s1600/RGBDXtion2.jpg" />
+	<figcaption>An Asus Xtion Pro Live, the recommended alternative to a Kinect</figcaption>
 </figure>
 
 <p>This article talks in terms of the kit I am using (and I recommend this where possible):</p>
@@ -72,12 +64,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p><strong>2. Mount the camera to the depth sensor</strong><br />You can buy a mount from the makers of the RGBDToolkit. At the time of this writing there is a link at the top-right corner of <a href="http://www.rgbdtoolkit.com/">the official website</a>, and they deliver anywhere.</p>
 
 <figure>
-	<a href="http://4.bp.blogspot.com/-H1NVA_Vh_HQ/UfwXgFensII/AAAAAAAABRg/KxdMffxkFV8/s1600/RGBDMount.jpg">
-		<img alt="A Kinect mount (left), and an Asus Xtion Pro mount (right)" src="http://4.bp.blogspot.com/-H1NVA_Vh_HQ/UfwXgFensII/AAAAAAAABRg/KxdMffxkFV8/s800/RGBDMount.jpg" />
-	</a>
-	<figcaption>
-		A Kinect mount (left), and an Asus Xtion Pro mount (right)
-	</figcaption>
+	<img alt="A Kinect mount (left), and an Asus Xtion Pro mount (right)" src="http://4.bp.blogspot.com/-H1NVA_Vh_HQ/UfwXgFensII/AAAAAAAABRg/KxdMffxkFV8/s1600/RGBDMount.jpg" />
+	<figcaption>A Kinect mount (left), and an Asus Xtion Pro mount (right)</figcaption>
 </figure>
 
 <p>There is a mount for the Asus Xtion and a mount for the Kinect, you need to make sure you buy the appropriate mount for your particular depth sensor.</p>
@@ -93,22 +81,16 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>Take a look at the image below. With the Xtion mount you need an extra bolt and three nuts (included in the package) to keep things in place. In case you ever need to replace these extras, it's just a 1.5" long 1/4"-20 bolt with three 1/4"-20 nuts.</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-MF-2damKEBw/UfwYUt6l_9I/AAAAAAAABRs/YCHE5nUMADo/s1600/RGBDMount2.jpg">
-		<img alt="A mounted Asus Xtion Pro and Kinect" src="http://1.bp.blogspot.com/-MF-2damKEBw/UfwYUt6l_9I/AAAAAAAABRs/YCHE5nUMADo/s800/RGBDMount2.jpg" />
-	</a>
-	<figcaption>
-		A mounted Asus Xtion Pro and Kinect
-	</figcaption>
+	<img alt="A mounted Asus Xtion Pro and Kinect" src="http://1.bp.blogspot.com/-MF-2damKEBw/UfwYUt6l_9I/AAAAAAAABRs/YCHE5nUMADo/s1600/RGBDMount2.jpg" />
+	<figcaption>A mounted Asus Xtion Pro and Kinect</figcaption>
 </figure>
 
 <p>I found it handy to have a screwdriver, an adjustable wrench, and a pair of pliers for this part.</p>
 
 <ul><li>Screw the orange RGBD mount wings to the metal box, with the four small screws<br /><span style="font-style:italic">Don't tighten these screws too much, we are going to adjust these later</span></li><li>Remove the base plate from the Xtion<br /><span style="font-style:italic">Just nudge the plastic covers with your fingernail, and then unscrew the screw you find inside</span></li><li>Place a nut in between the two screwholes of the Xtion base, hold it steady, and feed the long screw through by screwing it through the nut<br /><span style="font-style:italic">- We are not touching the RGBD mount at this stage, it is to one side<br />- Use the screwdriver and pliers to tighten the screw to the nut</span></li><li>Once that is tight, add the next nut, followed by the RGBD mount, followed by the last nut<br /><span style="font-style:italic">- Locate the depth sensor on the front of the Xtion - line up the mount so that the depth sensor is in the middle of the two orange mount wings<br />- Use the pliers to hold the middle nut still while you use the wrench to tighten the last nut - no movement should be possible on this once you are done</span></li></ul>
 
-<figure>
-	<a href="http://1.bp.blogspot.com/-I175LstcTgc/Uf1eElp53wI/AAAAAAAABTs/GWhu5LKr-EA/s1600/20130803_152731.jpg">
-		<img alt="The extra Xtion screw" src="http://1.bp.blogspot.com/-I175LstcTgc/Uf1eElp53wI/AAAAAAAABTs/GWhu5LKr-EA/s400/20130803_152731.jpg" style="max-width:400px;" />
-	</a>
+<figure class="smaller">
+	<img alt="The extra Xtion screw" src="http://1.bp.blogspot.com/-I175LstcTgc/Uf1eElp53wI/AAAAAAAABTs/GWhu5LKr-EA/s1600/20130803_152731.jpg" />
 </figure>
 
 <ul><li>Place your DSLR on the top using the quick release plate provided<br /><span style="font-style:italic">You now have a camera rig!</span></li><li>Place the camera rig on a tripod<br /><span style="font-style:italic">This is only required during calibration, you can take it off the tripod when you want to film</span></li></ul>
@@ -144,12 +126,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>Finally, note that there is a menu bar at the top of the Capture app.</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-XsO-c_PZp_c/UgCFPA5nZtI/AAAAAAAABUg/Bhk6LcTaTBg/s1600/RGBDMenu.png">
-		<img alt="Where each Step is in the top-menu" src="http://1.bp.blogspot.com/-XsO-c_PZp_c/UgCFPA5nZtI/AAAAAAAABUg/Bhk6LcTaTBg/s800/RGBDMenu.png" />
-	</a>
-	<figcaption>
-		Where each Step is in the top-menu
-	</figcaption>
+	<img alt="Where each Step is in the top-menu" src="http://1.bp.blogspot.com/-XsO-c_PZp_c/UgCFPA5nZtI/AAAAAAAABUg/Bhk6LcTaTBg/s1600/RGBDMenu.png" />
+	<figcaption>Where each Step is in the top-menu</figcaption>
 </figure>
 
 <p>As we progress through each calibration Step, we will progress through the menu as illustrated. The first two Steps are under <code>Calibrate Lenses</code> and the final Step is under <code>Calibrate Correspondence</code>.</p>
@@ -159,12 +137,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <ul><li>First, set your Working Directory<br /><span style="font-style:italic">This is where your files will be stored going forward, including the intrinsics information, your movie files - everything, so now is the time to set it</span></li><li>Press <code>Self Calibrate Depth Camera</code> at the bottom of the left-hand pane<br /><span style="font-style:italic">Aim your rig at an area of space which has plenty of 'visible information' - featuring different colors, contrasts and depths</span></li><li>It should say <code>Depth Camera Self Calibrated!</code> in green</li><li>The <code>Principal Point</code> should read as <code>320 x 240</code><br /><span style="font-style:italic">This is the center of the <code>640 x 480</code> depth sensor video stream. If you get any other numbers, repeat the process</span></li></ul>
 
 <figure>
-	<a href="http://3.bp.blogspot.com/-ZHlurBxkOpg/UgB-evByiTI/AAAAAAAABUQ/v4kYbl-MdIU/s1600/RGBDCap2.png">
-		<img alt="A successful depth sensor lens intrinsics calibration" src="http://3.bp.blogspot.com/-ZHlurBxkOpg/UgB-evByiTI/AAAAAAAABUQ/v4kYbl-MdIU/s800/RGBDCap2.png" />
-	</a>
-	<figcaption>
-		A successful depth sensor lens intrinsics calibration
-	</figcaption>
+	<img alt="A successful depth sensor lens intrinsics calibration" src="http://3.bp.blogspot.com/-ZHlurBxkOpg/UgB-evByiTI/AAAAAAAABUQ/v4kYbl-MdIU/s1600/RGBDCap2.png" />
+	<figcaption>A successful depth sensor lens intrinsics calibration</figcaption>
 </figure>
 
 <p>When the box under the left pane goes green, you can proceed to Step 2. Good - that was easy!</p>
@@ -178,12 +152,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>The shots should look a bit like this:</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-98ZOD2fBL_0/Ufw5gMPAe4I/AAAAAAAABR8/b1DtqexSzFo/s1600/RGBDCalib1.gif">
-		<img alt="The checkerboard positions cover the frame" src="http://1.bp.blogspot.com/-98ZOD2fBL_0/Ufw5gMPAe4I/AAAAAAAABR8/b1DtqexSzFo/s800/RGBDCalib1.gif" />
-	</a>
-	<figcaption>
-		The checkerboard positions cover the frame
-	</figcaption>
+	<img alt="The checkerboard positions cover the frame" src="http://1.bp.blogspot.com/-98ZOD2fBL_0/Ufw5gMPAe4I/AAAAAAAABR8/b1DtqexSzFo/s1600/RGBDCalib1.gif" />
+	<figcaption>The checkerboard positions cover the frame</figcaption>
 </figure>
 
 <p>You should now have a total of 13 videos of the checkerboard in different positions. The idea is to have thoroughly covered all areas of the frame.</p>
@@ -195,12 +165,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>When the <code>Total Error</code> is low enough, the box under the right pane will go green, and you can proceed to Step 3.</p>
 
 <figure>
-	<a href="http://4.bp.blogspot.com/-Ri5VckR7MHE/UgB8HKp-ROI/AAAAAAAABUA/rzbXmClfhEU/s1600/RGBDCap1.png">
-		<img alt="A successful DSLR lens intrinsics calibration" src="http://4.bp.blogspot.com/-Ri5VckR7MHE/UgB8HKp-ROI/AAAAAAAABUA/rzbXmClfhEU/s800/RGBDCap1.png" />
-	</a>
-	<figcaption>
-		A successful DSLR lens intrinsics calibration
-	</figcaption>
+	<img alt="A successful DSLR lens intrinsics calibration" src="http://4.bp.blogspot.com/-Ri5VckR7MHE/UgB8HKp-ROI/AAAAAAAABUA/rzbXmClfhEU/s1600/RGBDCap1.png" />
+	<figcaption>A successful DSLR lens intrinsics calibration</figcaption>
 </figure>
 
 <p>The good news is, you only have to do this once for each lens. Once you have correctly gathered the intrinsics information, it is sitting safely in your current Working Directory for reuse (you can copy &amp; paste it to a new Working Directory). Even though you may have to recalibrate the correspondence (Step 3) each time you take apart your rig, you will be able to reuse the information gathered in Steps 1 and 2.</p>
@@ -210,9 +176,7 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <ul><li>Click the <code>Calibrate Correspondence</code> top-menu item in the Capture app<br /><span class="font-style:italic">You should see a screen which looks like this:</span></li></ul>
 
 <figure>
-	<a href="http://2.bp.blogspot.com/-b5LJj_olq8Y/UgCKHOS1stI/AAAAAAAABVA/O17nTkhJ_Pk/s1600/RGBDCap4.png">
-		<img alt="The calibrate correspondence screen" src="http://2.bp.blogspot.com/-b5LJj_olq8Y/UgCKHOS1stI/AAAAAAAABVA/O17nTkhJ_Pk/s800/RGBDCap4.png" />
-	</a>
+	<img alt="The calibrate correspondence screen" src="http://2.bp.blogspot.com/-b5LJj_olq8Y/UgCKHOS1stI/AAAAAAAABVA/O17nTkhJ_Pk/s1600/RGBDCap4.png" />
 </figure>
 
 <p>To calibrate correspondence, we need to match up three images:</p>
@@ -224,10 +188,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>We can see in the Capture app that there are slots for each of these three images, and they are organized into columns so that we can take images of the checkerboard at different distances from the rig. Taking images at different depths ensures that the overlay is correct when the items we shoot move from the near range to the far range.</p>
 
 <figure>
-	<img alt="The three columns" src="http://2.bp.blogspot.com/-qLtYxVl7uP8/Uf0nexva9vI/AAAAAAAABTY/GqefofXrbCo/s800/RGBDCalib3.png" />
-	<figcaption>
-		The three columns
-	</figcaption>
+	<img alt="The three columns" src="http://2.bp.blogspot.com/-qLtYxVl7uP8/Uf0nexva9vI/AAAAAAAABTY/GqefofXrbCo/s1600/RGBDCalib3.png" />
+	<figcaption>The three columns</figcaption>
 </figure>
 
 <p>As we start taking pictures going forward, the rows will start to appear. If we ever want to delete a row, just use the <code>[x]</code> on it's right-hand side.</p>
@@ -237,17 +199,13 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <ul><li>Place the checkerboard so that it fills up a large part of the frame</li><li>Focus your DSLR onto the checkerboard</li><li>Click the depth map column<br /><span style="font-style:italic">There is a brief pause while the picture is taken</span></li><li>Place a piece of tissue over the infra-red projector on the depth sensor<br /><span style="font-style:italic">The tissue diffuses the infra-red dots so that the software can make out the edges on the checkerboard</span></li></ul>
 
 <figure>
-	<a href="http://3.bp.blogspot.com/-dCX9eiQ8oes/UgCQVlvMjkI/AAAAAAAABVY/wLYSinQ34zI/s1600/RGBDDiffuse.png">
-		<img alt="Dots should appear over the checkerboard" src="http://3.bp.blogspot.com/-dCX9eiQ8oes/UgCQVlvMjkI/AAAAAAAABVY/wLYSinQ34zI/s800/RGBDDiffuse.png" />
-	</a>
+	<img alt="Dots should appear over the checkerboard" src="http://3.bp.blogspot.com/-dCX9eiQ8oes/UgCQVlvMjkI/AAAAAAAABVY/wLYSinQ34zI/s1600/RGBDDiffuse.png" />
 </figure>
 
 <ul><li>Red dots should appear over the checkerboard<br /><span style="font-style:italic">- If they don't, you may have an issue with glare, try re-angling the checkerboard<br />- It may also be that the tissue paper you have used is too thick or the light in the room not bright enough. Try variations.</span></li></ul>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-yYEtHXY5sRk/UgCQTOxnHqI/AAAAAAAABVQ/c4YZDhnqivI/s1600/RGBDDots.png">
-		<img alt="Dots should appear over the checkerboard" src="http://1.bp.blogspot.com/-yYEtHXY5sRk/UgCQTOxnHqI/AAAAAAAABVQ/c4YZDhnqivI/s800/RGBDDots.png" />
-	</a>
+	<img alt="Dots should appear over the checkerboard" src="http://1.bp.blogspot.com/-yYEtHXY5sRk/UgCQTOxnHqI/AAAAAAAABVQ/c4YZDhnqivI/s1600/RGBDDots.png" />
 </figure>
 
 <ul><li>While the red dots are showing, click the infra-red camera column<br /><span style="font-style:italic">There is a brief pause while the picture is taken. A new row will appear in the software, and the DSLR column will remain blank. This is normal, later we will drag the captured DSLR shots into these empty spaces</span></li><li>Remove the tissue</li><li>Take a 1-3 second video with your DSLR<br /><span style="font-style:italic">Don't forget this!</span></li></ul>
@@ -265,12 +223,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2013/08/rgbdtoolkit-calibration
 <p>If you have a good set of dots in the places where you would expect them to be, congratulations! You have a good calibration.</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-o_GKF3zJ_ys/UgCVL-4SQFI/AAAAAAAABVo/j860MuWdnp0/s1600/RGBDCap5.png">
-		<img alt="A successfully calibrated RGBDToolkit rig" src="http://1.bp.blogspot.com/-o_GKF3zJ_ys/UgCVL-4SQFI/AAAAAAAABVo/j860MuWdnp0/s800/RGBDCap5.png" />
-	</a>
-	<figcaption>
-		A successfully calibrated RGBDToolkit rig
-	</figcaption>
+	<img alt="A successfully calibrated RGBDToolkit rig" src="http://1.bp.blogspot.com/-o_GKF3zJ_ys/UgCVL-4SQFI/AAAAAAAABVo/j860MuWdnp0/s1600/RGBDCap5.png" />
+	<figcaption>A successfully calibrated RGBDToolkit rig</figcaption>
 </figure>
 
 <p>If your screen looks like something like this, you are now ready for the production phase - you are ready to <a href="https://vimeo.com/44240337">record</a>!</p>

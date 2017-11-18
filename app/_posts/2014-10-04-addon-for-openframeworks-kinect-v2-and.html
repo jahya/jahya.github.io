@@ -24,9 +24,7 @@ blogger_orig_url: http://jahyawords.blogspot.com/2014/10/addon-for-openframework
 <p>The <a href="http://www.microsoft.com/en-us/kinectforwindows/purchase/default.aspx">Kinect V2 depth sensor</a> is now widely available, but bound to Windows. I've <a href="https://github.com/microcosm/ofxKinectV2-OSC">written an addon</a> which simplifies getting Kinect V2 skeletal data onto a Mac, so you can manipulate it in openFrameworks.</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-kZMUmluha3o/VDA8aUxGWfI/AAAAAAAAFqk/xDq3R5AEPPc/s1600/screenshot-win.png">
-		<img alt="A new Kinect V2 sensor" src="http://1.bp.blogspot.com/-a8mcD9T1I6s/VDA0QwTjYVI/AAAAAAAAFqU/ni-nXPCDOwU/s800/kinect.jpg" />
-	</a>
+	<img alt="A new Kinect V2 sensor" src="http://1.bp.blogspot.com/-a8mcD9T1I6s/VDA0QwTjYVI/AAAAAAAAFqU/ni-nXPCDOwU/s1600/kinect.jpg" />
 </figure>
 
 <p>You'll need two computers - a Windows and a Mac - and a network connection between them. You won't have to write any code in Windows, just run a utility.</p>
@@ -50,12 +48,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2014/10/addon-for-openframework
 <p>It sends all information every frame, so you don't have to configure it or edit code.</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-kZMUmluha3o/VDA8aUxGWfI/AAAAAAAAFqk/xDq3R5AEPPc/s1600/screenshot-win.png">
-		<img alt="The broadcasting utility running on Windows" src="http://1.bp.blogspot.com/-kZMUmluha3o/VDA8aUxGWfI/AAAAAAAAFqk/xDq3R5AEPPc/s800/screenshot-win.png" />
-	</a>
-	<figcaption class="caption">
-		The <a href="https://github.com/microcosm/KinectV2-OSC">broadcasting utility</a> running on Windows
-	</figcaption>
+	<img alt="The broadcasting utility running on Windows" src="http://1.bp.blogspot.com/-kZMUmluha3o/VDA8aUxGWfI/AAAAAAAAFqk/xDq3R5AEPPc/s1600/screenshot-win.png" />
+	<figcaption class="caption">The <a href="https://github.com/microcosm/KinectV2-OSC">broadcasting utility</a> running on Windows</figcaption>
 </figure>
 
 <p>Over on the Mac, you can clone <a href="https://github.com/microcosm/ofxKinectV2-OSC">ofxKinectV2-OSC</a> into your <code>addons</code> directory, and it will read in all the OSC data and use it to populate an object model. You can then query that object model as you wish:</p>
@@ -67,12 +61,8 @@ blogger_orig_url: http://jahyawords.blogspot.com/2014/10/addon-for-openframework
 <p><strong>Using the included example code</strong><br />The addon comes with <a href="https://github.com/microcosm/ofxKinectV2-OSC/tree/master/example/src">example code</a>, and a <code>BodyRenderer</code> class you can edit to draw the skeleton how you like:</p>
 
 <figure>
-	<a href="http://1.bp.blogspot.com/-Zs8VVJEEBAI/VDA8aWy4WiI/AAAAAAAAFqo/5E59eKoPwZs/s1600/screenshot-mac.png">
-		<img alt="The addon example code running on Mac" src="http://1.bp.blogspot.com/-Zs8VVJEEBAI/VDA8aWy4WiI/AAAAAAAAFqo/5E59eKoPwZs/s800/screenshot-mac.png" />
-	</a>
-	<figcaption class="caption">
-		The addon example code running on Mac
-	</figcaption>
+	<img alt="The addon example code running on Mac" src="http://1.bp.blogspot.com/-Zs8VVJEEBAI/VDA8aWy4WiI/AAAAAAAAFqo/5E59eKoPwZs/s1600/screenshot-mac.png" />
+	<figcaption class="caption">The addon example code running on Mac</figcaption>
 </figure>
 
 <p>This screengrab shows the skeleton being rendered in openFrameworks, with confident bones in thick white and less-confident bones in thin gray. One hand is open (green), and the other is closed (red).</p>
