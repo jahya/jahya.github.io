@@ -87,9 +87,7 @@
 
 <figure>
 	<img alt="Commonly, a DB will need to be directly accesible from multiple applications" src=http://4.bp.blogspot.com/-azsqFssHSio/Ub5LQ7XGNhI/AAAAAAAABNI/ArnYiaU9AvA/s800/nosql-impedence1.png> 
-	<figcaption>
-		Commonly, a DB will need to be directly accesible from multiple applications
-	</figcaption>
+	<figcaption>Commonly, a DB will need to be directly accesible from multiple applications</figcaption>
 </figure>
 
 <p>Object DBs use <a href=http://en.wikipedia.org/wiki/Object_Query_Language>much simpler SQL</a> for data access, and it is incompatible with the <code>JOIN</code>-heavy SQL used in Relational DBs.</p>
@@ -108,9 +106,7 @@
 
 <figure>
 	<img alt="Common NoSQL implementations" src=http://1.bp.blogspot.com/-TEe81HD9tkQ/Ub5eLpEwBSI/AAAAAAAABNY/52SO5d04rAI/s800/nosql-ecosystem.png> 
-	<figcaption>
-		Common NoSQL implementations
-	</figcaption>
+	<figcaption>Common NoSQL implementations</figcaption>
 </figure>
 
 <p>Things are missing here, and at the end one of the audience members asks about different types. Martin gives a very interesting answer illustrating what he thinks might happen with respect to the future of DBs. But for the purposes of this introductory presentation, these are the types we are discussing.</p>
@@ -121,9 +117,7 @@
 
 <figure>
 	<img alt="They all use keys" src=http://3.bp.blogspot.com/-gPGwyBPrYWY/Ub5kfkepB8I/AAAAAAAABNo/Eyl0mD0BMk8/s900/nosql-keys.png> 
-	<figcaption>
-		They all use keys to access an aggregate
-	</figcaption>
+	<figcaption>They all use keys to access an aggregate</figcaption>
 </figure>
 
 <p>Note the trade-off - what if you don't want to access that data as an aggregate? What if you want to know the average age across all <code>Customer</code> records? Now you have to access loads of aggregates across loads of distributed nodes.</p>
@@ -138,9 +132,7 @@
 
 <figure>
 	<img alt="Graph databases are ACID" src=http://4.bp.blogspot.com/-awTaJlHeHVQ/Ub5t1J42qEI/AAAAAAAABN4/j6uNQzLtBxA/s800/nosql-base-acid.png> 
-	<figcaption>
-		Graph databases are ACID
-	</figcaption>
+	<figcaption>Graph databases are ACID</figcaption>
 </figure>
 
 <p>Part of that BASE acronym may be unfamiliar to you - what is Eventual Consistency? To get an idea, this article contains a great <a href="http://ksat.me/a-plain-english-introduction-to-cap-theorem/">Introduction to the CAP theorem, in Plain English</a>. Explanation by analogy is one of my favorites!</p>
@@ -159,9 +151,7 @@
 
 <figure>
 	<img alt="RESTful Web services make all the difference" src=http://2.bp.blogspot.com/-W-LEPtVImwk/Ub5zrUpJPTI/AAAAAAAABOI/D4h6-lEMnnE/s560/nosql-webservices.png> 
-	<figcaption>
-		RESTful Web services make all the difference
-	</figcaption>
+	<figcaption>RESTful Web services make all the difference</figcaption>
 </figure>
 
 <p>The rise of the popularity of RESTful web services has meant that there is no longer a need for systems to integrate with databases directly. A datastore can be exposed via a standardized REST interface, abstracting the underlying storage implementation.</p>

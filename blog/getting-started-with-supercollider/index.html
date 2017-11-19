@@ -79,7 +79,10 @@
 
 <p>The job of scsynth (the server) is to handle all the sound generators, filters, and waveforms it has been told about and to calculate values to send to the sound card.</p>
 
-<table class=tr-caption-container style="text-align: center; margin-left: auto; margin-right:auto"><tbody><tr><td style="text-align: center"><img alt="SuperCollider. Your laptop. You" height=375 width=500 src=http://3.bp.blogspot.com/-hcpoau68qNY/UapbPbmSztI/AAAAAAAABMA/F9hsSGLBNeE/s500/GettingStartedWithSuperCollider.png></td></tr><tr><td class=tr-caption style="text-align: center"><span style="font-size: small; text-align: left">SuperCollider. Your laptop. You</span></td></tr></tbody></table>
+<figure>
+	<img alt="SuperCollider. Your laptop. You" src=http://3.bp.blogspot.com/-hcpoau68qNY/UapbPbmSztI/AAAAAAAABMA/F9hsSGLBNeE/s500/GettingStartedWithSuperCollider.png>
+	<figcaption>SuperCollider. Your laptop. You</figcaption>
+</figure>
 
 <p>The job of sclang (the client) is to interpret the commands you give as written code, and to send instructions to scsynth on your behalf. The objects you instantiate and manipulate from sclang are abstractions, each of which is designed to allow you to manipulate an actual sound-generating object on scsynth.</p>
 
@@ -91,7 +94,10 @@
 
 <p><strong>Why write code - can't I use a GUI?</strong><br>Coding in an OO client like sclang means you have full flexibility to build (and screw up) anything you want. No catches, no restrictions. You can literally build as many virtual synthesizers as your CPU can handle, and connect them in a seemingly infinite variety of ways. A GUI, though easier to learn, wouldn't be able to provide anything like that flexibility.</p>
 
-<table class=tr-caption-container style="text-align: center; margin-left: auto; margin-right:auto"><tbody><tr><td style="text-align: center"><img alt="Multiple clients, same server" height=375 width=500 src=http://2.bp.blogspot.com/-IFobycBXaps/Uapn9V5lLvI/AAAAAAAABMQ/mRDgqF3zSe4/s500/GettingStartedWithSuperCollider2.png></td></tr><tr><td class=tr-caption style="text-align: center"><span style="font-size: small; text-align: left">Multiple clients, same server</span></td></tr></tbody></table>
+<figure>
+	<img alt="Multiple clients, same server" src=http://2.bp.blogspot.com/-IFobycBXaps/Uapn9V5lLvI/AAAAAAAABMQ/mRDgqF3zSe4/s500/GettingStartedWithSuperCollider2.png>
+	<figcaption>Multiple clients, same server</figcaption>
+</figure>
 
 <p>However, because scsynth will accept any communications via OSC, you could technically use any client you want. Anything which understands how to generate OSC commands for scsynth can act as a client -- sclang is just the one that comes bundled in the SuperCollider application (<a href=http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/ServerArchitecture/ClientVsServer.html>more on that here</a>). People write their own GUIs to help them interact with scsynth in different ways. The thing to remember is that when you start using a GUI, there is inevitably a restricted subset of things you can use it to do.</p>
 
@@ -99,9 +105,15 @@
 
 <p>I am going to put you onto some learning resources below, but this gives you a quick taste:</p>
 
-<table class=tr-caption-container style="text-align: center; margin-left: auto; margin-right:auto"><tbody><tr><td style="text-align: center"><a href=http://4.bp.blogspot.com/-cJMSPEVGuqQ/Uapup8qBYaI/AAAAAAAABMg/IRzgT0BcQJE/s1600/supercollider-code.png><img alt="A quick bit of code" src=http://4.bp.blogspot.com/-cJMSPEVGuqQ/Uapup8qBYaI/AAAAAAAABMg/IRzgT0BcQJE/s320/supercollider-code.png></a></td></tr><tr><td class=tr-caption style="text-align: center"><span style="font-size: small; text-align: left">A quick bit of code</span></td></tr></tbody></table>
+<figure class=smaller>
+	<img alt="A quick bit of code" src=http://4.bp.blogspot.com/-cJMSPEVGuqQ/Uapup8qBYaI/AAAAAAAABMg/IRzgT0BcQJE/s1600/supercollider-code.png>
+	<figcaption>A quick bit of code</figcaption>
+</figure>
 
-<table class=tr-caption-container style="text-align: center; margin-left: auto; margin-right:auto"><tbody><tr><td style="text-align: center"><a href=http://4.bp.blogspot.com/-83kRHuuRV3w/Uapup1R2DBI/AAAAAAAABMk/_3t6WRC6k4Q/s1600/supercollider-plot.png><img alt="The visual output" src=http://4.bp.blogspot.com/-83kRHuuRV3w/Uapup1R2DBI/AAAAAAAABMk/_3t6WRC6k4Q/s320/supercollider-plot.png></a></td></tr><tr><td class=tr-caption style="text-align: center"><span style="font-size: small; text-align: left">The visual output</span></td></tr></tbody></table>
+<figure class=smaller>
+	<img alt="The visual output" src=http://4.bp.blogspot.com/-83kRHuuRV3w/Uapup1R2DBI/AAAAAAAABMk/_3t6WRC6k4Q/s1600/supercollider-plot.png>
+	<figcaption>The visual output</figcaption>
+</figure>
 
 <p>Luckily, SC is designed to be really simple to use, once you understand some basics. It aims to be expressive, polymorphic, user-friendly and compact. Coding is quick, rather than strict -- the framework is littered with static object references for quick object instantiations, uses short-form naming conventions for class methods, and is syntactically minimal.</p>
 
@@ -109,7 +121,10 @@
 
 <p>Please note - this is NOT how you would normally write SC code! So don't be put off by the short-hand they used to get the code inside the tweets!</p>
 
-<table class=tr-caption-container style="float:right; text-align: center; margin-left: 2em"><tbody><tr><td style="text-align: center"><a href=http://3.bp.blogspot.com/-7YfQEtiFiGM/T75OEUPZ-uI/AAAAAAAAAr0/k1gZrekke0M/s1600/thor.png style="margin-left: auto; margin-right: auto"><img alt="Thor Magnusson at SC2012" height=320 src=http://3.bp.blogspot.com/-7YfQEtiFiGM/T75OEUPZ-uI/AAAAAAAAAr0/k1gZrekke0M/s320/thor.png width=212></a></td></tr><tr><td class=tr-caption style="text-align: center"><span style="font-size: small; text-align: left"><a href="http://ixi-audio.net/thor/">Thor Magnusson</a> at SC2012<br>(Photo: <a href="http://www.flickr.com/photos/stevewelburn/">Steve Welburn</a>)</span></td></tr></tbody></table>
+<figure>
+	<img alt="Thor Magnusson at SC2012" src=http://3.bp.blogspot.com/-7YfQEtiFiGM/T75OEUPZ-uI/AAAAAAAAAr0/k1gZrekke0M/s1600/thor.png>
+	<figcaption><a href="http://ixi-audio.net/thor/">Thor Magnusson</a> at SC2012 (credit: <a href="http://www.flickr.com/photos/stevewelburn/">Steve Welburn</a>)</figcaption>
+</figure>
 
 <p><strong>Getting started</strong><br>In a moment I will point you to the best guide to help you get started. But first off, I want to point out this SC-bundled <a href=http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/Help.html>help landing page</a>. You'll want to come back to that link again and again once you get underway.</p>
 
