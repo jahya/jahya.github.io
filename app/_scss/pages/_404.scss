@@ -1,4 +1,6 @@
-#about {
+#not-found {
+	background-color: #f6f6f6;
+
 	#image {
 		position: relative;
 
@@ -16,12 +18,14 @@
 	}
 
 	main {
-		a:link, a:visited {
-			text-decoration: none;
-		}
+		min-height: 600px;
+	}
+}
 
-		a:hover, a:active {
-			text-decoration: underline;
+@media (max-width: 899px) {
+	#not-found {
+		main {
+			min-height: 0;
 		}
 	}
 }
