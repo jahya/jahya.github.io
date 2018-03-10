@@ -73,6 +73,15 @@
 				padding-top: 2.3em;
 			}
 		}
+
+		.tab-parent {
+			position: relative;
+		}
+
+		.tab {
+			position: absolute;
+			left: 5em;
+		}
 	}
 }
 
