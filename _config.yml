@@ -40,5 +40,6 @@ markdown: kramdown
 #     coderay_bold_every: 10
 #     coderay_css: style
 
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-paginate
