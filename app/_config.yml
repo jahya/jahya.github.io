@@ -51,7 +51,6 @@ defaults:
     values:
       layout    : work
       bodyid    : works
-      bodyclass : content
 
 plugins:
   - jekyll-sitemap
