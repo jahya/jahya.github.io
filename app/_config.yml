@@ -40,6 +40,19 @@ markdown: kramdown
 #     coderay_bold_every: 10
 #     coderay_css: style
 
+collections:
+  works:
+    output: true
+    permalink: /works/:title/
+
+defaults:
+  - scope:
+      type: works
+    values:
+      layout    : work
+      bodyid    : works
+      bodyclass : content
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
