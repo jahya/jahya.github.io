@@ -47,6 +47,11 @@ collections:
 
 defaults:
   - scope:
+      type: posts
+    values:
+      layout    : post
+      bodyid    : blog
+  - scope:
       type: works
     values:
       layout    : work
