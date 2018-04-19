@@ -44,7 +44,7 @@ h2 {
 }
 
 main {
-	ul, ol, p, pre {
+	ul, ol, p, pre, td {
 		font-size: $largest_font;
 		letter-spacing: $large_spacing;
 		line-height: $small_lineheight;
@@ -196,7 +196,7 @@ main {
 
 @media (max-width: 1299px) {
 	main {
-		ul, ol, p, pre {
+		ul, ol, p, pre, td {
 			font-size: $large_font;
 		}
 	}
@@ -230,7 +230,7 @@ main {
 	}
 
 	main {
-		ul, ol, p, pre {
+		ul, ol, p, pre, td {
 			font-size: $medium_font;
 			line-height: $large_lineheight;
 			padding: 0.6em 0;
@@ -267,7 +267,7 @@ main {
 
 @media (max-width: 499px) {
 	main {
-		ul, ol, p, pre {
+		ul, ol, p, pre, td {
 			font-size: $medium_font;
 			letter-spacing: $small_spacing;
 			line-height: $small_lineheight;

@@ -74,13 +74,29 @@
 			}
 		}
 
-		.tab-parent {
-			position: relative;
-		}
+		table {
+			margin-top: 1.15em;
 
-		.tab {
-			position: absolute;
-			left: 5em;
+			tr {
+				td {
+					padding: 0;
+
+					ul {
+						font-size: inherit;
+						list-style: none;
+						padding: 0 0 1em 0;
+
+						li {
+							padding-bottom: 0.65em;
+							line-height: 1.15em;
+						}
+					}
+				}
+
+				td.label {
+					padding-right: 1.2em;
+				}
+			}
 		}
 	}
 }
