@@ -5,6 +5,7 @@ medium      : Installation
 image       : /images/works/insulin-700.jpg
 description : "Insulin: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 145707591
+feature-id  : 4
 
 exhibitions:
  - "HarvestWorks, New York, 2016"

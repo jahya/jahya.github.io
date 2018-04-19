@@ -5,6 +5,7 @@ medium      : Interactive Installation
 image       : /images/works/sound-control-700.jpg
 description : "Sound Control: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 112347647
+feature-id  : 7
 
 exhibitions:
  - "NYC Media Lab, New York, 2014"

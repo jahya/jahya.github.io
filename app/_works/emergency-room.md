@@ -6,6 +6,7 @@ image       : /images/works/emergency-room-700.jpg
 description : "Emergency Room: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 172770145
 video-note  : "Video by: Kevin Barry"
+feature-id  : 1
 
 exhibitions:
  - "HarvestWorks, New York, 2016"

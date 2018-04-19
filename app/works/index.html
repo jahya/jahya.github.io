@@ -11,94 +11,20 @@ description: "Portfolio of works by New York-based artist Andrew McWilliams."
 			<h1 class="hide">Works</h1>
 		</header>
 		<ul>
-			<li>
-				<a href="/works/emergency-room">
-					<figure>
-						<img src="/images/works/emergency-room-700.jpg" />
-						<figcaption class="label">
-							<em>Emergency Room</em>, 2016<br />
-							Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/existential">
-					<figure>
-						<img src="/images/works/existential-700.jpg" />
-						<figcaption class="label">
-							<em>Existential</em>, 2013<br />
-							Video
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/long">
-					<figure>
-						<img src="/images/works/long-700.jpg" />
-						<figcaption class="label">
-							<em>Long</em>, 2012<br />
-							Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/insulin">
-					<figure>
-						<img src="/images/works/insulin-700.jpg" />
-						<figcaption class="label">
-							<em>Insulin</em>, 2015<br />
-							Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/gravity">
-					<figure>
-						<img src="/images/works/gravity-700.jpg" />
-						<figcaption class="label">
-							<em>Gravity</em>, 2011<br />
-							Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/measure">
-					<figure>
-						<img src="/images/works/measure-700.jpg" />
-						<figcaption class="label">
-							<em>Measure</em>, 2011<br />
-							Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/sound-control">
-					<figure>
-						<img src="/images/works/sound-control-700.jpg" />
-						<figcaption class="label">
-							<em>Sound Control</em>, 2014<br />
-							Interactive Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="/works/reflections">
-					<figure>
-						<img src="/images/works/reflections-700.jpg" />
-						<figcaption class="label">
-							<em>Reflections</em>, 2011<br />
-							Sound Installation
-						</figcaption>
-					</figure>
-				</a>
-			</li>
+			{% for feature in (1..8) %}
+				{% assign work = site.works | where:"feature-id", feature  | first %}
+				<li>
+					<a href="{{ work.url }}">
+						<figure>
+							<img src="{{ work.image }}" />
+							<figcaption class="label">
+								<em>{{ work.title }}</em>, {{ work.year }}<br />
+								{{ work.medium }}
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			{% endfor %}
 		</ul>
 	</article>
 </main>

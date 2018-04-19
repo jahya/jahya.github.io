@@ -5,6 +5,7 @@ medium      : Video
 image       : /images/works/existential-700.jpg
 description : "Existential: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 73437198
+feature-id  : 2
 
 exhibitions:
  - "CultureHub, New York, 2013"

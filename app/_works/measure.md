@@ -5,6 +5,7 @@ medium      : Installation
 image       : /images/works/measure-700.jpg
 description : "Measure: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 31937746
+feature-id  : 6
 
 exhibitions:
  - "Alpha-Ville Festival of Post-Digital Culture, London, 2011"
