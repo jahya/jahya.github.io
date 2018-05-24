@@ -10,6 +10,4 @@ feature-id  : 7
 exhibitions:
  - "NYC Media Lab, New York, 2014"
 ---
-<p>
-	<span class="title">Sound Control</span> is an experiment in the modulation of synthetic sound via a full-body interface. Human movement is interpreted as adjustments to a series of software synthesizers, which play back continuously with modulated parameters.
-</p>
+_Sound Control_ is an experiment in the modulation of synthetic sound via a full-body interface. Human movement is interpreted as adjustments to a series of software synthesizers, which play back continuously with modulated parameters.
