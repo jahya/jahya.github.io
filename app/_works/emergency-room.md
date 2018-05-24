@@ -13,14 +13,33 @@ exhibitions:
  - "Human Impacts Institute, New York, 2017"
  - "SPRING/BREAK Art Fair, New York, 2018"
 ---
-_Emergency Room_ is an immersive media installation comparing the way we respond to personal medical conditions with the way have responded to climate change. Twelve screens buzz and flicker with images of activism and environmental chaos, accompanied by a beeping heart-rate monitor.
+_Emergency Room_ is an immersive media installation examining the global climate crisis through the lens of a personal health crisis.
 
-Despite generally acknowledging the massive and devastating consequences of climate change, we consistently deprioritize it. As such, our collective action in response to the condition is inadequate, and we are locking in its worst outcomes.
+Video screens buzz and flicker with images of environmental chaos, activism and effects on New Yorkers from extreme weather events such as Superstorm Sandy. The room is flooded deep red, and the persistent noise of a man struggling to breath. The screens are accompanied by a beeping heart-rate monitor.
 
-_Emergency Room_ features images of activists attempting to build momentum for change, alongside images of observed effects such as rising sea levels and increasing superstorms. Alongside these are images of individuals already dealing with the effects of climate change.
+Climate change has so far proven too broad to grip a majority of people and drive them to action on a scale required to avoid catastrophe. Despite generally acknowledging the massive and devastating consequences of climate change, most people consistently deprioritize it for near-term issues.
+
+Having been diagnosed with Type 1 Diabetes in adulthood, I have a personal sense of the feeling of dealing with chronic illness, and of the striving to meet the challenge and achieve good health. It is clear to me that our collective action in response to climate change is grossly inadequate, and we are locking in its worst outcomes.
+
+<figure class="shots">
+	<figcaption>Emergency Room at Human Impacts Institute, New York, 2017</figcaption>
+	<img src="/images/works/emergency-room/emergency-room-hii-1.jpg" alt="Emergency Room at Human Impacts Institute, New York, 2017" />
+	<img src="/images/works/emergency-room/emergency-room-hii-2.jpg" alt="Emergency Room at Human Impacts Institute, New York, 2017" />
+	<img src="/images/works/emergency-room/emergency-room-hii-3.jpg" alt="Emergency Room at Human Impacts Institute, New York, 2017" />
+	<img src="/images/works/emergency-room/emergency-room-hii-4.jpg" alt="Emergency Room at Human Impacts Institute, New York, 2017" />
+	<img src="/images/works/emergency-room/emergency-room-hii-5.jpg" alt="Emergency Room at Human Impacts Institute, New York, 2017" />
+</figure>
+
+<figure class="shots">
+	<figcaption>Emergency Room at SPRING/BREAK Art Show, New York, 2018</figcaption>
+	<img src="/images/works/emergency-room/emergency-room-sb-1.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
+	<img src="/images/works/emergency-room/emergency-room-sb-2.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
+	<img src="/images/works/emergency-room/emergency-room-sb-3.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
+	<img src="/images/works/emergency-room/emergency-room-sb-4.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
+</figure>
 
 ## Supported by
-This installation was created with support from [ThoughtWorks](https://www.thoughtworks.com/) and [HarvestWorks](http://harvestworks.org).
+This installation was created with support from [ThoughtWorks](https://www.thoughtworks.com/) and [Harvestworks](http://harvestworks.org).
 
 ## Credits
 

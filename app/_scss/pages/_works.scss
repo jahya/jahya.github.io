@@ -36,7 +36,7 @@
 		}
 	}
 
-	main {
+	main.detail {
 		figure {
 			width: 66%;
 			max-width: 61em;
@@ -66,6 +66,20 @@
 
 				ul, ol {
 					margin-left: 1.1em;
+				}
+
+				figure.shots {
+					figcaption {
+						margin: 2em 0 1em 0;
+						text-align: center;
+						font-size: 1.3em;
+						font-weight: 400;
+					}
+
+					img {
+						margin: 0.4em 0;
+						border: 2px solid #e8e8e8;
+					}
 				}
 			}
 
@@ -103,7 +117,7 @@
 
 @media (max-width: 1479px) {
 	#works {
-		main figure {
+		main.detail figure {
 			width: 55em;
 		}
 	}
@@ -111,7 +125,7 @@
 
 @media (max-width: 1099px) {
 	#works {
-		main figure {
+		main.detail figure {
 			width: 96%;
 
 			.description img {
@@ -135,7 +149,7 @@
 			}
 		}
 
-		main figure {
+		main.detail figure {
 			width: 100%;
 		}
 	}
