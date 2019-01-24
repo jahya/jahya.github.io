@@ -11,7 +11,7 @@ feature-id  : 2
 exhibitions:
  - "HarvestWorks, New York, 2016"
  - "Human Impacts Institute, New York, 2017"
- - "SPRING/BREAK Art Fair, New York, 2018"
+ - "SPRING/BREAK, New York Armory Week, 2018"
 ---
 _Emergency Room_ is an immersive media installation examining the global climate crisis through the lens of a personal health crisis.
 
@@ -31,7 +31,7 @@ Having been diagnosed with Type 1 Diabetes in adulthood, I have a personal sense
 </figure>
 
 <figure class="shots">
-	<figcaption>Emergency Room at SPRING/BREAK Art Show, New York, 2018</figcaption>
+	<figcaption>Emergency Room at SPRING/BREAK, New York Armory Week, 2018</figcaption>
 	<img src="/images/works/emergency-room/emergency-room-sb-1.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
 	<img src="/images/works/emergency-room/emergency-room-sb-2.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
 	<img src="/images/works/emergency-room/emergency-room-sb-3.jpg" alt="Emergency Room at SPRING/BREAK Art Show, New York, 2018" />
