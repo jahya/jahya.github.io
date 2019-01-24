@@ -5,7 +5,7 @@ medium      : Installation
 image       : /images/works/gravity-700.jpg
 description : "Gravity: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 93316309
-feature-id  : 5
+feature-id  : 8
 
 exhibitions:
  - "Jaaga Creative Common Ground, India, 2011"

@@ -5,7 +5,7 @@ medium      : Installation
 image       : /images/works/long-700.jpg
 description : "Long: A work by New York-based artist Andrew McWilliams."
 vimeo-id    : 52138049
-feature-id  : 3
+feature-id  : 6
 
 exhibitions:
  - "ThoughtWorks, USA, 2013"
