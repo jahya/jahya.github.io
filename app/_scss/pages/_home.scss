@@ -15,9 +15,9 @@
 
 	#homepage {
 		flex: 1 0 auto;
-		background-image: url('/images/full-bleed/gravity-1600.jpg');
+		background-image: url('/images/full-bleed/emergency-room-1600.jpg');
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-color: #000000;
 		background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@
 @media (max-width: 1299px) {
 	#home {
 		#homepage {
-			background-image: url('/images/full-bleed/gravity-1299.jpg');
+			background-image: url('/images/full-bleed/emergency-room-1299.jpg');
 		}
 	}
 }
@@ -38,7 +38,7 @@
 @media (max-width: 1099px) {
 	#home {
 		#homepage {
-			background-image: url('/images/full-bleed/gravity-1099.jpg');
+			background-image: url('/images/full-bleed/emergency-room-1099.jpg');
 		}
 	}
 }
@@ -46,8 +46,8 @@
 @media (max-width: 899px) {
 	#home {
 		#homepage {
-			background-image: url('/images/full-bleed/existential-899.jpg');
-			background-size: 100% auto;
+			background-image: url('/images/full-bleed/emergency-room-899.jpg');
+			background-position: center 33%;
 
 			.small-screens {
 				display: block;
@@ -63,7 +63,8 @@
 @media (max-width: 639px) {
 	#home {
 		#homepage {
-			background-image: url('/images/full-bleed/existential-639.jpg');
+			background-image: url('/images/full-bleed/emergency-room-639.jpg');
+			background-position: center 38%;
 		}
 	}
 }
