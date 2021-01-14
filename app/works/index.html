@@ -10,8 +10,8 @@ description : Portfolio of works by New York-based artist Andrew McWilliams.
 			<h1 class="hide">Works</h1>
 		</header>
 		<ul>
-			{% for feature in (1..8) %}
-				{% assign work = site.works | where:"feature-id", feature  | first %}
+			{% assign features = site.works | sort : 'year' | reverse %}
+			{% for work in features %}
 				<li>
 					<a href="{{ work.url }}">
 						<figure>
