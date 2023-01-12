@@ -18,12 +18,8 @@ a {
 	transition: color 0.12s;
 }
 
-a:link, a:visited {
+a:link, a:visited, a:hover, a:active {
 	text-decoration: underline;
-}
-
-a:hover, a:active {
-	text-decoration: none;
 }
 
 header h1 {
