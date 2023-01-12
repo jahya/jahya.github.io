@@ -39,7 +39,7 @@ Having been diagnosed with Type 1 Diabetes in adulthood, I have a personal sense
 </figure>
 
 ## Supported by
-This installation was created with support from [ThoughtWorks](https://www.thoughtworks.com/) and [Harvestworks](http://harvestworks.org).
+This installation was created with support from [Thoughtworks](https://www.thoughtworks.com/) and [Harvestworks](http://harvestworks.org).
 
 ## Credits
 

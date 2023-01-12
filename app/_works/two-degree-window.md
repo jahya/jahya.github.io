@@ -28,4 +28,4 @@ This project was created by the [Climate Consciousness](https://artahack.io/proj
 </figure>
 
 ## Supported by
-This installation was created with support from [ThoughtWorks](https://www.thoughtworks.com/) and [Art-A-Hack](http://artahack.io).
+This installation was created with support from [Thoughtworks](https://www.thoughtworks.com/) and [Art-A-Hack](http://artahack.io).
