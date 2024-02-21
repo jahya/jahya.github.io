@@ -40,9 +40,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-    <!-- build:css({app,.tmp}) /stylesheets/style.css -->
-    <link href="/stylesheets/site.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link href="/style/site.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -68,10 +66,8 @@
       </nav>
     </header>
     {{ content }}
-    <!-- build:js(app) /javascript/script.js -->
     <script src="/javascript/jquery.js"></script>
     <script src="/javascript/site.js"></script>
     <script src="/javascript/analytics.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

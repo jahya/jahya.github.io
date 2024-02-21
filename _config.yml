@@ -1,0 +1,43 @@
+name: jahya.net
+url: 'https://jahya.net'
+author:
+  name: Andrew McWilliams
+  email: andy@jahya.net
+
+collections:
+  works:
+    output: true
+    permalink: /works/:title/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      bodyid: blog
+  - scope:
+      type: works
+    values:
+      layout: work
+      bodyid: works
+
+permalink: /blog/:title/
+paginate: 7
+paginate_path: "/blog/page:num/"
+
+excerpt_separator: <!--excerpt-ends-->
+
+sass:
+  sass_dir: style
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-sass-converter
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
