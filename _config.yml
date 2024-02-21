@@ -41,3 +41,5 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
+  - '*.yml'
+  - psd/
