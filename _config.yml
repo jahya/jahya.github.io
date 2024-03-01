@@ -27,6 +27,8 @@ paginate_path: "/blog/page:num/"
 
 excerpt_separator: <!--excerpt-ends-->
 
+incremental: true
+
 sass:
   sass_dir: style
   style: compressed

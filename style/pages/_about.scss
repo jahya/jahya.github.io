@@ -1,21 +1,94 @@
-#about {
-	article a img {
-		width: 100%;
+body#about {
+	/* ============= *
+	.focus {
+		figure {
+			border: 2px dashed green;
+		}
 	}
 
-	#image {
-		position: relative;
+	.focus:nth-child(odd) {
+		border: 2px dashed red;
+	}
 
-		h1 {
-			display: none;
+	.focus:nth-child(even) {
+		border: 2px dashed blue;
+	}
+	/* ============= */
+
+	#hero {
+		height: 68vh;
+		min-height: 100px;
+		max-height: 680px;
+
+		background-position: center 27%;
+		background-size: cover;
+		background-color: #ffffff;
+		background-repeat: no-repeat;
+
+		background-image: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0)), url('/images/full-bleed/emergency-room-1600.jpg');
+	}
+
+	.intro {
+		margin: 0.5em auto;
+		width: 930px;
+		//max-width: 65vw;
+
+		.strap {
+			font-size: 2.2em;
+			text-align: center;
+			line-height: 1.35em;
+		}
+	}
+
+	.focus {
+		margin: 0 2em 4em 2em;
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+
+		.text {
+			align-self: center;
+
+			p {
+				padding: 0;
+				margin: 1em 2em;
+			}
+
+			p:first-of-type {
+				margin-top: 0;
+			}
+
+			p:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 
 		figure {
-			background: url('/images/about/long-700.jpg');
-			background-position: 30% center;
-			background-size: cover;
-			width: 100%; height: 100%;
-			position: absolute;
+			grid-row: 1 / 2;
+			align-self: center;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.focus:nth-child(odd) {
+		.text {
+			grid-column: 6 / 10;
+		}
+
+		figure {
+			grid-column: 1 / 6;
+		}
+	}
+
+	.focus:nth-child(even) {
+		.text {
+			grid-column: 1 / 5;
+		}
+
+		figure {
+			grid-column: 5 / 10;
 		}
 	}
 }
