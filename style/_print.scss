@@ -1,10 +1,10 @@
 @media print {
 	body {
-		background-color: #fff;
+		background-color: $offwhite;
 
 		>header, >main {
 			border-top: 0.2em solid #e8e8e8;
-			background-color: #fff;
+			background-color: $offwhite;
 			height: 76px;
 
 			>article {

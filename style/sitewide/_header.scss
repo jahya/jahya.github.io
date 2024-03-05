@@ -3,7 +3,7 @@ $padding: 9px;
 body {
 	>header {
 		height: 9.25em;
-		background: #ffffff;
+		background: $offwhite;
 		position: relative;
 
 		h1 {
@@ -67,12 +67,12 @@ body {
 			}
 
 			.cta a:link, .cta a:visited {
-				background: #ffffff;
+				background: $offwhite;
 				color: #999;
 			}
 
 			.cta a:hover, .cta a:active {
-				background: #ffffff;
+				background: $offwhite;
 				color: #666;
 			}
 		}
@@ -181,13 +181,13 @@ body {
 				}
 
 				a:link, a:visited, a:hover, a:active {
-					color: #ffffff;
+					color: $offwhite;
 					text-decoration: none;
 					position: relative;
 					z-index: 20;
 
 					i {
-						color: #ffffff;
+						color: $offwhite;
 					}
 				}
 			}

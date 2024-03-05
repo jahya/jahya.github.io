@@ -60,7 +60,7 @@
 					margin: 0.5em 0;
 
 					img, iframe {
-						background-color: #ffffff;
+						background-color: $offwhite;
 						width: 98%;
 						border: 3px solid #e8e8e8;
 					}
@@ -118,7 +118,7 @@
 
 			p.code, pre {
 				font-size: 1em;
-				background-color: #fff;
+				background-color: $offwhite;
 				border: 3px #e5e5e5 dashed;
 				padding-top: 0.4em;
 				padding-bottom: 0.4em;
@@ -145,7 +145,7 @@
 			}
 
 			table.displaytable {
-				background: #ffffff;
+				background: $offwhite;
 				border: 2px solid #e5e5e5;
 				border-collapse: collapse;
 				margin-bottom: 1.2em;
