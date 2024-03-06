@@ -1,70 +1,95 @@
-#home {
-	display: flex;
-	flex-flow: column;
-
-	h1, h2, p {
-		cursor: default;
+body#home {
+	background-color: $offwhite;
+	/* ============= *
+	.focus {
+		figure {
+			border: 2px dashed green;
+		}
 	}
 
-	>section {
-		font-size: 1.2em;
-		text-align: center;
-		line-height: 1.5em;
-		width: 100%;
+	.focus:nth-child(odd) {
+		border: 2px dashed red;
 	}
 
-	#homepage {
-		flex: 1 0 auto;
-		background-image: url('/images/full-bleed/emergency-room-1600.jpg');
-		background-position: center center;
+	.focus:nth-child(even) {
+		border: 2px dashed blue;
+	}
+	/* ============= */
+
+	#hero {
+		height: 70vh;
+		min-height: 100px;
+		max-height: 680px;
+
+		background-position: 90% 20%;
 		background-size: cover;
-		background-color: #000000;
+		background-color: $offwhite;
 		background-repeat: no-repeat;
 
-		.small-screens {
-			display: none;
+		background-image: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), url('/images/full-bleed/emergency-room-1600.jpg');
+	}
+
+	.intro {
+		margin: 0.5em auto 2em auto;
+		width: 930px;
+		//max-width: 65vw;
+
+		.strap {
+			font-size: 2.2em;
+			text-align: center;
+			line-height: 1.35em;
 		}
 	}
-}
 
-@media (max-width: 1299px) {
-	#home {
-		#homepage {
-			background-image: url('/images/full-bleed/emergency-room-1299.jpg');
-		}
-	}
-}
+	.focus {
+		margin: 0 2em 4em 2em;
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
 
-@media (max-width: 1099px) {
-	#home {
-		#homepage {
-			background-image: url('/images/full-bleed/emergency-room-1099.jpg');
-		}
-	}
-}
+		.text {
+			align-self: center;
 
-@media (max-width: 899px) {
-	#home {
-		#homepage {
-			background-image: url('/images/full-bleed/emergency-room-899.jpg');
-			background-position: center 33%;
-
-			.small-screens {
-				display: block;
+			p {
+				padding: 0;
+				margin: 1em 2em;
 			}
 
-			.large-screens {
-				display: none;
+			p:first-of-type {
+				margin-top: 0;
+			}
+
+			p:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		figure {
+			grid-row: 1 / 2;
+			align-self: center;
+
+			img {
+				width: 100%;
 			}
 		}
 	}
-}
 
-@media (max-width: 639px) {
-	#home {
-		#homepage {
-			background-image: url('/images/full-bleed/emergency-room-639.jpg');
-			background-position: center 38%;
+	.focus:nth-child(odd) {
+		.text {
+			grid-column: 6 / 10;
+		}
+
+		figure {
+			grid-column: 1 / 6;
+		}
+	}
+
+	.focus:nth-child(even) {
+		.text {
+			grid-column: 1 / 5;
+		}
+
+		figure {
+			grid-column: 5 / 10;
 		}
 	}
 }

@@ -37,6 +37,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-sass-converter
+  - jekyll-redirect-from
 
 exclude:
   - .sass-cache/
