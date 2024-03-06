@@ -2,21 +2,20 @@ $padding: 9px;
 
 body {
 	>header {
-		height: 9.25em;
+		height: 155px;
 		background: $offwhite;
 		position: relative;
 
 		h1 {
 			display: block;
-			font-weight: 400;
-			color: #9c9c9c;
+			font-weight: 300;
 			letter-spacing: -0.02em;
 			position: absolute; bottom: 0; left: 0;
 			text-align: left;
-			font-size: 3.2em;
+			font-size: 3.55em;
 			line-height: 0.83em;
 			width: 7em;
-			margin-bottom: 0.05em;
+			margin: 0 0 0.05em 0;
 
 			a {
 				padding: 14px 18px;
@@ -24,16 +23,13 @@ body {
 				text-transform: uppercase;
 				display: block;
 				width: 100%; height: 100%;
-				color: #898989;
 
 				.sub {
 					text-transform: lowercase;
-					color: #898989;
 				}
 
 				.shift {
 					position: relative; left: 0.08em;
-					color: #898989;
 				}
 			}
 		}
@@ -50,12 +46,12 @@ body {
 			}
 
 			li {
-				padding: $padding 0;
-				margin-left: 1em;
+				padding: 0.83em 0;
+				margin-left: 0.1em;
 			}
 
 			.cta {
-				padding-right: $padding;
+				margin-right: 0.9em;
 			}
 
 			.cta a {
@@ -67,13 +63,19 @@ body {
 			}
 
 			.cta a:link, .cta a:visited {
-				background: $offwhite;
-				color: #999;
+				i {
+					color: $lightgrey;
+					transform: scale(1);
+					transition: all 0.05s ease-in-out;
+				}
 			}
 
 			.cta a:hover, .cta a:active {
-				background: $offwhite;
-				color: #666;
+				i {
+					color: $offblack;
+					transform: scale(1.2);
+					transition: all 0.08s ease-in-out;
+				}
 			}
 		}
 	}

@@ -1,0 +1,43 @@
+body {
+	>footer {
+		height: 155px;
+		background: $offblack;
+		color: $offwhite;
+		margin-top: 100px;
+
+		display: grid;
+
+		h2 {
+			display: none;
+		}
+
+		.cta {
+			margin: 0 auto;
+			place-self: center;
+		}
+
+		.cta a {
+			padding-top: inherit;
+			padding-bottom: inherit;
+			padding-left: $padding;
+			padding-right: $padding;
+			font-weight: 300;
+		}
+
+		.cta a:link, .cta a:visited {
+			i {
+				color: $offwhite;
+				transform: scale(1);
+				transition: all 0.05s ease-in-out;
+			}
+		}
+
+		.cta a:hover, .cta a:active {
+			i {
+				color: $offwhite;
+				transform: scale(1.2);
+				transition: all 0.08s ease-in-out;
+			}
+		}
+	}
+}
