@@ -66,15 +66,15 @@ body {
 				i {
 					color: $lightgrey;
 					transform: scale(1);
-					transition: all 0.05s ease-in-out;
+					transition: all 0.1s ease-in-out;
 				}
 			}
 
 			.cta a:hover, .cta a:active {
 				i {
 					color: $offblack;
-					transform: scale(1.2);
-					transition: all 0.08s ease-in-out;
+					transform: scale(1.35);
+					transition: all 0.2s ease-in-out;
 				}
 			}
 		}
