@@ -138,3 +138,20 @@ body {
 		}
 	}
 }
+
+@media (max-width: 329px) {
+	body {
+		>header {
+			height: 20vh;
+
+			h1 {
+				font-size: 12vw;
+
+				a {
+					padding-left: 2vw;
+					padding-right: 2vw;
+				}
+			}
+		}
+	}
+}
